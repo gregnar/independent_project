@@ -13,7 +13,7 @@
     </div>
 
     <div id="splash-description" class="medium-4 columns medium-offset-6">
-      <h3><%= link_to "Login with GoodReads", '#', class: 'button radius' %></h3>
+      <h3><%= link_to image_tag("goodreads-login-button.png"), '#' %></h3>
     </div>
   </div>
 
@@ -25,5 +25,18 @@
         <li>Get more accurate reviews, based on users you trust</li>
       </ul>
     </div>
+  </div>
+</div>
+
+<div>
+  <div id="splash-featured-user" class="medium-11 columns medium-offset-1">
+    <h2>Featured User</h2>
+    <div class="medium-2 columns">
+      <%= image_tag 'greg.jpg' %>
+    </div>
+    <h4>Greg N</h4>
+    <h5>Featured Book: <b>Fifty Shades of Grey</b> by not a real person</h5>
+    <h5>goodreads score: <b>3.7 / 5</b></h5>
+    <h5>Greg's better reads score: <b>0 / 5</b></h5>
   </div>
 </div>
