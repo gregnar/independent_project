@@ -1,11 +1,29 @@
-<div id="splash-title" class="medium-6 columns medium-offset-1 ">
-  <h1>Better Reads</h1>
-</div>
+
 
 <div id="splash-image">
   <%= image_tag 'twilight_zoneedited.jpg', class: 'small-12 columns' %>
 </div>
 
-<div id="name">
+<div>
 
+  <div id="right-splash-block" class="medium-12 columns">
+
+    <div id="splash-title" class="medium-5 columns medium-offset-7">
+      <h1>Better Reads</h1>
+    </div>
+
+    <div id="splash-description" class="medium-4 columns medium-offset-6">
+      <h3><%= link_to "Login with GoodReads", '#', class: 'button radius' %></h3>
+    </div>
+  </div>
+
+  <div id="left-splash-block">
+    <div class="medium-8 columns">
+      <ul>
+        <li>Connect your GoodReads account</li>
+        <li>Follow more users</li>
+        <li>Get more accurate reviews, based on users you trust</li>
+      </ul>
+    </div>
+  </div>
 </div>
