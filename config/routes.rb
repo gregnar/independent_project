@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   resources :homepage, only: [:index]
   resources :dashboard, only: [:index]
+  resources :users
 
 end
