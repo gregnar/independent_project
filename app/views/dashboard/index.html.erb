@@ -15,12 +15,25 @@
 
 <div class="medium-6 columns medium-offset-3">
   <h4 class='text-center'>Books from members in your network</h4>
+  <%= link_to "browse all", '#', class: "center" %>
 </div>
 
 <div class="container" id="book-grid">
   <ul class="medium-block-grid-3">
-    <% 6.times do %>
+    <% 3.times do %>
       <li><%=render partial: 'books/book' %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="medium-6 columns medium-offset-3">
+  <h4 class='text-center'>Suggested people for your network</h4>
+  <%= link_to "browse all", '#', class: "center" %>
+</div>
+<div class="container" id="book-grid">
+  <ul class="medium-block-grid-2">
+    <% 2.times do %>
+      <li><%=render partial: 'users/user' %></li>
     <% end %>
   </ul>
 </div>
