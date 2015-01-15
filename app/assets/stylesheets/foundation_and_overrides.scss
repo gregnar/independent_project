@@ -1449,3 +1449,17 @@ body {
 .top-bar {
 	background: rgba(204, 51, 0, .9) !important;
 }
+
+.top-bar * {
+  background: rgba(204, 51, 0, .9) !important;
+}
+
+#user-attributes {
+  float: right
+}
+
+#reason-for-user-suggestion {
+  p {
+    color: rgba(204, 51, 0, .9)
+  }
+}
