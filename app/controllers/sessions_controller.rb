@@ -5,11 +5,9 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.where(provider: auth_hash['provider'],
-                       uid: auth_hash['uid'].to_s).first || User.create(auth_hash)
+    @user = User.where(goodreads_id: auth_hash_user_id).first || User.create(goodreads_id: auth_hash_user_id)
     reset_session
-    raise @user.inspect
-    session[:user_id] = user.id
+    session[:user_id] = @user.id
     redirect_to root_path, notice: 'Signed in!'
   end
 
@@ -19,4 +17,7 @@ class SessionsController < ApplicationController
     request.env['omniauth.auth']
   end
 
+  def auth_hash_user_id
+    auth_hash['uid']
+  end
 end

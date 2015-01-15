@@ -1,0 +1,23 @@
+
+.top-bar {
+	background: rgba(204, 51, 0, .9);
+}
+
+
+body {
+  background: #FDF3E7;
+}
+
+.top-bar * {
+  background: rgba(204, 51, 0, .9);
+}
+
+#user-attributes {
+  float: right
+}
+
+#reason-for-user-suggestion {
+  p {
+    color: rgba(204, 51, 0, .9)
+  }
+}
