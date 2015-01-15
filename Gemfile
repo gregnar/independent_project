@@ -12,7 +12,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
 gem 'omniauth'
 gem 'goodreads'
-gem 'omniauth-goodreads'
+# gem 'omniauth-goodreads'
+gem 'omniauth-oauth'
+
+# gem 'omniauth-goodreads'
 gem 'pry'
 gem 'figaro'
 
