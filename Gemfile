@@ -10,10 +10,8 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
-gem 'goodreads'
 gem 'omniauth'
-gem 'multi_xml'
-gem 'omniauth-goodreads'
+gem 'goodreads'
 
 
 group :development, :test do
@@ -21,5 +19,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'web-console', '~> 2.0'
 
-  # gem 'spring'
+  gem 'spring'
 end
