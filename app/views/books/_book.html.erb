@@ -1,7 +1,7 @@
   <div class="panel">
-      <h5><b>book.title</b></h5>
+      <h5><b><%= book.title %></b></h5>
       <span>
-        <%= image_tag book.small_image_url %>
+        <%= image_tag medium_cover_image_by_isbn(book.isbn) %>
       </span>
       <span id="panel-scores" class="right" style="float: right">
         <div id="gr_add_to_books">
