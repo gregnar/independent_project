@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :dashboard, only: [:index]
   resources :users
   resources :sessions
+  resources :book_search_results, only: [:index]
 
   get '/auth/:provider/callback', to: 'sessions#create'
 
