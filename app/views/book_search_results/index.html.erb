@@ -4,8 +4,10 @@
   </div>
 </div>
 
-<div class="row">
-  <% search.results.work.each do |book| %>
-    <%= render @book %>
-  </div>
-<% end %>
+<div class="container" id="book-grid">
+  <ul class="medium-block-grid-3">
+    <% @results.each do |book| %>
+      <li><%=render partial: 'books/book', locals: { book: book.best_book } %></li>
+    <% end %>
+  </ul>
+</div>

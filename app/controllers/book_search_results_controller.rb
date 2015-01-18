@@ -1,13 +1,13 @@
 class BookSearchResultsController < ApplicationController
 
   def index
-    @results = basic_goodreads_client.search.work
+    @results = search_results.work
   end
 
   private
 
-  def search
-    client.search_books(params[:query])
+  def search_results
+    basic_goodreads_client.search_books(params[:q]).results
   end
 
 end
