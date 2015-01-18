@@ -50,6 +50,6 @@ end
 OmniAuth.config.add_camelization 'goodreads', 'GoodreadsStrategy'
 
 Rails.application.config.middleware.use OmniAuth::Builder do
-  # provider :developer unless Rails.env.production?
+  provider :developer if Rails.env.test?
   provider :goodreads, Figaro.env.goodreads_key, Figaro.env.goodreads_secret
 end

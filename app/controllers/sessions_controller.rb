@@ -20,4 +20,8 @@ class SessionsController < ApplicationController
   def auth_hash_user_id
     auth_hash['uid']
   end
+
+  def access_token
+    auth_hash['extra']['access_token']
+  end
 end
