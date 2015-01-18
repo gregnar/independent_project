@@ -26,3 +26,9 @@
 #dashboard-book-suggestions {
   margin-top: 2em;
 }
+
+#book-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
