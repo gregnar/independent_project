@@ -1,0 +1,27 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <% unless request.fullpath == root_path %>
+        <h1><%= link_to 'Reviewer', root_path %></h1>
+      <% end %>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="right">
+      <% unless request.fullpath == root_path %>
+        <li><%= link_to image_tag("goodreads-login-button.png"), '#' %></li>
+      <% end %>
+      <li class="has-dropdown">
+        <a href="#" id="actions-button">Actions</a>
+        <ul class="dropdown">
+          <li><%= link_to "User Dashboard", dashboard_index_path %></li>
+          <li><a href="#">Manage Followed Users</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+</nav>

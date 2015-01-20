@@ -1,0 +1,54 @@
+<div class="row" id="books-header">
+  <h2 class='text-center'>Books</h2>
+</div>
+
+<div class="container" id="dashboard-search">
+  <%= form_tag('/book_search_results', method: 'get') do %>
+  <div class="small-6 medium-4 columns medium-offset-3">
+      <%= text_field_tag :q, nil, placeholder: "search books" %>
+  </div>
+  <div class="small-3 medium-2 columns end">
+    <%= submit_tag "Search", :name => nil, class: "button round postfix" %>
+  </div>
+  <% end %>
+</div>
+
+<div class="row">
+  <div id="dashboard-book-suggestions"class="medium-6 columns medium-offset-3">
+    <h4 class='text-center'>Your suggestions</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class= "medium-2 columns right">
+    <%= link_to "browse all", '#'%>
+  </div>
+</div>
+
+<div class="container" id="book-grid">
+  <ul class="medium-block-grid-3">
+    <% 3.times do %>
+      <li><%=render partial: 'books/book', locals: { book: @book } %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="row">
+  <div id="dashboard-book-suggestions" class="medium-6 columns medium-offset-3">
+    <h4 class='text-center'>Suggested people for your network</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class= "medium-2 columns right">
+    <%= link_to "browse all", '#'%>
+  </div>
+</div>
+
+<div class="container" id="book-grid">
+  <ul class="medium-block-grid-2">
+    <% 6.times do %>
+      <li><%=render partial: 'users/user' %></li>
+    <% end %>
+  </ul>
+</div>

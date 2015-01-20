@@ -1,0 +1,44 @@
+<div id="landing-background">
+
+</div>
+
+<div id="splash-image">
+  <%= image_tag 'burgess4.jpg', class: 'small-12 columns' %>
+</div>
+
+<div id="right-splash-block">
+
+  <div class="container">
+    <div id="splash-title" class="medium-5 columns medium-offset-7">
+      <h1>Reviewer</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="splash-description" class="medium-4 columns medium-offset-8">
+      <h3><%= link_to image_tag("goodreads-login-button.png"), new_session_path %></h3>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="medium-12 columns" id="splash-bullets">
+      <div class="small-4 columns text-left">login with goodreads</div>
+      <div class="small-4 columns text-center">follow more users</div>
+      <div class="small-4 columns text-right">get tailored book ratings</div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="splash-featured-user" class="medium-6 columns medium-offset-3">
+    <h2>Featured User</h2>
+    <div class="medium-2 columns">
+      <%= image_tag 'greg.jpg' %>
+    </div>
+    <h4>Greg N</h4>
+    <h5>Featured Book: <b>Fifty Shades of Grey</b> by not a real person</h5>
+    <h5>goodreads score: <b>3.7 / 5</b></h5>
+    <h5>Greg's better reads score: <b>0 / 5</b></h5>
+  </div>
+</div>
