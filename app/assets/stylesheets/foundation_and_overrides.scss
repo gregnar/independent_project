@@ -1443,7 +1443,7 @@ $include-html-global-classes: $include-html-classes;
 @import 'foundation';
 
 
-.top-bar * {
+.top-bar #actions-button {
   background: rgba(204, 51, 0, .9) !important;
 }
 

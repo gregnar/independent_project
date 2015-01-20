@@ -1,11 +1,10 @@
-
-
-
-body {
-  background: rgba(0, 0, 0, .9);
+#landing-background {
+	background: rgba(0, 0 , 0, .9);
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: fixed;
 }
-
-
 #user-attributes {
   float: right
 }
@@ -14,4 +13,8 @@ body {
   p {
     color: rgba(204, 51, 0, .9)
   }
+}
+
+.button {
+	background: rgba(204, 51, 0, .9)
 }
