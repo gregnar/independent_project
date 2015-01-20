@@ -1448,9 +1448,12 @@ $include-html-global-classes: $include-html-classes;
   font-family: 'Oswald';
 }
 
-.dropdown * {
-  font-family: 'Oswald';
+.dropdown-link {
+  a {
+    font-family: 'Oswald';
+  }
 }
+
 
 #user-attributes {
   float: right

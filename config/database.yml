@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: independent_project_production
-  username: independent_project
-  password: <%= ENV['INDEPENDENT_PROJECT_DATABASE_PASSWORD'] %>
+  username: deploy
+  password: <%= ENV['production_psql_password'] %>
