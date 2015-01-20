@@ -1445,6 +1445,11 @@ $include-html-global-classes: $include-html-classes;
 
 .top-bar #actions-button {
   background: rgba(204, 51, 0, .9) !important;
+  font-family: 'Oswald';
+}
+
+.dropdown * {
+  font-family: 'Oswald';
 }
 
 #user-attributes {
