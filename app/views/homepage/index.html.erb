@@ -1,30 +1,32 @@
 
 
 <div id="splash-image">
-  <%= image_tag 'twilight_zoneedited.jpg', class: 'small-12 columns' %>
+  <%= image_tag 'burgess4.jpg', class: 'small-12 columns' %>
 </div>
 
-<div>
+<div id="right-splash-block">
 
-  <div id="right-splash-block" class="medium-12 columns">
-
+  <div class="container">
     <div id="splash-title" class="medium-5 columns medium-offset-7">
-      <h1>Better Reads</h1>
+      <h1>Reviewer</h1>
     </div>
+  </div>
 
-    <div id="splash-description" class="medium-4 columns medium-offset-6">
+  <div class="container">
+    <div id="splash-description" class="medium-4 columns medium-offset-8">
       <h3><%= link_to image_tag("goodreads-login-button.png"), new_session_path %></h3>
     </div>
   </div>
 
-  <div id="left-splash-block">
-    <div class="medium-8 columns">
-      <ul>
-        <li>Connect your GoodReads account</li>
-        <li>Follow more users</li>
-        <li>Get more accurate reviews, based on users you trust</li>
-      </ul>
-    </div>
+</div>
+
+<div class="row">
+  <div class="medium-8 columns">
+    <ul>
+      <li>Connect your GoodReads account</li>
+      <li>Follow more users</li>
+      <li>Get more accurate reviews, based on users you trust</li>
+    </ul>
   </div>
 </div>
 
