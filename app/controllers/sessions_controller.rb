@@ -8,7 +8,6 @@ class SessionsController < ApplicationController
     @user = User.where(goodreads_id: auth_hash_user_id).first || User.create(goodreads_id: auth_hash_user_id)
     reset_session
     session[:user_id] = @user.id
-    redirect_to root_path, notice: 'Signed in!'
   end
 
   protected
@@ -21,7 +20,12 @@ class SessionsController < ApplicationController
     auth_hash['uid']
   end
 
-  def access_token
-    auth_hash['extra']['access_token']
+  def access_token_key
+    auth_hash['extra']['access_token']['token']
   end
+
+  def access_token_secret
+    auth_hash['extra']['access_token']['secret']
+  end
+
 end
