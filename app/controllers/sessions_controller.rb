@@ -6,8 +6,16 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.where(goodreads_id: auth_hash_user_id).first || User.create(goodreads_id: auth_hash_user_id)
+    @user.set_access_token(access_token_key, access_token_secret)
     reset_session
     session[:user_id] = @user.id
+    redirect_to dashboard_index_path
+  end
+
+  def destroy
+    current_user.access_token.destroy
+    session[:user_id] = nil
+    redirect_to root_path
   end
 
   protected
