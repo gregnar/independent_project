@@ -11,8 +11,10 @@
 
   <section class="top-bar-section">
     <ul class="right">
-      <% unless request.fullpath == root_path %>
-        <li><%= link_to image_tag("goodreads-login-button.png"), new_session_path %></li>
+      <% if current_user %>
+        <li><%= link_to "logout", logout_path %></li>
+      <% elsif request.fullpath != root_path %>
+        <li><%= link_to image_tag("goodreads-login-button.png"), login_path %></li>
       <% end %>
       <li class="has-dropdown">
         <a href="#" id="actions-button">Actions</a>

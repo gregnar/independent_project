@@ -6,9 +6,13 @@ Rails.application.routes.draw do
   resources :homepage, only: [:index]
   resources :dashboard, only: [:index]
   resources :users
-  resources :sessions
+
+  resources :sessions, only: [:create]
+  get '/login',  to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
+  get '/auth/:provider/callback', to: 'sessions#create'
+
   resources :book_search_results, only: [:index]
 
-  get '/auth/:provider/callback', to: 'sessions#create'
 
 end
