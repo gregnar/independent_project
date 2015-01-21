@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 
   def create
     @user = User.where(goodreads_id: auth_hash_user_id).first || User.create(goodreads_id: auth_hash_user_id)
+    binding.pry
     @user.set_access_token(access_token_key, access_token_secret)
     reset_session
     session[:user_id] = @user.id
@@ -29,11 +30,11 @@ class SessionsController < ApplicationController
   end
 
   def access_token_key
-    auth_hash['extra']['access_token']['token']
+    auth_hash['extra']['access_token'].token
   end
 
   def access_token_secret
-    auth_hash['extra']['access_token']['secret']
+    auth_hash['extra']['access_token'].secret
   end
 
 end

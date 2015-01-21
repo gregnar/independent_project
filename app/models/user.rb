@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_one :access_token, dependent: :destroy
 
   def set_access_token(token, secret)
-    access_token = AccessToken.create(token: token, secret: secret)
+    access_token = AccessToken.create(token: token, secret: secret, user_id: id)
   end
 
 end
