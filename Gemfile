@@ -12,10 +12,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
 gem 'omniauth'
 gem 'goodreads'
-# gem 'omniauth-goodreads'
 gem 'omniauth-oauth'
-
-# gem 'omniauth-goodreads'
 gem 'pry'
 gem 'figaro'
 
@@ -24,5 +21,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'web-console', '~> 2.0'
   gem 'capybara'
-  # gem 'spring'
+  gem 'spring'
 end
