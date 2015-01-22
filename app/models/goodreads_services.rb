@@ -1,12 +1,19 @@
 class GoodreadsServices
-  def self.current_access_token
-    @current_access_token ||= OAuth::AccessToken.new( consumer,
-                                                      access_token,
-                                                      access_token_secret
-                                                    )
+
+  def self.follow(user_id)
+    authorized_goodreads_user.
   end
 
-  def self.access_token
+  private
+
+  def self.authorized_goodreads_user
+    @authorized_goodreads_user ||= OAuth::AccessToken.new(consumer,
+                                                          access_token_key,
+                                                          access_token_secret
+                                                         )
+  end
+
+  def self.access_token_key
     current_user.access_token.token
   end
 
@@ -21,4 +28,7 @@ class GoodreadsServices
                                       )
   end
 
+  def self.convert_to_openstruct(data)
+    OpenStruct.new(data)
+  end
 end
