@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :homepage, only: [:index]
   resources :dashboard, only: [:index]
   resources :users
+  resources :user_followees, except: [:edit, :update, :new]
 
   resources :sessions, only: [:create]
   get '/login',  to: 'sessions#new'

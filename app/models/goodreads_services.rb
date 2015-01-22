@@ -1,7 +1,7 @@
 class GoodreadsServices
 
   def self.follow(user_id)
-    authorized_goodreads_user.
+    authorized_goodreads_user.post('/followers.xml', {'user_id' => user_id })
   end
 
   private

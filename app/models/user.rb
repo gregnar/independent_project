@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
     access_token = AccessToken.create(token: token, secret: secret, user_id: id)
   end
 
+  def follow(user_id)
+    GoodreadsServices.follow(user_id)
+  end
+
 end
