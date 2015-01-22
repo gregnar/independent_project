@@ -1,34 +1,34 @@
 class GoodreadsServices
+  CONSUMER = OAuth::Consumer.new( Figaro.env.goodreads_key,
+                                  Figaro.env.goodreads_secret,
+                                  site: 'http://www.goodreads.com'
+                                )
 
-  def self.follow(user_id)
-    authorized_goodreads_user.post('/followers.xml', {'user_id' => user_id })
+  def initialize(key, secret)
+    @access_token_key    = key
+    @access_token_secret = secret
+  end
+
+  def follow(user_id)
+    user.post("http://www.goodreads.com/user/#{user_id}/followers?format=xml")
   end
 
   private
 
-  def self.authorized_goodreads_user
-    @authorized_goodreads_user ||= OAuth::AccessToken.new(consumer,
-                                                          access_token_key,
-                                                          access_token_secret
-                                                         )
+  def user
+    @user ||= OAuth::AccessToken.new(CONSUMER, access_token_key, access_token_secret)
   end
 
-  def self.access_token_key
-    current_user.access_token.token
+  def access_token_key
+    @access_token_key
   end
 
-  def self.access_token_secret
-    current_user.access_token.secret
-  end
-
-  def self.consumer
-    @consumer ||= OAuth::Consumer.new(  Figaro.env.goodreads_key,
-                                        Figaro.env.goodreads_secret,
-                                        site: 'http://www.goodreads.com'
-                                      )
+  def access_token_secret
+    @access_token_secret
   end
 
   def self.convert_to_openstruct(data)
     OpenStruct.new(data)
   end
+
 end

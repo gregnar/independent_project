@@ -8,7 +8,13 @@ class User < ActiveRecord::Base
   end
 
   def follow(user_id)
-    GoodreadsServices.follow(user_id)
+    goodreads_services.follow(user_id)
+  end
+
+  private
+
+  def goodreads_services
+    @goodreads_services ||= GoodreadsServices.new(access_token.token, access_token.secret)
   end
 
 end
