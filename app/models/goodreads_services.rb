@@ -13,6 +13,10 @@ class GoodreadsServices
     user.post("http://www.goodreads.com/user/#{user_id}/followers?format=xml")
   end
 
+  # def followees(user_id)
+  #   user.get("https://www.goodreads.com/user_following/#{user_id}?format=xml")
+  # end
+
   private
 
   def user

@@ -12,4 +12,10 @@ class ApplicationController < ActionController::Base
     @basic_goodreads_client ||= Goodreads.new
   end
 
+  def require_current_user
+    unless current_user
+      redirect_to root_path, notice: "Login with GoodReads in order to view dashboard."
+    end
+  end
+
 end

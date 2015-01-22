@@ -15,6 +15,7 @@ gem 'goodreads'
 gem 'omniauth-oauth'
 gem 'pry'
 gem 'figaro'
+gem 'faraday'
 
 group :development, :test do
   gem 'byebug'

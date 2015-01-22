@@ -11,6 +11,10 @@ class User < ActiveRecord::Base
     goodreads_services.follow(user_id)
   end
 
+  # def followees
+  #   goodreads_services.followees(goodreads_id)
+  # end
+
   private
 
   def goodreads_services

@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     reset_session
     session[:user_id] = @user.id
     redirect_to dashboard_index_path
-    binding.pry
   end
 
   def destroy
