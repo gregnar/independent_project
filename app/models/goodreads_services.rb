@@ -1,21 +1,27 @@
 class GoodreadsServices
+  BASE_URL = "http://www.goodreads.com"
   CONSUMER = OAuth::Consumer.new( Figaro.env.goodreads_key,
                                   Figaro.env.goodreads_secret,
-                                  site: 'http://www.goodreads.com'
+                                  site: BASE_URL
                                 )
 
-  def initialize(key, secret)
+  def initialize(goodreads_id, key, secret)
+    @user_id             = goodreads_id
     @access_token_key    = key
     @access_token_secret = secret
   end
 
   def follow(user_id)
-    user.post("http://www.goodreads.com/user/#{user_id}/followers?format=xml")
+    user.post(BASE_URL + "/user/#{user_id}/followers?format=xml")
   end
 
-  # def followees(user_id)
-  #   user.get("https://www.goodreads.com/user_following/#{user_id}?format=xml")
-  # end
+  def followees(user_id)
+    XMLParser.parse_followees(user.get(BASE_URL + "/user/#{user_id}/following?format=xml").body)
+  end
+
+  def custom_rating(book_id)
+    RatingsGenerator.generate_rating(user_id book_id)
+  end
 
   private
 

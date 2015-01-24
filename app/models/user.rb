@@ -11,14 +11,22 @@ class User < ActiveRecord::Base
     goodreads_services.follow(user_id)
   end
 
-  # def followees
-  #   goodreads_services.followees(goodreads_id)
-  # end
+  def custom_rating(book_id)
+    goodreads_services.custom_rating(book_id)
+  end
+
+  def friends
+    goodreads_services.all_friends
+  end
+
+  def followees
+    goodreads_services.followees(goodreads_id)
+  end
 
   private
 
   def goodreads_services
-    @goodreads_services ||= GoodreadsServices.new(access_token.token, access_token.secret)
+    @goodreads_services ||= GoodreadsServices.new(goodreads_id, access_token.token, access_token.secret)
   end
 
 end
