@@ -6,7 +6,7 @@ class XMLParser
 
   def self.parse_ratings(followee_id, ratings)
     new_ratings = ratings_hashes(ratings)
-    new_ratings.map! { |rating| rating['followee_id'] = followee_id }; new_ratings
+    new_ratings.map { |rating| rating.tap { |r| r['followee_id'] = followee_id } }
   end
 
   private

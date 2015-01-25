@@ -59,7 +59,7 @@ class GoodreadsServices
   def all_parsed_ratings_for_user
     user_object.followees.inject([]) do |array, f|
       array << parse_ratings_for_single_user(f.goodreads_id); array
-    end
+    end.flatten
   end
 
 end

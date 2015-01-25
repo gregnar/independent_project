@@ -7,17 +7,17 @@ class RatingsManager
     end
   end
 
-  def existing_rating(rating)
+  def self.existing_rating(rating)
     Rating.find_by(followee_id: rating['followee_id'], book_id: rating['book_id'])
   end
 
   def self.clean_ratings_up(ratings)
-    ratings.reject { |rating| rating['id'] == '0' }
+    ratings.reject { |rating| rating['rating'] == '0' }
            .map    { |rating| select_needed_keys(rating) }
   end
 
   def self.select_needed_keys(rating_hash)
-    rating_hash.slice('followee_id', 'book' 'rating')
-               .tap { |h| h['book_id'] = h['book']['id']; h.delete['book'] }
+    rating_hash.slice('followee_id', 'book', 'rating')
+               .tap { |h| h['book_id'] = h['book']['id']; h.delete('book') }
   end
 end
