@@ -25,7 +25,7 @@ class GoodreadsServices
   end
 
   def update_followees
-    FolloweesManager.update_followees_for_user(@user_object, followees)
+    FolloweesManager.new(@user_object, followees).update_followees
   end
 
   private
