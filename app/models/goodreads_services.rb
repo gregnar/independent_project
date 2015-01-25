@@ -18,6 +18,7 @@ class GoodreadsServices
 
   def followees
     XMLParser.parse_followees(user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body)
+    # XMLParser.parse_followees(user.get(http://www.goodreads.com/review/list/9186805.xml").body)
   end
 
   def update_followees
@@ -25,15 +26,15 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml").body
+    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2").body
   end
 
   def update_followee_ratings
-    RatingsManager.new(user_object, all_parsed_ratings_for_user).update_ratings
+    RatingsManager.update_ratings(all_parsed_ratings_for_user)
   end
 
 
-  # private
+  private
 
   def user
     @user ||= OAuth::AccessToken.new(CONSUMER, access_token_key, access_token_secret)
@@ -58,7 +59,7 @@ class GoodreadsServices
   def all_parsed_ratings_for_user
     user_object.followees.inject([]) do |array, f|
       array.tap { |a| a << parse_ratings_for_single_user(f.goodreads_id) }
-    end
+    end.flatten
   end
 
 end

@@ -12,7 +12,7 @@ class XMLParser
   private
 
   def self.ratings_hashes(ratings)
-    xml_to_hash(ratings)['GoodreadsResponse']['books']['book']
+    xml_to_hash(ratings)['GoodreadsResponse']['reviews']
   end
 
   def self.xml_to_hash(raw_xml)
