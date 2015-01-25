@@ -52,13 +52,13 @@ class GoodreadsServices
     @access_token_secret
   end
 
-  def parse_ratings_for_single_user(goodreads_id)
-    XMLParser.parse_ratings(goodreads_id, get_ratings_for_single_user(goodreads_id))
+  def parse_ratings_for_single_user(followee_id, followee_goodreads_id)
+    XMLParser.parse_ratings(followee_id, get_ratings_for_single_user(followee_goodreads_id))
   end
 
   def all_parsed_ratings_for_user
     user_object.followees.inject([]) do |array, f|
-      array << parse_ratings_for_single_user(f.goodreads_id); array
+      array << parse_ratings_for_single_user(f.id, f.goodreads_id); array
     end.flatten
   end
 
