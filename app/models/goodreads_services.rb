@@ -15,12 +15,12 @@ class GoodreadsServices
     user.post(BASE_URL + "/user/#{user_id}/followers?format=xml")
   end
 
-  def followees(user_id)
-    XMLParser.parse_followees(user.get(BASE_URL + "/user/#{user_id}/following?format=xml").body)
+  def followees
+    XMLParser.parse_followees(user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body)
   end
 
   def custom_rating(book_id)
-    RatingsGenerator.generate_rating(user_id book_id)
+    RatingsGenerator.generate_rating(user_id, book_id)
   end
 
   private
@@ -37,8 +37,5 @@ class GoodreadsServices
     @access_token_secret
   end
 
-  def self.convert_to_openstruct(data)
-    OpenStruct.new(data)
-  end
 
 end

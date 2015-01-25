@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   validates :goodreads_id, presence: true, uniqueness: true
   has_one :access_token, dependent: :destroy
+  has_many :followees
 
   def set_access_token(token, secret)
     access_token.destroy if access_token.present?
@@ -11,7 +12,7 @@ class User < ActiveRecord::Base
     goodreads_services.follow(user_id)
   end
 
-  def custom_rating(book_id)
+  def custom_rating(id, book_id)
     goodreads_services.custom_rating(book_id)
   end
 
@@ -20,7 +21,7 @@ class User < ActiveRecord::Base
   end
 
   def followees
-    goodreads_services.followees(goodreads_id)
+    goodreads_services.followees
   end
 
   private

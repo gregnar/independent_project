@@ -1,7 +1,7 @@
 class RatingsGenerator
 
 
-  def generate_rating(book)
+  def generate_rating(user_id, book)
 
   end
 
