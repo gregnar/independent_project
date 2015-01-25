@@ -5,22 +5,27 @@ class GoodreadsServices
                                   site: BASE_URL
                                 )
 
-  def initialize(goodreads_id, key, secret)
-    @user_id             = goodreads_id
-    @access_token_key    = key
-    @access_token_secret = secret
+  def initialize(user_object)
+    @user_object         = user_object
+    @user_id             = user_object.goodreads_id
+    @access_token_key    = user_object.access_token.token
+    @access_token_secret = user_object.access_token.secret
   end
 
-  def follow(user_id)
-    user.post(BASE_URL + "/user/#{user_id}/followers?format=xml")
+  def follow(foreign_user_id)
+    user.post(BASE_URL + "/user/#{foreign_user_id}/followers?format=xml")
+  end
+
+  def custom_rating(book_id)
+    RatingsGenerator.generate_rating(user_id, book_id)
   end
 
   def followees
     XMLParser.parse_followees(user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body)
   end
 
-  def custom_rating(book_id)
-    RatingsGenerator.generate_rating(user_id, book_id)
+  def update_followees
+    FolloweesManager.update_followees_for_user(@user_object, followees)
   end
 
   private

@@ -1,7 +1,7 @@
 class CreateFollowees < ActiveRecord::Migration
   def change
     create_table :followees do |t|
-      t.integer :id
+      t.integer :goodreads_id
       t.string :name
       t.string :link
       t.string :image_url

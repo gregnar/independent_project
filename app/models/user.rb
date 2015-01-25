@@ -20,14 +20,14 @@ class User < ActiveRecord::Base
     goodreads_services.all_friends
   end
 
-  def followees
-    goodreads_services.followees
+  def update_followees
+    goodreads_services.update_followees
   end
 
   private
 
   def goodreads_services
-    @goodreads_services ||= GoodreadsServices.new(goodreads_id, access_token.token, access_token.secret)
+    @goodreads_services ||= GoodreadsServices.new(self)
   end
 
 end

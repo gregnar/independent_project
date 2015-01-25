@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150121202444) do
+ActiveRecord::Schema.define(version: 20150125010619) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,10 +30,35 @@ ActiveRecord::Schema.define(version: 20150121202444) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "followees", force: :cascade do |t|
+    t.integer  "goodreads_id"
+    t.string   "name"
+    t.string   "link"
+    t.string   "image_url"
+    t.string   "small_image_url"
+    t.integer  "user_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  add_index "followees", ["user_id"], name: "index_followees_on_user_id", using: :btree
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer  "book_id"
+    t.integer  "followee_id"
+    t.integer  "rating"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "ratings", ["followee_id"], name: "index_ratings_on_followee_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.integer  "goodreads_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
 
+  add_foreign_key "followees", "users"
+  add_foreign_key "ratings", "followees"
 end
