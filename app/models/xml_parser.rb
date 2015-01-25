@@ -1,16 +1,22 @@
 class XMLParser
 
   def self.parse_followees(followees)
-    @followees = followees; followee_hashes
-    # followee_hashes.map { |hash| OpenStruct.new(hash) }
+    followee_hashes(followees)
   end
 
-  def self.first_attempt
-    Hash.from_xml(@followees.gsub(/\s*\\n*t*/, ""))
+  def self.parse_ratings(ratings)
+    
   end
 
-  def self.followee_hashes
-    first_attempt['GoodreadsResponse']['following']['user']
+
+  private
+
+  def self.xml_to_hash(raw_xml)
+    Hash.from_xml(raw_xml.gsub(/\s*\\n*t*/, ""))
+  end
+
+  def self.followee_hashes(followees)
+    xml_to_hash(followees)['GoodreadsResponse']['following']['user']
   end
 
 end

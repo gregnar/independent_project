@@ -24,6 +24,16 @@ class User < ActiveRecord::Base
     goodreads_services.update_followees
   end
 
+  def update_followee_ratings
+    RatingsManager.collect_ratings(followees)
+  end
+
+
+  def custom_rating(book_id)
+    RatingsGenerator.generate_rating(user_id, book_id)
+  end
+
+
   private
 
   def goodreads_services
