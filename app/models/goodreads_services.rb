@@ -29,7 +29,7 @@ class GoodreadsServices
     user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2").body
   end
 
-  def update_followee_ratings
+  def update_ratings
     RatingsManager.update_ratings(all_parsed_ratings_for_user)
   end
 
@@ -58,8 +58,8 @@ class GoodreadsServices
 
   def all_parsed_ratings_for_user
     user_object.followees.inject([]) do |array, f|
-      array.tap { |a| a << parse_ratings_for_single_user(f.goodreads_id) }
-    end.flatten
+      array << parse_ratings_for_single_user(f.goodreads_id); array
+    end
   end
 
 end

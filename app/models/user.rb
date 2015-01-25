@@ -24,8 +24,8 @@ class User < ActiveRecord::Base
     goodreads_services.update_followees
   end
 
-  def update_followee_ratings
-    RatingsManager.collect_ratings(followees)
+  def update_ratings
+    goodreads_services.update_ratings
   end
 
 

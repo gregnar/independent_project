@@ -5,7 +5,8 @@ class XMLParser
   end
 
   def self.parse_ratings(followee_id, ratings)
-    ratings_hashes(ratings).map { |review| review['followee_id'] = followee_id }
+    new_ratings = ratings_hashes(ratings)
+    new_ratings.map! { |rating| rating['followee_id'] = followee_id }; new_ratings
   end
 
   private
@@ -19,7 +20,7 @@ class XMLParser
   end
 
   def self.ratings_hashes(ratings)
-    xml_to_hash(ratings)['GoodreadsResponse']['reviews']
+    xml_to_hash(ratings)['GoodreadsResponse']['reviews']['review']
   end
 
 end
