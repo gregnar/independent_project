@@ -5,9 +5,9 @@ class FolloweesManager
     @followees = followees
   end
 
-  def self.update_followees_for_user
+  def update_followees
     followees.each do |followee_hash|
-      create_followee(followee_hash) unless existing_followee(followee_hash[:id])
+      create_followee(followee_hash) unless existing_followee?(followee_hash)
     end
   end
 
@@ -21,19 +21,19 @@ class FolloweesManager
     @followees
   end
 
-  def self.create_followee(followee_hash)
+  def create_followee(followee_hash)
     attributes = followee_attributes(followee_hash)
-    user.followees.create(attributes)
+    user.followees.create!(attributes)
   end
 
-  def self.existing_followee(followee_id)
-    user.followees.find_by(goodreads_id: followee_id)
+  def existing_followee?(followee_hash)
+    user.followees.find_by(goodreads_id: followee_hash['id'])
   end
 
 
-  def self.followee_attributes(followee_hash)
-    followee_hash.slice(:id, :name, :link, :image_url, :small_image_url)
-                 .tap { |h| h[:goodreads_id] = h[:id], h.delete[:id]}
+  def followee_attributes(followee_hash)
+    followee_hash.slice('id', 'name', 'link', 'image_url', 'small_image_url')
+                 .tap { |h| h['goodreads_id'] = h['id'], h.delete('id') }
   end
 
 end
