@@ -53,7 +53,7 @@ class GoodreadsServices
   end
 
   def parse_ratings_for_single_user(goodreads_id)
-    XMLParser.parse_ratings(get_ratings_for_single_user(goodreads_id))
+    XMLParser.parse_ratings(goodreads_id, get_ratings_for_single_user(goodreads_id))
   end
 
   def all_parsed_ratings_for_user
