@@ -25,18 +25,23 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    puts "making API call for #{goodreads_id}..."
     stuff = user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
-    puts "finished API call for #{goodreads_id}"
-    stuff
   end
 
   def update_ratings
     RatingsManager.update_ratings(all_parsed_ratings_for_user)
   end
 
+  def update_books
+    books = books_ids.map { |id| goodreads_gem.book(id) }
+    BooksManager.update_books(books)
+  end
 
   private
+
+  def goodreads_gem
+    @goodreads_gem ||= Goodreads.new
+  end
 
   def user
     @user ||= OAuth::AccessToken.new(CONSUMER, access_token_key, access_token_secret)

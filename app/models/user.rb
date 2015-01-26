@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   validates :goodreads_id, presence: true, uniqueness: true
   has_one :access_token, dependent: :destroy
   has_many :followees
+  has_many :ratings, through: :followees
 
   def set_access_token(token, secret)
     access_token.destroy if access_token.present?
@@ -28,9 +29,28 @@ class User < ActiveRecord::Base
     goodreads_services.update_ratings
   end
 
+  def update_books
+    goodreads_services.update_books
+  end
 
   def custom_rating(book_id)
     RatingsGenerator.generate_rating(self, book_id)
+  end
+
+  def ids_for_rated_books
+    ratings.pluck(:book_id).uniq
+  end
+
+  def rated_books
+
+  end
+
+  def book_ids
+    ratings.pluck(:book_id).uniq
+  end
+
+  def uncached_book_ids
+    book_ids.delete_if { |id| Book.find_by(goodreads_id: id) }
   end
 
 
@@ -39,5 +59,6 @@ class User < ActiveRecord::Base
   def goodreads_services
     @goodreads_services ||= GoodreadsServices.new(self)
   end
+
 
 end
