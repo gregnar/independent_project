@@ -18,7 +18,6 @@ class GoodreadsServices
 
   def followees
     XMLParser.parse_followees(user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body)
-    # XMLParser.parse_followees(user.get(http://www.goodreads.com/review/list/9186805.xml").body)
   end
 
   def update_followees
@@ -26,7 +25,7 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2").body
+    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
   end
 
   def update_ratings

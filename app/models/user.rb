@@ -12,8 +12,8 @@ class User < ActiveRecord::Base
     goodreads_services.follow(user_id)
   end
 
-  def custom_rating(id, book_id)
-    goodreads_services.custom_rating(book_id)
+  def custom_rating(book_id)
+    RatingsGenerator.generate_rating(self, book_id)
   end
 
   def friends
@@ -30,7 +30,7 @@ class User < ActiveRecord::Base
 
 
   def custom_rating(book_id)
-    RatingsGenerator.generate_rating(user_id, book_id)
+    RatingsGenerator.generate_rating(self, book_id)
   end
 
 
