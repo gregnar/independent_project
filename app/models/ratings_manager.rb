@@ -3,7 +3,7 @@ class RatingsManager
   def self.update_ratings(ratings)
     cleaned_ratings = clean_ratings_up(ratings)
     cleaned_ratings.each do |r|
-      existing_rating(r) ? existing_rating(r).update_attributes(r) : Rating.create(r)
+      Rating.create(r) unless existing_rating(r)
     end
   end
 

@@ -16,6 +16,7 @@ gem 'omniauth-oauth'
 gem 'pry'
 gem 'figaro'
 gem 'faraday'
+gem 'sucker_punch', '~> 1.0'
 
 group :development, :test do
   gem 'byebug'

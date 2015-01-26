@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
     @user.set_access_token(access_token_key, access_token_secret)
     reset_session
     session[:user_id] = @user.id
+    UpdateDatabaseJob.new.async.perform(@user.id)
     redirect_to dashboard_index_path
   end
 

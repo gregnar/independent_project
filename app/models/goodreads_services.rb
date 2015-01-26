@@ -25,7 +25,10 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
+    puts "making API call for #{goodreads_id}..."
+    stuff = user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
+    puts "finished API call for #{goodreads_id}"
+    stuff
   end
 
   def update_ratings
