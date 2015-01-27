@@ -7,7 +7,7 @@
     <span id="panel-scores" class="right" style="float: right">
       <div id="gr_add_to_books">
         <div class="gr_custom_each_container_">
-          <%= link_to image_tag("add_book.png"), add_book_path, method: :post %>
+          <%= link_to image_tag("add_book.png"), add_book_path(book_goodreads_id: book.goodreads_id), method: :post %>
         </div>
       </div>
       <h5>goodreads score: <br/><b><%= book.goodreads_rating %></b></h5>
