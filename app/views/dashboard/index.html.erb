@@ -46,9 +46,9 @@
 </div>
 
 <div class="container" id="book-grid">
-  <ul class="medium-block-grid-2">
-    <% 6.times do %>
-      <li><%= render partial: 'users/user' %></li>
+  <ul class="medium-block-grid-3">
+    <% @suggested_followees.each do |suggested_followee| %>
+      <li><%= render partial: 'suggested_followees/suggested_followee', locals: {suggested_followee: suggested_followee} %></li>
     <% end %>
   </ul>
 </div>

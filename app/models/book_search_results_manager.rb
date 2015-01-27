@@ -8,7 +8,7 @@ class BookSearchResultsManager
     def self.reassign_average_rating(search_results)
       search_results.each do |r|
         r.best_book.goodreads_rating = r.average_rating
-        r.goodreads_id = id
+        r.goodreads_id = r.id
       end
     end
 

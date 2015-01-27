@@ -8,7 +8,11 @@ class BookSearchResultsController < ApplicationController
   private
 
   def search_results
-    basic_goodreads_client.search_books(params[:q]).results.work
+    begin
+      basic_goodreads_client.search_books(params[:q]).results.work
+    rescue
+      []
+    end
   end
-  
+
 end

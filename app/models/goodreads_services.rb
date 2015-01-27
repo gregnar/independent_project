@@ -17,11 +17,15 @@ class GoodreadsServices
   end
 
   def followees
-    XMLParser.parse_followees(get_followees)
+    XMLParser.parse_followees(get_user_followees)
   end
 
-  def get_followees
-    user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body
+  def get_followees(user_id)
+    user.get(BASE_URL + "/user/#{user_id}/following?format=xml").body
+  end
+
+  def get_user_followees
+    get_followees(@user_id)
   end
 
   def update_followees
@@ -39,6 +43,19 @@ class GoodreadsServices
   def update_books
     raw_book_data = get_book_data(ids_of_books_to_update)
     BooksManager.update_books(raw_book_data)
+  end
+
+  def update_suggested_followees
+    user_object.followees.map do |f|
+      raw_suggestions = get_followees(f.goodreads_id)
+      parsed_suggestions = XMLParser.parse_followees(raw_suggestions)
+      next unless parsed_suggestions
+      SuggestedFolloweesManager.new(user_object, f, parsed_suggestions).update_suggested_followees
+    end
+  end
+
+  def compare(user_id)
+    XMLParser.parse_comparison(user.get(BASE_URL + "/user/compare/#{user_id}.xml").body)
   end
 
   def add_book(book_id)
