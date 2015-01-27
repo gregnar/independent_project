@@ -4,10 +4,10 @@
   </div>
 </div>
 
-<div class="row" id="book-grid">
+<div class="container" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @results.each do |book| %>
-      <li><%=render partial: 'books/book', locals: { book: book.best_book } %></li>
+      <li><%=render partial: 'books/book', locals: { book: book } %></li>
     <% end %>
   </ul>
 </div>

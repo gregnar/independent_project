@@ -17,7 +17,11 @@ class GoodreadsServices
   end
 
   def followees
-    XMLParser.parse_followees(user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body)
+    XMLParser.parse_followees(get_followees)
+  end
+
+  def get_followees
+    user.get(BASE_URL + "/user/#{@user_id}/following?format=xml").body
   end
 
   def update_followees
@@ -25,7 +29,6 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    puts "getting reviews for #{goodreads_id}"
     user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
   end
 
@@ -34,11 +37,23 @@ class GoodreadsServices
   end
 
   def update_books
-    books = user_object.uncached_book_ids.map { |id| puts "getting info for #{id}"; goodreads_gem.book(id) }
-    BooksManager.update_books(books)
+    raw_book_data = get_book_data(ids_of_books_to_update)
+    BooksManager.update_books(raw_book_data)
+  end
+
+  def add_book(book_id)
+    user.post(BASE_URL + "/shelf/add_to_shelf.xml?name=to-read&book_id=#{book_id}")
   end
 
   private
+
+  def ids_of_books_to_update
+    user_object.uncached_book_ids
+  end
+
+  def get_book_data(ids)
+    ids.map { |id| goodreads_gem.book(id) }
+  end
 
   def goodreads_gem
     @goodreads_gem ||= Goodreads.new

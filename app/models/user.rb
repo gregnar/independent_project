@@ -53,6 +53,9 @@ class User < ActiveRecord::Base
     book_ids.inject([]) { |ary, id| ary << Book.find_by(goodreads_id: id); ary }
   end
 
+  def add_book(book_id)
+    goodreads_services.add_book(book_id)
+  end
 
   private
 
