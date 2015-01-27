@@ -15,5 +15,6 @@ Rails.application.routes.draw do
 
   resources :book_search_results, only: [:index]
 
+  post '/add-book', to: 'book_on_shelf#create'
 
 end
