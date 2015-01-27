@@ -16,7 +16,11 @@ class XMLParser
   private
 
   def self.comparison_hashes(comparison)
-    xml_to_hash(comparison)['GoodreadsResponse']['compare']['reviews']['review']
+    begin
+      xml_to_hash(comparison)['GoodreadsResponse']['compare']['reviews']['review']
+    rescue
+      []
+    end
   end
 
   def self.xml_to_hash(raw_xml)

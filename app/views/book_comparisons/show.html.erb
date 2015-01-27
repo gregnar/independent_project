@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="small-6 columns small-offset-3">
+    <h2 class="text-center">Compare ratings with <%= @suggested_followee.name %></h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-6 columns small-offset-3">
+    <table>
+      <thead>
+        <tr>
+          <th width="200">Book Title</th>
+          <th width="150">You</th>
+          <th width="150"><%= @suggested_followee.name %></th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @comparisons.each do |comparison| %>
+          <tr>
+            <td><%= comparison['book']['title'] %></td>
+            <td><%= comparison['your_review']['rating'] %></td>
+            <td><%= comparison['their_review']['rating'] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

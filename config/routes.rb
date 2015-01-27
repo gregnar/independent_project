@@ -17,4 +17,6 @@ Rails.application.routes.draw do
 
   post '/add-book', to: 'book_on_shelf#create'
 
+  resources :book_comparisons, only: [:show]
+
 end
