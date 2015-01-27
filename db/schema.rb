@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150126215220) do
+ActiveRecord::Schema.define(version: 20150127002020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,8 +30,7 @@ ActiveRecord::Schema.define(version: 20150126215220) do
     t.integer  "goodreads_id"
     t.string   "small_image_url"
     t.string   "image_url"
-    t.string   "name"
-    t.string   "author"
+    t.string   "title"
   end
 
   create_table "followees", force: :cascade do |t|

@@ -41,16 +41,16 @@ class User < ActiveRecord::Base
     ratings.pluck(:book_id).uniq
   end
 
-  def rated_books
-
-  end
-
   def book_ids
     ratings.pluck(:book_id).uniq
   end
 
   def uncached_book_ids
     book_ids.delete_if { |id| Book.find_by(goodreads_id: id) }
+  end
+
+  def books
+    book_ids.inject([]) { |ary, id| ary << Book.find_by(goodreads_id: id); ary }
   end
 
 

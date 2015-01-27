@@ -1,6 +1,6 @@
 class Followee < ActiveRecord::Base
   belongs_to :user
-  has_many   :ratings
+  has_many :ratings, dependent: :destroy
   validates_presence_of :goodreads_id,
                         :name,
                         :user_id,

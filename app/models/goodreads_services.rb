@@ -25,7 +25,8 @@ class GoodreadsServices
   end
 
   def get_ratings_for_single_user(goodreads_id)
-    stuff = user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
+    puts "getting reviews for #{goodreads_id}"
+    user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
   end
 
   def update_ratings
@@ -33,7 +34,7 @@ class GoodreadsServices
   end
 
   def update_books
-    books = books_ids.map { |id| goodreads_gem.book(id) }
+    books = user_object.uncached_book_ids.map { |id| puts "getting info for #{id}"; goodreads_gem.book(id) }
     BooksManager.update_books(books)
   end
 
