@@ -5,7 +5,7 @@
       <h4><%= suggested_followee.name %></h4>
     </div>
     <div class="medium-3 columns right">
-      <%= link_to "compare", '#' %>
+      <%= link_to "compare", book_comparison_path(id: suggested_followee.goodreads_id) %>
       <%= link_to "follow", user_followees_path(followee_id: suggested_followee.goodreads_id), method: :post %>
     </div>
   </div>
