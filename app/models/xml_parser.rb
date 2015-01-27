@@ -9,7 +9,15 @@ class XMLParser
     new_ratings.map { |rating| rating.tap { |r| r['followee_id'] = followee_id } }
   end
 
+  def self.parse_comparison(comparison)
+    comparison_hashes(comparison)
+  end
+
   private
+
+  def self.comparison_hashes(comparison)
+    xml_to_hash(comparison)['GoodreadsResponse']['compare']['reviews']['review']
+  end
 
   def self.xml_to_hash(raw_xml)
     Hash.from_xml(raw_xml)

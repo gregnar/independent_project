@@ -52,7 +52,10 @@ class GoodreadsServices
       next unless parsed_suggestions
       SuggestedFolloweesManager.new(user_object, f, parsed_suggestions).update_suggested_followees
     end
+  end
 
+  def compare(user_id)
+    XMLParser.parse_comparison(user.get(BASE_URL + "/user/compare/#{user_id}.xml").body)
   end
 
   def add_book(book_id)

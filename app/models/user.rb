@@ -58,6 +58,10 @@ class User < ActiveRecord::Base
     goodreads_services.add_book(book_id)
   end
 
+  def compare(goodreads_id)
+    goodreads_services.compare(goodreads_id)
+  end
+
   def update_suggested_followees
     goodreads_services.update_suggested_followees
   end
