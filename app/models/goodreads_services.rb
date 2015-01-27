@@ -42,7 +42,7 @@ class GoodreadsServices
   end
 
   def add_book(book_id)
-    user.post(BASE_URL + "/shelf/add_to_shelf.xml?name=to-read&book_id=#{book_id}")
+    user.post(BASE_URL + "/shelf/add_to_shelf.xml?book_id=#{book_id}&name=to-read")
   end
 
   private
