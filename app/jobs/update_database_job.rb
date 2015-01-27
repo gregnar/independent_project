@@ -6,6 +6,7 @@ class UpdateDatabaseJob
       user = User.find(user_id)
       user.update_followees
       user.update_ratings
+      user.update_suggested_followees
     end
   end
 end

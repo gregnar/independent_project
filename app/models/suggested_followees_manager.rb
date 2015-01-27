@@ -8,7 +8,7 @@ class SuggestedFolloweesManager
 
   def update_suggested_followees
     suggestions.each do |suggestion_hash|
-      create_suggested_followee(suggestion_hash) unless existing_suggested_followee?(suggestion_hash)
+      create_suggested_followee(suggestion_hash) unless ineligible?(suggestion_hash)
     end
   end
 
@@ -26,8 +26,16 @@ class SuggestedFolloweesManager
     @suggestions
   end
 
+  def ineligible?(hash)
+    existing_suggested_followee?(hash) || existing_followee?(hash)
+  end
+
   def existing_suggested_followee?(suggestion_hash)
     user.suggested_followees.find_by(goodreads_id: suggestion_hash['id'])
+  end
+
+  def existing_followee?(suggestion_hash)
+    user.followees.find_by(goodreads_id: suggestion_hash['id'])
   end
 
   def create_suggested_followee(suggestion_hash)

@@ -1,4 +1,4 @@
-<div class="panel clearfix">
+<div class="panel">
 
   <div class="row">
     <div class="medium-3 columns medium-offset-4">
@@ -10,13 +10,13 @@
     </div>
   </div>
 
-  <%= image_tag suggested_followee.small_image_path %>
+  <%= image_tag suggested_followee.image_url %>
   <div id="user-attributes" class="medium-8 columns medium-offset 4 right">
     <div class="row">
       <h5 class="left"><%= link_to "follow", user_followees_path, method: :post, class: "button" %></h5>
     </div>
     <div id="reason-for-user-suggestion" class="row">
-      <p>suggested_followee.reason_for_suggestion</p>
+      <p><%= suggested_followee.reason_for_suggestion %></p>
     </div>
   </div>
 </div>
