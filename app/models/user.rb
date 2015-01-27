@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   has_one :access_token, dependent: :destroy
   has_many :followees
   has_many :ratings, through: :followees
+  has_many :suggested_followees
 
   def set_access_token(token, secret)
     access_token.destroy if access_token.present?
@@ -57,7 +58,9 @@ class User < ActiveRecord::Base
     goodreads_services.add_book(book_id)
   end
 
-  private
+  def update_suggested_followees
+    goodreads_services.update_suggested_followees
+  end
 
   def goodreads_services
     @goodreads_services ||= GoodreadsServices.new(self)

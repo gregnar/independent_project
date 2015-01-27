@@ -7,6 +7,8 @@ class Followee < ActiveRecord::Base
                         :link,
                         :small_image_url,
                         :image_url
+                        
+  has_many :suggested_followees
 
   def update_ratings
     GoodreadsServices
