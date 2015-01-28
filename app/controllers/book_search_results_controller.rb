@@ -9,7 +9,7 @@ class BookSearchResultsController < ApplicationController
 
   def search_results
     begin
-      basic_goodreads_client.search_books(params[:q]).results.work
+      GoodreadsServices.search_books(params[:q]).results.work
     rescue
       []
     end

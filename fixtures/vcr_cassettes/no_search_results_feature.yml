@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.goodreads.com/search/index?format=xml&key=7JZbbAdA91ktpq19R4P1cA&q=aoisdhfgoiashgio
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 18:52:57 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      Vary:
+      - User-Agent
+      X-Request-Id:
+      - 03HDR3FCB0ND171HZ4FC
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.036599'
+      X-Content-Type-Options:
+      - nosniff
+      Content-Encoding:
+      - gzip
+      Set-Cookie:
+      - _session_id2=2a9f6e774a67baa422e0ff7a063cd6de; path=/; expires=Thu, 29-Jan-2015
+        00:52:57 GMT; HttpOnly
+      - csid=BAhJIhg0NDQtMDY2MTI4Ny0xOTAwNjQ4BjoGRVQ%3D--f4368a3d3f086f35f038f01b146c235731ad7f0b;
+        path=/; expires=Sun, 28-Jan-2035 18:52:57 GMT
+      - locale=en; path=/
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA22RUUvDMBDH3/cpat+7tCDoIMsoioJPMuaLY0jWnG1Ym2y5
+        q8xvb9p0bp2+Jf/75e7HhS+OTR19gUNtzTzOpmkcgSms0qacx2+rp+Q+XogJ
+        f7ZWOZAKl4B7axDEJIr4Eg4tIHVnf5MtVWBIF5J8M0GuBc6uwp707A6+Bb9Z
+        Pzzmq3x99/K+3eYqn2U72h+y2fL2NSvyzUZw1nGhewNUWXV+hCBdUX1oo+DY
+        owPQebELMR7A3tfbuou50mpU1WdptcSq1LZvE5gw0wG2NWGCJB2JjLNxMIbA
+        KJGeke4aALIk62R42iHjIEBoW1eA+N0zZ0MSyr1VQrqBBKGwRqFIp6k3+qcw
+        0hocTub+K9lpIf7491t/AJb+AEcRAgAA
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 18:52:57 GMT
+recorded_with: VCR 2.9.3

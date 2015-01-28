@@ -1,24 +1,11 @@
 class RatingsManager
 
-  def self.update_ratings(ratings)
-    cleaned_ratings = clean_ratings_up(ratings)
-    cleaned_ratings.each do |r|
-      BooksManager.update_book(r['book']); r.delete('book')
-      Rating.create(r) unless existing_rating(r)
-    end
+  def self.create(rating)
+    Rating.create(rating) unless existing_rating(rating)
   end
 
   def self.existing_rating(rating)
     Rating.find_by(followee_id: rating['followee_id'], book_id: rating['book_id'])
   end
 
-  def self.clean_ratings_up(ratings)
-    ratings.reject { |rating| rating['rating'] == '0' }
-           .map    { |rating| select_needed_keys(rating) }
-  end
-
-  def self.select_needed_keys(rating_hash)
-    rating_hash.slice('followee_id', 'book', 'rating')
-               .tap { |h| h['book_id'] = h['book']['id']}
-  end
 end

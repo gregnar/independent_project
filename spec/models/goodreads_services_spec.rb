@@ -2,10 +2,6 @@ require 'rails_helper'
 
 RSpec.describe GoodreadsServices, :type => :model do
 
-  VCR.configure do |c|
-    c.cassette_library_dir = 'fixtures/vcr_cassettes'
-    c.hook_into :webmock
-  end
 
   let(:user) { User.create(goodreads_id: 9186805) }
 
@@ -23,7 +19,7 @@ RSpec.describe GoodreadsServices, :type => :model do
 
   it "can get all reviews for a user" do
     VCR.use_cassette('reviews') do
-      reviews = user.goodreads_services.get_ratings_for_single_user(user.goodreads_id)
+      reviews = user.goodreads_services.get_ratings_and_books_for_single_user(user.goodreads_id)
       expect(reviews).to be_an_instance_of String
       expect(reviews).to include("reviews")
     end
@@ -50,6 +46,14 @@ RSpec.describe GoodreadsServices, :type => :model do
       response = user.goodreads_services.follow(4384303)
       expect(response.code).to eq "422"
       expect(response.body).to include("You're already following this user.")
+    end
+  end
+
+  it "can search for books" do
+    VCR.use_cassette('search_books') do
+      response = GoodreadsServices.search_books("Great Expectations")
+      expect(response).to be_an_instance_of(Hashie::Mash)
+      expect(response.results.work.first.best_book.author.name).to eq("Charles Dickens")
     end
   end
 
