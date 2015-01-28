@@ -40,11 +40,6 @@ class GoodreadsServices
     RatingsAndBooksManager.update_ratings_and_books(all_parsed_ratings_and_books_for_user)
   end
 
-  def update_books
-    raw_book_data = get_book_data(ids_of_books_to_update)
-    BooksManager.update_books(raw_book_data)
-  end
-
   def update_suggested_followees
     user_object.followees.map do |f|
       raw_suggestions = get_followees(f.goodreads_id)
@@ -72,13 +67,6 @@ class GoodreadsServices
 
   private
 
-  def ids_of_books_to_update
-    user_object.uncached_book_ids
-  end
-
-  def get_book_data(ids)
-    ids.map { |id| goodreads_gem.book(id) }
-  end
 
   def goodreads_gem
     @goodreads_gem ||= Goodreads.new

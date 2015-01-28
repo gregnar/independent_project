@@ -30,24 +30,12 @@ class User < ActiveRecord::Base
     goodreads_services.update_ratings_and_books
   end
 
-  def update_books
-    goodreads_services.update_books
-  end
-
   def custom_rating(book_id)
     RatingsGenerator.generate_rating(self, book_id)
   end
 
-  def ids_for_rated_books
-    ratings.pluck(:book_id).uniq
-  end
-
   def book_ids
     ratings.pluck(:book_id).uniq
-  end
-
-  def uncached_book_ids
-    book_ids.delete_if { |id| Book.find_by(goodreads_id: id) }
   end
 
   def books
