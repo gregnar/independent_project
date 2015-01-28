@@ -19,12 +19,6 @@ describe 'OmniAuth authorization', type: :feature do
     xit "can log in with goodreads" do
       visit root_path
       click_link "login"
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
     end
 
 

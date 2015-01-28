@@ -1,3 +1,0 @@
-module BookOnShelfHelper
-
-end
