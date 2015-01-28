@@ -17,10 +17,12 @@ gem 'pry'
 gem 'figaro'
 gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
+gem 'launchy', group: :test
 
 group :development, :test do
   gem 'simplecov'
   gem 'vcr'
+  gem 'webmock'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
   gem 'byebug'

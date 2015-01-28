@@ -4,24 +4,28 @@ require 'capybara/rspec'
 
 describe 'OmniAuth authorization', type: :feature do
 
-  before(:each) do
-    OmniAuth.config.test_mode = true
-    OmniAuth.config.mock_auth[:goodreads] = nil
-    OmniAuth.config.mock_auth[:goodreads] = OmniAuth::AuthHash.new({
-      :provider => 'goodreads',
-      :uid => '123445'
-    })
-    # request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:goodreads]
-  end
-
   context "when an unauthenticated user" do
 
-    xit "can log in with goodreads" do
-      visit root_path
-      click_link "login"
+    it "can log in with goodreads and redirect to dashboard" do
+      log_in
+      expect(current_path).to eq(dashboard_index_path)
     end
 
+  end
 
+  context "when an authenticated user" do
+
+    it "can log out" do
+      log_in
+      click_link 'logout'
+    end
+
+    it 'cannot visit the dashboard' do
+      log_in
+      click_link 'logout'
+      visit dashboard_index_path
+      expect(current_path).to eq(root_path)
+    end
   end
 
 end

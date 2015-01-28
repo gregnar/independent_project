@@ -1,6 +1,6 @@
 class XMLParser
 
-  def self.parse_followees(followees)
+  def self.parse_followees(followees) 
     followee_hashes(followees)
   end
 

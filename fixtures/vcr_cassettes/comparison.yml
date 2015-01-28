@@ -1,0 +1,472 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/compare/4384303.xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="EdzmnchYEmGISadZ0ataIaeVcc9O3EGWYleo82xzLg",
+        oauth_signature="Hu9SqFcuirhqslfKiSCW%2FXM4hlk%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422465100", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:11:41 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1B8KRJ0FQD2NFE7XW0BK
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.953915'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=33a99fe7203eeae3f105ec325a75aca9; path=/; expires=Wed, 28-Jan-2015
+        23:11:41 GMT; HttpOnly
+      - csid=BAhJIhg2ODgtNjgzNzI5Ni0zNzQ3NzQ5BjoGRVQ%3D--0a883276b4b8c512412a298ce3bedea4c15bd701;
+        path=/; expires=Sun, 28-Jan-2035 17:11:41 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_compare]]></method>
+          </Request>
+          <compare>
+            <not_in_common>999</not_in_common>
+          <your_library_percent>29.11</your_library_percent>
+          <their_library_percent>2.25</their_library_percent>
+          <your_total_books_count>79</your_total_books_count>
+          <their_total_books_count>1022</their_total_books_count>
+          <common_count>23</common_count>
+          <reviews>
+              <review>
+                <book>
+                  <title><![CDATA[The Selected Poetry of Rainer Maria Rilke]]></title>
+                  <id>46201</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/46201.The_Selected_Poetry_of_Rainer_Maria_Rilke]]></url>
+                </book>
+                <your_review>
+                  <id>481611177</id>
+        <rating>to-read</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768236544</id>
+        <rating>3</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Fathers and Sons</title>
+                  <id>19117</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/19117.Fathers_and_Sons]]></url>
+                </book>
+                <your_review>
+                  <id>481608300</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>1120142279</id>
+        <rating>read</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>A Passage to India</title>
+                  <id>45195</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/45195.A_Passage_to_India]]></url>
+                </book>
+                <your_review>
+                  <id>481610222</id>
+        <rating>5</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768738318</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Bleak House</title>
+                  <id>31242</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/31242.Bleak_House]]></url>
+                </book>
+                <your_review>
+                  <id>849148578</id>
+        <rating>5</rating>
+
+                </your_review>
+                <their_review>
+                  <id>1160365958</id>
+        <rating>to-read</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Notes from Underground</title>
+                  <id>17876</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/17876.Notes_from_Underground]]></url>
+                </book>
+                <your_review>
+                  <id>481610982</id>
+        <rating>to-read</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768254614</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Paradise Lost</title>
+                  <id>15997</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/15997.Paradise_Lost]]></url>
+                </book>
+                <your_review>
+                  <id>357895524</id>
+        <rating>read</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768183342</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>The Trial</title>
+                  <id>17690</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/17690.The_Trial]]></url>
+                </book>
+                <your_review>
+                  <id>481611004</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768109497</id>
+        <rating>5</rating>
+          <text><![CDATA[My interpretation of THE TRIAL has shifted over time. What are we to make of Josef K's plight? He is charged with committing an unspecified crime and has no understanding of what he might have done to draw this accusation. But paradoxically, he does not feel innocent.<br /><br />I tend to think that the story is about the paradox and the individual's need to find meaning by looking inside himself for authenticity, not outside, a familiar theme in early existentialism. But it is also possible that THE TRIAL is a commentary about societal and political degeneration.<br /><br />The way that Europeans, in particular, thought about their world changed dramatically between the end of the 19th century and the time when Kafka wrote. Christianity had grown effete. Governments were proving to be incapable of solving the complicated problems introduced by the industrial age. Science was undermining basic beliefs about how the universe worked. Art began to embrace the ugly and dissonant. Worst of all, arguably, individuals lost confidence that they had a role and could influence society meaningfully. Everything began to feel disconnected. And familiar patterns of behavior that had long sustained individuals and communities disintegrated. The old answers had gone stale.<br /><br />Josef K's personal crisis resonates because it reflects all of this. Consider the absurdity of the court system and it's futility, as depicted in THE TRIAL. Jacques Barzun defined decadence as a state of affairs where absurdity and futility are accepted as normal. It is possible that Kafka intends his story as a commentary about the decadence of European society and the toxic effect that futility and absurdity will have on the human spirit when there is no escape.<br /><br />In the years shortly after THE TRIAL was written, Europeans embraced fascism, Bolshevism and existentialism. One might consider all of these extremist philosophies to be reactions to the decadence that Kafka described so brilliantly.  ]]></text>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Gulliver&apos;s Travels</title>
+                  <id>7733</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/7733.Gulliver_s_Travels]]></url>
+                </book>
+                <your_review>
+                  <id>481610756</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>769129294</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Don Quixote</title>
+                  <id>3836</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/3836.Don_Quixote]]></url>
+                </book>
+                <your_review>
+                  <id>481608579</id>
+        <rating>to-read</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768230735</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>The Brothers Karamazov</title>
+                  <id>4934</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/4934.The_Brothers_Karamazov]]></url>
+                </book>
+                <your_review>
+                  <id>481610869</id>
+        <rating>5</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768254426</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Heart of Darkness</title>
+                  <id>4900</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/4900.Heart_of_Darkness]]></url>
+                </book>
+                <your_review>
+                  <id>481610075</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768255007</id>
+        <rating>5</rating>
+          <text><![CDATA[This is not a review of HEART OF DARKNESS, which hardly needs a review, recognized as it is as a masterpiece of English literature. Instead, what follows is a comment that I offered in a Good Reads discussion thread on Conrad's apparent racism:<br /><br />I accept that Conrad almost certainly was a racist. As far as I can tell, most people of his circumstances were. In his place and time, it was the prevailing way of thinking about the relationship between Europeans/North Americans and the rest of the world.<br /><br />My concern is that I do not understand why any of us should care. We have little to learn from Conrad about race relations. He was not writing about race relations. I see nothing in his writing that suggests he thinks he has anything of interest to offer us on the subject.<br /><br />His writing is so rich and insightful about the human soul that it can only be a wasteful distraction from things truly important to wonder about his views on race relations. We might just as well speculate whether he was good to his mother or kept a neat house. All such questions are beside the point.<br /><br />The problem of racism is important and it pervades many things. But it is not the only important problem, so let's not try to shoe horn it in where there is nothing for us to learn.]]></text>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>The Stranger</title>
+                  <id>49552</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/49552.The_Stranger]]></url>
+                </book>
+                <your_review>
+                  <id>481610913</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768109819</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Moby-Dick; or, The Whale</title>
+                  <id>153747</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/153747.Moby_Dick_or_The_Whale]]></url>
+                </book>
+                <your_review>
+                  <id>481608517</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084944</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Dune</title>
+                  <id>234225</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/234225.Dune]]></url>
+                </book>
+                <your_review>
+                  <id>1176904058</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125085358</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Anna Karenina</title>
+                  <id>15823480</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/15823480-anna-karenina]]></url>
+                </book>
+                <your_review>
+                  <id>481608251</id>
+        <rating>5</rating>
+
+                </your_review>
+                <their_review>
+                  <id>768253869</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>The Odyssey</title>
+                  <id>1381</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/1381.The_Odyssey]]></url>
+                </book>
+                <your_review>
+                  <id>481607913</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084888</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>A Tale of Two Cities</title>
+                  <id>1953</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/1953.A_Tale_of_Two_Cities]]></url>
+                </book>
+                <your_review>
+                  <id>481607792</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084894</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Slaughterhouse-Five</title>
+                  <id>4981</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/4981.Slaughterhouse_Five]]></url>
+                </book>
+                <your_review>
+                  <id>1176903141</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084760</id>
+        <rating>4</rating>
+          <text><![CDATA[Slaughterhouse Five is a wonderful book, but it also ended the coolness of Kurt Vonnegut for me. Why? Because my parents liked it too. Wow. KV no longer represented the hip and edgy. He was transformed into a familiar and lovable old family favorite.<br /><br />So it goes.]]></text>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title><![CDATA[The Adventures of Huckleberry Finn]]></title>
+                  <id>2956</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/2956.The_Adventures_of_Huckleberry_Finn]]></url>
+                </book>
+                <your_review>
+                  <id>1176903421</id>
+        <rating>4</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084877</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Of Mice and Men</title>
+                  <id>890</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/890.Of_Mice_and_Men]]></url>
+                </book>
+                <your_review>
+                  <id>1176903203</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084747</id>
+        <rating>4</rating>
+          <text><![CDATA[I have not reviewed OF MICE AND MEN, but I have commented on it in response to a query on Good Reads about Curley's "Vaseline hand". That query prompted a long and interesting discussion thread whether Curley abused his new wife. My thought was:<br /><br />"Curley's wife is a flirt and ambiguously unfaithful. Curley is threatened by this and pretends to be in control when in fact he is terrified of being humiliated by her. His efforts at controlling her are not effective. I don't think we are meant to conclude that he abuses her. She does not show the effects of abuse. Rather she seems to be motivated by a lack of sexual satisfaction and a lack of respect for Curley. <br /><br />The vaseline hand is part of Curley's bragging to cover for his insecurity about his wife's apparent availability to other men."<br /><br />I am not sure that I can defend this observation successfully, but it certainly is how I understood the book, which was colored by the fact that I saw the movie first.<br /><br />In the movie, of course, Curley's wife was portrayed unsympathetically. For the screenwriters, her sole purpose was to serve as a danger to Lenny.]]></text>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>Animal Farm</title>
+                  <id>7613</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/7613.Animal_Farm]]></url>
+                </book>
+                <your_review>
+                  <id>481607598</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084739</id>
+        <rating>3</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>The Great Gatsby</title>
+                  <id>4671</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/4671.The_Great_Gatsby]]></url>
+                </book>
+                <your_review>
+                  <id>1176902784</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084721</id>
+        <rating>4</rating>
+
+                </their_review>
+              </review>
+              <review>
+                <book>
+                  <title>To Kill a Mockingbird</title>
+                  <id>2657</id>
+                  <url><![CDATA[http://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird]]></url>
+                </book>
+                <your_review>
+                  <id>1176903246</id>
+        <rating>3</rating>
+
+                </your_review>
+                <their_review>
+                  <id>125084692</id>
+        <rating>5</rating>
+
+                </their_review>
+              </review>
+          </reviews>
+        </compare>
+
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:11:41 GMT
+recorded_with: VCR 2.9.3

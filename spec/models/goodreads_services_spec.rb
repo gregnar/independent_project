@@ -4,7 +4,7 @@ RSpec.describe GoodreadsServices, :type => :model do
 
   VCR.configure do |c|
     c.cassette_library_dir = 'fixtures/vcr_cassettes'
-    # c.hook_into :webmock
+    c.hook_into :webmock
   end
 
   let(:user) { User.create(goodreads_id: 9186805) }
@@ -30,7 +30,7 @@ RSpec.describe GoodreadsServices, :type => :model do
   end
 
   it "can compare reviews with another user" do
-    VCR.use_cassette('reviews') do
+    VCR.use_cassette('comparison') do
       comparison = user.goodreads_services.get_comparison(4384303)
       expect(comparison).to be_an_instance_of String
       expect(comparison).to include("their_review")
@@ -39,18 +39,18 @@ RSpec.describe GoodreadsServices, :type => :model do
   end
 
   it "makes the correct request for adding a book" do
-    VCR.use_cassette('reviews') do
+    VCR.use_cassette('add_book') do
       response = user.goodreads_services.add_book(12872236)
       expect(response.code).to eq "201"
     end
   end
 
   it "tries to follow a user" do
-    VCR.use_cassette('reviews') do
+    VCR.use_cassette('follow') do
       response = user.goodreads_services.follow(4384303)
       expect(response.code).to eq "422"
       expect(response.body).to include("You're already following this user.")
     end
   end
-  
+
 end
