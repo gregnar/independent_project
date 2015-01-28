@@ -17,17 +17,20 @@ gem 'pry'
 gem 'figaro'
 gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
-gem 'launchy', group: :test
+
+group :test do
+  gem 'launchy', group: :test
+  gem 'webmock', group: :test
+  gem 'vcr'
+  gem 'simplecov'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+end
 
 group :development, :test do
-  gem 'simplecov'
-  gem 'vcr'
-  gem 'webmock'
-  gem 'database_cleaner'
-  gem 'factory_girl_rails'
   gem 'byebug'
-  gem 'rspec-rails'
   gem 'web-console', '~> 2.0'
-  gem 'capybara'
   gem 'spring'
 end
