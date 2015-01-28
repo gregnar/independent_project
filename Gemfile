@@ -19,6 +19,7 @@ gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
 
 group :development, :test do
+  gem 'simplecov'
   gem 'vcr'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
