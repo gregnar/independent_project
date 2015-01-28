@@ -21,7 +21,8 @@ RSpec.describe User, :type => :model do
     end
 
     it "can generate a custom rating" do
-      expect(user.custom_rating(rating1.book_id)).to eq(5.0)
+      rating = user.custom_rating(rating1.book_id)
+      expect(rating).to eq(5.0)
     end
 
     it "can handle a book without a custom rating" do
@@ -72,6 +73,20 @@ RSpec.describe User, :type => :model do
         expect(comparison.first.keys).to include("your_review")
       end
     end
-  end
 
+    it "tries to follow a user" do
+      VCR.use_cassette('follow') do
+        response = user.follow(4384303)
+        expect(response.code).to eq "422"
+        expect(response.body).to include("You're already following this user.")
+      end
+    end
+
+    it "can add a book to the to-read shelf" do
+      VCR.use_cassette('user_add_book') do
+        response = user.add_book(1)
+        expect(response.code).to eq("201")
+      end
+    end
+  end
 end

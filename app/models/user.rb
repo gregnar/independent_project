@@ -18,10 +18,6 @@ class User < ActiveRecord::Base
     RatingsGenerator.generate_rating(self, book_id)
   end
 
-  def friends
-    goodreads_services.all_friends
-  end
-
   def update_followees
     goodreads_services.update_followees
   end
