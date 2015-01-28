@@ -72,7 +72,7 @@ RSpec.describe User, :type => :model do
         expect(comparison.first.keys).to include("their_review")
         expect(comparison.first.keys).to include("your_review")
       end
-    end
+    end\
 
     it "tries to follow a user" do
       VCR.use_cassette('follow') do
