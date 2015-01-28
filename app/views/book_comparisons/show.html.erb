@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<% if @similarity_score %>
+<% if @similarity_score.present? %>
   <div class="row" id="similarity-score">
     <div class="small-4 columns small-offset-4">
       <h5>Your reviews are <%= @similarity_score %> percent similar.*</h5>

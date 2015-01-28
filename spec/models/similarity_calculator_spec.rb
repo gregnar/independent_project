@@ -7,7 +7,7 @@ RSpec.describe SimilarityCalculator, :type => :model do
                    }
 
   it "gives a similarity score" do
-    sim = SimilarityCalculator.new(comparison)calculate_similarity
+    sim = SimilarityCalculator.new(comparison).calculate_similarity
     expect(sim).to eq(50)
   end
 
