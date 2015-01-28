@@ -19,6 +19,9 @@ gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
 
 group :development, :test do
+  gem 'vcr'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
   gem 'byebug'
   gem 'rspec-rails'
   gem 'web-console', '~> 2.0'

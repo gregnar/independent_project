@@ -10,7 +10,8 @@ class XMLParser
   end
 
   def self.parse_comparison(comparison)
-    comparison_hashes(comparison)
+    parsed_comparison = comparison_hashes(comparison)
+    parsed_comparison.is_a?(Array) ? parsed_comparison : Array.new(1, parsed_comparison)
   end
 
   private

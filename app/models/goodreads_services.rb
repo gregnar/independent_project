@@ -55,7 +55,11 @@ class GoodreadsServices
   end
 
   def compare(user_id)
-    XMLParser.parse_comparison(user.get(BASE_URL + "/user/compare/#{user_id}.xml").body)
+    XMLParser.parse_comparison(get_comparison(user_id))
+  end
+
+  def get_comparison(user_id)
+    user.get(BASE_URL + "/user/compare/#{user_id}.xml").body
   end
 
   def add_book(book_id)
