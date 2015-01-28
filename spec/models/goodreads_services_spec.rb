@@ -45,4 +45,12 @@ RSpec.describe GoodreadsServices, :type => :model do
     end
   end
 
+  it "tries to follow a user" do
+    VCR.use_cassette('reviews') do
+      response = user.goodreads_services.follow(4384303)
+      expect(response.code).to eq "422"
+      expect(response.body).to include("You're already following this user.")
+    end
+  end
+  
 end
