@@ -5,7 +5,7 @@ class GoodreadsServices
                                   site: BASE_URL
                                 )
 
-  def initialize(user_object)
+  def initialize(user_object=nil)
     @user_object         = user_object
     @user_id             = user_object.goodreads_id
     @access_token_key    = user_object.access_token.token
@@ -32,17 +32,12 @@ class GoodreadsServices
     FolloweesManager.new(user_object, followees).update_followees
   end
 
-  def get_ratings_for_single_user(goodreads_id)
+  def get_ratings_and_books_for_single_user(goodreads_id)
     user.get(BASE_URL + "/review/list/#{goodreads_id}.xml?v=2&per_page=200").body
   end
 
-  def update_ratings
-    RatingsManager.update_ratings(all_parsed_ratings_for_user)
-  end
-
-  def update_books
-    raw_book_data = get_book_data(ids_of_books_to_update)
-    BooksManager.update_books(raw_book_data)
+  def update_ratings_and_books
+    RatingsAndBooksManager.update_ratings_and_books(all_parsed_ratings_and_books_for_user)
   end
 
   def update_suggested_followees
@@ -55,24 +50,29 @@ class GoodreadsServices
   end
 
   def compare(user_id)
-    XMLParser.parse_comparison(user.get(BASE_URL + "/user/compare/#{user_id}.xml").body)
+    XMLParser.parse_comparison(get_comparison(user_id))
+  end
+
+  def get_comparison(user_id)
+    user.get(BASE_URL + "/user/compare/#{user_id}.xml").body
   end
 
   def add_book(book_id)
     user.post(BASE_URL + "/shelf/add_to_shelf.xml?book_id=#{book_id}&name=to-read")
   end
 
+  def self.search_books(query)
+    goodreads_gem.search_books(query)
+  end
+
   private
 
-  def ids_of_books_to_update
-    user_object.uncached_book_ids
-  end
-
-  def get_book_data(ids)
-    ids.map { |id| goodreads_gem.book(id) }
-  end
 
   def goodreads_gem
+    @goodreads_gem ||= Goodreads.new
+  end
+
+  def self.goodreads_gem
     @goodreads_gem ||= Goodreads.new
   end
 
@@ -92,13 +92,13 @@ class GoodreadsServices
     @access_token_secret
   end
 
-  def parse_ratings_for_single_user(followee_id, followee_goodreads_id)
-    XMLParser.parse_ratings(followee_id, get_ratings_for_single_user(followee_goodreads_id))
+  def parse_ratings_and_books_for_single_user(followee_id, followee_goodreads_id)
+    XMLParser.parse_ratings_and_books(followee_id, get_ratings_and_books_for_single_user(followee_goodreads_id))
   end
 
-  def all_parsed_ratings_for_user
+  def all_parsed_ratings_and_books_for_user
     user_object.followees.inject([]) do |array, f|
-      array << parse_ratings_for_single_user(f.id, f.goodreads_id); array
+      array << parse_ratings_and_books_for_single_user(f.id, f.goodreads_id); array
     end.flatten
   end
 

@@ -1,16 +1,19 @@
 class BookComparisonsController < ApplicationController
 
   def show
-    @suggested_followee = SuggestedFollowee.find_by(goodreads_id: params[:id])
-    @comparisons = comparison_object
+    @compared_user      = compared_user
+    @comparisons        = current_user.compare(params[:id])
+    @similarity_score   = get_similarity(@comparisons) unless @comparisons.empty?
   end
 
   private
 
-  def comparison_object
-    comparisons = current_user.compare(params[:id])
-    Array.new << comparisons if comparisons.is_a?(Hash)
-    comparisons
+  def get_similarity(comparisons)
+    SimilarityCalculator.new(comparisons).calculate_similarity
+  end
+
+  def compared_user
+    SuggestedFollowee.find_by(goodreads_id: params[:id]) || Followee.find_by(goodreads_id: params[:id])
   end
 
 end

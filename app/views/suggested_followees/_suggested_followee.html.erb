@@ -1,19 +1,32 @@
 <div class="panel clearfix">
+  <div>
 
-  <div class="row">
-    <div class="medium-3 columns medium-offset-4">
-      <h4><%= suggested_followee.name %></h4>
+    <div class="row">
+      <div class="small-10 columns small-offset-1 followee-name-container">
+        <h5 class="text-center followee-name"><%= suggested_followee.name %></h5>
+      </div>
     </div>
-    <div class="medium-3 columns right">
-      <%= link_to "compare", book_comparison_path(id: suggested_followee.goodreads_id) %>
-      <%= link_to "follow", user_followees_path(followee_id: suggested_followee.goodreads_id), method: :post %>
-    </div>
-  </div>
 
-  <%= image_tag suggested_followee.image_url %>
-  <div id="user-attributes" class="medium-8 columns medium-offset 4 right">
-    <div id="reason-for-user-suggestion" class="row">
-      <p><%= suggested_followee.reason_for_suggestion %></p>
+    <div class="row" id="reason-for-user-suggestion" >
+      <p class=text-center><%= suggested_followee.reason_for_suggestion %></p>
     </div>
+    <div class="container">
+      <div class="followee-image-container small-10 columns small-offset-1">
+        <%= image_tag suggested_followee.image_url, class: 'panel-image', lazy: true %>
+      </div>
+      <div class="row">
+        <div class="small-8 columns small-offset-2 text-center">
+          <%= link_to "follow", user_followees_path(followee_id: suggested_followee.goodreads_id), method: :post, class: 'bold-link left' %>
+          <span>|</span>
+          <%= link_to "compare", book_comparison_path(id: suggested_followee.goodreads_id), class: 'bold-link right' %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-6 columns small-offset-2 right">
+        </div>
+      </div>
+    </div>
+
+
   </div>
 </div>

@@ -1,3 +1,26 @@
 // Place all the styles related to the UserFollowees controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.followee-image-container {
+  height: 9em;
+  overflow: hidden;
+}
+
+.followee-name {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.panel-image {
+  min-height: 80%;
+  min-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.followee-name-container {
+  margin-bottom: .4em;
+}

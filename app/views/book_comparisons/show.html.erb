@@ -1,28 +1,42 @@
 <div class="row">
-  <div class="small-6 columns small-offset-3">
-    <h2 class="text-center">Compare ratings with <%= @suggested_followee.name %></h2>
+  <div class="small-10 columns small-offset-1 page-title">
+    <% if @comparisons.empty? %>
+      <h2 class="text-center">You have no books in common with <%= @compared_user.name %>.</h2>
+    <% else %>
+      <h2 class="text-center"> You and <%= @compared_user.name %></h2>
+    <% end %>
   </div>
 </div>
 
-<div class="row">
-  <div class="small-6 columns small-offset-3">
-    <table>
-      <thead>
-        <tr>
-          <th width="200">Book Title</th>
-          <th width="150">You</th>
-          <th width="150"><%= @suggested_followee.name %></th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @comparisons.each do |comparison| %>
-          <tr>
-            <td><%= comparison['book']['title'] %></td>
-            <td><%= comparison['your_review']['rating'] %></td>
-            <td><%= comparison['their_review']['rating'] %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
+<% if @similarity_score.present? %>
+  <div class="row" id="similarity-score">
+    <div class="small-4 columns small-offset-4 text-center similarity-score">
+      <h5><%= @similarity_score %> percent of your reviews are similar.</h5>
+    </div>
   </div>
-</div>
+<% end %>
+
+<% unless @comparisons.empty? %>
+  <div class="row">
+    <div class="small-6 columns small-offset-3" id="comparison-table">
+      <table>
+        <thead>
+          <tr>
+            <th width="200">Book Title</th>
+            <th width="150">You</th>
+            <th width="150"><%= @compared_user.name %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @comparisons.each do |comparison| %>
+            <tr>
+              <td><%= comparison['book']['title'] %></td>
+              <td><%= comparison['your_review']['rating'] %></td>
+              <td><%= comparison['their_review']['rating'] %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+<% end %>

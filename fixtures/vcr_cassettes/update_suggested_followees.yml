@@ -1,0 +1,2266 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/9186805/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="qIraT67L9Tqx4q5IlKWhcg10sJr2gbSpsKPkN55ec",
+        oauth_signature="8Pqi3FEB8pb9uBLT%2Bf8d%2FXhX4Wc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466060", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:40 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 00B5KM5BH2FKF3YC48CX
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.147797'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=66902255f9b4ed38e5e90662e60ff725; path=/; expires=Wed, 28-Jan-2015
+        23:27:40 GMT; HttpOnly
+      - csid=BAhJIhgxNTYtMjc0Mzg0Mi02MjA3MDg0BjoGRVQ%3D--36d890e8ba7d72fce3333f71b228da6cfa1d320e;
+        path=/; expires=Sun, 28-Jan-2035 17:27:40 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEdvb2Ry
+        ZWFkc1Jlc3BvbnNlPgogIDxSZXF1ZXN0PgogICAgPGF1dGhlbnRpY2F0aW9u
+        PnRydWU8L2F1dGhlbnRpY2F0aW9uPgogICAgICA8a2V5PjwhW0NEQVRBWzdK
+        WmJiQWRBOTFrdHBxMTlSNFAxY0FdXT48L2tleT4KICAgIDxtZXRob2Q+PCFb
+        Q0RBVEFbdXNlcl9mb2xsb3dpbmdzX2ZvbGxvd2luZ11dPjwvbWV0aG9kPgog
+        IDwvUmVxdWVzdD4KICA8Zm9sbG93aW5nIHN0YXJ0PSIxIiBlbmQ9IjE0IiB0
+        b3RhbD0iMTQiPgogICAgPHVzZXI+CiAgICAgIDxpZD4zOTQ3PC9pZD4KICAg
+        ICAgPG5hbWU+RzwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDov
+        L3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8zOTQ3LWddXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjY4NzAyNzM2cDMvMzk0Ny5qcGddXT48L2ltYWdlX3Vy
+        bD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEyNjg3MDI3MzZwMi8zOTQ3LmpwZ11dPjwv
+        c21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD45MzwvZnJp
+        ZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+Nzc1PC9yZXZpZXdz
+        X2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PlR1ZSBKYW4gMjcgMTM6MTY6NTgg
+        LTA4MDAgMjAxNTwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2Vy
+        PgogICAgICA8aWQ+NDE2MzkwPC9pZD4KICAgICAgPG5hbWU+UGF1bDwvbmFt
+        ZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMu
+        Y29tL3VzZXIvc2hvdy80MTYzOTAtcGF1bF1dPjwvbGluaz4KICAgICAgPGlt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzEyMjQxMTMxNzJwMy80MTYzOTAuanBnXV0+PC9pbWFnZV91cmw+CiAgICAg
+        IDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjI0MTEzMTcycDIvNDE2MzkwLmpwZ11dPjwvc21hbGxf
+        aW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4xNjA4PC9mcmllbmRz
+        X2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4yMDEwPC9yZXZpZXdzX2Nv
+        dW50PgogIAkJCTxjcmVhdGVkX2F0PlRodSBKYW4gMjIgMTA6MjM6MzMgLTA4
+        MDAgMjAxNTwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgog
+        ICAgICA8aWQ+MjE3MDMwNDwvaWQ+CiAgICAgIDxuYW1lPk1hcmsgRGF2ZXNz
+        PC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2Ry
+        ZWFkcy5jb20vdXNlci9zaG93LzIxNzAzMDQtbWFyay1kYXZlc3NdXT48L2xp
+        bms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNz
+        ZXRzLmNvbS91c2Vycy8xMjc4NzA5Njc5cDMvMjE3MDMwNC5qcGddXT48L2lt
+        YWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRw
+        Oi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEyNzg3MDk2NzlwMi8yMTcwMzA0
+        LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3Vu
+        dD41MDwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTE4
+        MzwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5Nb24gSmFuIDI2
+        IDE0OjIzOjUyIC0wODAwIDIwMTU8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+
+        CiAgICA8dXNlcj4KICAgICAgPGlkPjM0MjczMzk8L2lkPgogICAgICA8bmFt
+        ZT5KZWZmcmV5IEtlZXRlbjwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFb
+        aHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8zNDI3MzM5LWpl
+        ZmZyZXkta2VldGVuXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NE
+        QVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTMwMTA4NzM1MnAz
+        LzM0MjczMzkuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFn
+        ZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8x
+        MzAxMDg3MzUycDIvMzQyNzMzOS5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4K
+        ICAgICAgPGZyaWVuZHNfY291bnQ+MTg5OTwvZnJpZW5kc19jb3VudD4KICAg
+        ICAgPHJldmlld3NfY291bnQ+MzAxNjwvcmV2aWV3c19jb3VudD4KICAJCQk8
+        Y3JlYXRlZF9hdD5Nb24gSmFuIDI2IDA5OjI2OjMwIC0wODAwIDIwMTU8L2Ny
+        ZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjQy
+        MDkzNjM8L2lkPgogICAgICA8bmFtZT5TdXNhbiBmcm9tIE1EPC9uYW1lPgog
+        ICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20v
+        dXNlci9zaG93LzQyMDkzNjMtc3VzYW4tZnJvbS1tZF1dPjwvbGluaz4KICAg
+        ICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29t
+        L3VzZXJzLzEzMjAwMTc1OTdwMy80MjA5MzYzLmpwZ11dPjwvaW1hZ2VfdXJs
+        PgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdy
+        LWFzc2V0cy5jb20vdXNlcnMvMTMyMDAxNzU5N3AyLzQyMDkzNjMuanBnXV0+
+        PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjM2PC9m
+        cmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4zMjQ8L3Jldmll
+        d3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+TW9uIEphbiAyNiAxNDoyNToy
+        MyAtMDgwMCAyMDE1PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVz
+        ZXI+CiAgICAgIDxpZD40Mzg0MzAzPC9pZD4KICAgICAgPG5hbWU+QnJhZCBM
+        eWVybGE8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cu
+        Z29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNDM4NDMwMy1icmFkLWx5ZXJsYV1d
+        PjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEzODUzMTUxMDBwMy80Mzg0MzAzLmpwZ11d
+        PjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM4NTMxNTEwMHAyLzQz
+        ODQzMDMuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRz
+        X2NvdW50Pjg5PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3Vu
+        dD4xMDIyPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0Pk1vbiBK
+        YW4gMjYgMDk6MTk6MzcgLTA4MDAgMjAxNTwvY3JlYXRlZF9hdD4KICAgIDwv
+        dXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+NzAzNjMzNzwvaWQ+CiAgICAg
+        IDxuYW1lPkdhcnkgIHRoZSBCb29rd29ybTwvbmFtZT4KICAgICAgPGxpbms+
+        PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy83
+        MDM2MzM3LWdhcnktdGhlLWJvb2t3b3JtXV0+PC9saW5rPgogICAgICA8aW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTQwOTI1MjgzNXAzLzcwMzYzMzcuanBnXV0+PC9pbWFnZV91cmw+CiAgICAg
+        IDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xNDA5MjUyODM1cDIvNzAzNjMzNy5qcGddXT48L3NtYWxs
+        X2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTY1PC9mcmllbmRz
+        X2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4yODA8L3Jldmlld3NfY291
+        bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+TW9uIEphbiAyNiAwOToyMjo0OCAtMDgw
+        MCAyMDE1PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAg
+        ICAgIDxpZD43MDg4MTE4PC9pZD4KICAgICAgPG5hbWU+U3RldmVuIEdyZWVu
+        YmVyZzwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5n
+        b29kcmVhZHMuY29tL3VzZXIvc2hvdy83MDg4MTE4LXN0ZXZlbi1ncmVlbmJl
+        cmddXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDov
+        L2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzIyNzE3MTgxcDMvNzA4ODExOC5q
+        cGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtD
+        REFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzMjI3MTcxODFw
+        Mi83MDg4MTE4LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJp
+        ZW5kc19jb3VudD41PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19j
+        b3VudD4yMzwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5UaHUg
+        SmFuIDIyIDEwOjM0OjA2IC0wODAwIDIwMTU8L2NyZWF0ZWRfYXQ+CiAgICA8
+        L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjcyMTMwNzU8L2lkPgogICAg
+        ICA8bmFtZT5UZWQ8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6
+        Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNzIxMzA3NS10ZWRdXT48
+        L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3It
+        YXNzZXRzLmNvbS91c2Vycy8xNDE0Njk5MTA3cDMvNzIxMzA3NS5qcGddXT48
+        L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVto
+        dHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MTQ2OTkxMDdwMi83MjEz
+        MDc1LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19j
+        b3VudD4zNDU8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50
+        PjIwMjA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+TW9uIEph
+        biAyNiAxNDoyNzowMyAtMDgwMCAyMDE1PC9jcmVhdGVkX2F0PgogICAgPC91
+        c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xODM4Mzc3ODwvaWQ+CiAgICAg
+        IDxuYW1lPkRvbG9yczwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0
+        cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8xODM4Mzc3OC1kb2xv
+        cnNdXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDov
+        L2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzc5NTAwNDM3cDMvMTgzODM3Nzgu
+        anBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzc5NTAwNDM3
+        cDIvMTgzODM3NzguanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxm
+        cmllbmRzX2NvdW50PjI4MjwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmll
+        d3NfY291bnQ+OTk2PC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0
+        Pk1vbiBKYW4gMjYgMDk6MjU6MTIgLTA4MDAgMjAxNTwvY3JlYXRlZF9hdD4K
+        ICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+MjI1OTE2MzM8L2lk
+        PgogICAgICA8bmFtZT5aYW5uYTwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RB
+        VEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8yMjU5MTYz
+        My16YW5uYV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVto
+        dHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNzUxMDc3MThwMy8yMjU5
+        MTYzMy5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3Vy
+        bD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNzUx
+        MDc3MThwMi8yMjU5MTYzMy5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAg
+        ICAgPGZyaWVuZHNfY291bnQ+MjIzPC9mcmllbmRzX2NvdW50PgogICAgICA8
+        cmV2aWV3c19jb3VudD4xOTEyPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVh
+        dGVkX2F0Pk1vbiBKYW4gMjYgMDk6Mjk6MjAgLTA4MDAgMjAxNTwvY3JlYXRl
+        ZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+MjI5MjAy
+        MDA8L2lkPgogICAgICA8bmFtZT5UaGVyZXNhPC9uYW1lPgogICAgICA8bGlu
+        az48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93
+        LzIyOTIwMjAwLXRoZXJlc2FdXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+
+        PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzc2NDUy
+        MDg0cDMvMjI5MjAyMDAuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFs
+        bF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91
+        c2Vycy8xMzc2NDUyMDg0cDIvMjI5MjAyMDAuanBnXV0+PC9zbWFsbF9pbWFn
+        ZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjIwPC9mcmllbmRzX2NvdW50
+        PgogICAgICA8cmV2aWV3c19jb3VudD4zMjI8L3Jldmlld3NfY291bnQ+CiAg
+        CQkJPGNyZWF0ZWRfYXQ+TW9uIEphbiAyNiAxNDoyNDoyMCAtMDgwMCAyMDE1
+        PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxp
+        ZD4yOTQwMjYyMTwvaWQ+CiAgICAgIDxuYW1lPlJlbmF0byBNYWdhbGjDo2Vz
+        IFJvY2hhPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3
+        Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzI5NDAyNjIxLXJlbmF0by1tYWdh
+        bGgtZXMtcm9jaGFdXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RB
+        VEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDEwMDQxMzc3cDMv
+        Mjk0MDI2MjEuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFn
+        ZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8x
+        NDEwMDQxMzc3cDIvMjk0MDI2MjEuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+
+        CiAgICAgIDxmcmllbmRzX2NvdW50PjMwNTwvZnJpZW5kc19jb3VudD4KICAg
+        ICAgPHJldmlld3NfY291bnQ+NDIyPC9yZXZpZXdzX2NvdW50PgogIAkJCTxj
+        cmVhdGVkX2F0PlRodSBKYW4gMDggMTI6MjI6MjQgLTA4MDAgMjAxNTwvY3Jl
+        YXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+Mzkz
+        OTgyMTU8L2lkPgogICAgICA8bmFtZT5CZXRoYW55PC9uYW1lPgogICAgICA8
+        bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9z
+        aG93LzM5Mzk4MjE1LWJldGhhbnldXT48L2xpbms+CiAgICAgIDxpbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDIx
+        ODExNTExcDMvMzkzOTgyMTUuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxz
+        bWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNv
+        bS91c2Vycy8xNDIxODExNTExcDIvMzkzOTgyMTUuanBnXV0+PC9zbWFsbF9p
+        bWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjA8L2ZyaWVuZHNfY291
+        bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjI8L3Jldmlld3NfY291bnQ+CiAg
+        CQkJPGNyZWF0ZWRfYXQ+VGh1IEphbiAyMiAxNDoyNzozNSAtMDgwMCAyMDE1
+        PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgo8L2ZvbGxvd2luZz4KPC9Hb29k
+        cmVhZHNSZXNwb25zZT4=
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:40 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/3947/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="ZFIEzImdY9iZ4SzCCodvor8IbELddMdgEvgM4xPN4Y",
+        oauth_signature="NKktDX4oIF22XkBL1HzYWsOjxpU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466060", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:40 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 0W711XT5N23S4Q7DZ6KC
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.072607'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=604aad6d0b473c16b388fe7b2ba106fd; path=/; expires=Wed, 28-Jan-2015
+        23:27:40 GMT; HttpOnly
+      - csid=BAhJIhg0MzctMTM1NDg3Mi0zOTYxMzY5BjoGRVQ%3D--2033f1abb7501ead0355051c84032ab6f56b4776;
+        path=/; expires=Sun, 28-Jan-2035 17:27:40 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_followings_following]]></method>
+          </Request>
+          <following start="0" end="0" total="0">
+        </following>
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:41 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/416390/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="gzaiDr1asb5FxPc6mvv57zMtayGlZ6sCz3QxiertboY",
+        oauth_signature="ivdVMMOvS0iln3OAtgVGuBg4JhE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466061", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:41 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 132WFNN6HCNJ5WXZFR4H
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.154402'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=22710a37e5e73753ebbfbb7f0decc72e; path=/; expires=Wed, 28-Jan-2015
+        23:27:41 GMT; HttpOnly
+      - csid=BAhJIhg4NTMtNDI0OTMyNS01MTA1MzAxBjoGRVQ%3D--f06c835e5b035bd677a9d0a5c900ca9dd101b865;
+        path=/; expires=Sun, 28-Jan-2035 17:27:41 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"8\" total=\"8\">\n    <user>\n      <id>10378</id>\n
+        \     <name>Pinky</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/10378-pinky]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1293990882p3/10378.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1293990882p2/10378.jpg]]></small_image_url>\n
+        \     <friends_count>345</friends_count>\n      <reviews_count>1986</reviews_count>\n
+        \ \t\t\t<created_at>Fri Sep 09 02:27:37 -0700 2011</created_at>\n    </user>\n
+        \   <user>\n      <id>42508</id>\n      <name>Greg</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/42508-greg]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1368721201p3/42508.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1368721201p2/42508.jpg]]></small_image_url>\n
+        \     <friends_count>728</friends_count>\n      <reviews_count>2823</reviews_count>\n
+        \ \t\t\t<created_at>Fri Sep 02 02:49:58 -0700 2011</created_at>\n    </user>\n
+        \   <user>\n      <id>193310</id>\n      <name>brian   </name>\n      <link><![CDATA[http://www.goodreads.com/user/show/193310-brian]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1353195524p3/193310.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1353195524p2/193310.jpg]]></small_image_url>\n
+        \     <friends_count>384</friends_count>\n      <reviews_count>1072</reviews_count>\n
+        \ \t\t\t<created_at>Fri Sep 02 02:51:37 -0700 2011</created_at>\n    </user>\n
+        \   <user>\n      <id>1232712</id>\n      <name>Matt</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1232712-matt]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1404077158p3/1232712.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1404077158p2/1232712.jpg]]></small_image_url>\n
+        \     <friends_count>560</friends_count>\n      <reviews_count>410</reviews_count>\n
+        \ \t\t\t<created_at>Wed Aug 11 12:00:40 -0700 2010</created_at>\n    </user>\n
+        \   <user>\n      <id>1413439</id>\n      <name>Stephen</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1413439-stephen]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1311616811p3/1413439.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1311616811p2/1413439.jpg]]></small_image_url>\n
+        \     <friends_count>918</friends_count>\n      <reviews_count>5336</reviews_count>\n
+        \ \t\t\t<created_at>Sat Sep 03 09:07:47 -0700 2011</created_at>\n    </user>\n
+        \   <user>\n      <id>1652278</id>\n      <name>Susan</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1652278-susan]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1224862599p3/1652278.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1224862599p2/1652278.jpg]]></small_image_url>\n
+        \     <friends_count>136</friends_count>\n      <reviews_count>858</reviews_count>\n
+        \ \t\t\t<created_at>Fri Jan 06 02:15:21 -0800 2012</created_at>\n    </user>\n
+        \   <user>\n      <id>1907260</id>\n      <name>Boyd</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1907260-boyd]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1238131658p3/1907260.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1238131658p2/1907260.jpg]]></small_image_url>\n
+        \     <friends_count>11</friends_count>\n      <reviews_count>2356</reviews_count>\n
+        \ \t\t\t<created_at>Fri Nov 02 03:23:21 -0700 2012</created_at>\n    </user>\n
+        \   <user>\n      <id>3073544</id>\n      <name>David</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/3073544-david]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1374509066p3/3073544.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1374509066p2/3073544.jpg]]></small_image_url>\n
+        \     <friends_count>274</friends_count>\n      <reviews_count>423</reviews_count>\n
+        \ \t\t\t<created_at>Fri Sep 09 02:28:05 -0700 2011</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:41 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/2170304/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="kTbVaJlPptI5IhYdSuhy0rUHrKqHQjXx7xlBgd63BA",
+        oauth_signature="p0xO3KCp%2FYOFukpeMmrVpVhTvOE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466061", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:43 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 0PQR0ZSPF2GZ6TCHN2JQ
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '1.473055'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=738b10a70dade488289cc7162ba7c7bd; path=/; expires=Wed, 28-Jan-2015
+        23:27:43 GMT; HttpOnly
+      - csid=BAhJIhg5NjYtNTc2MDcyNS0wODk3NDkxBjoGRVQ%3D--b635b6381aacf26b93e22d2d5e3d3e56d51cd3fa;
+        path=/; expires=Sun, 28-Jan-2035 17:27:42 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"5\" total=\"5\">\n    <user>\n      <id>84023</id>\n
+        \     <name>Keely</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/84023-keely]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1274333636p3/84023.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1274333636p2/84023.jpg]]></small_image_url>\n
+        \     <friends_count>988</friends_count>\n      <reviews_count>1506</reviews_count>\n
+        \ \t\t\t<created_at>Wed Nov 20 15:57:16 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1241339</id>\n      <name>Clif</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1241339-clif]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1285539276p3/1241339.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1285539276p2/1241339.jpg]]></small_image_url>\n
+        \     <friends_count>35</friends_count>\n      <reviews_count>180</reviews_count>\n
+        \ \t\t\t<created_at>Wed Jun 19 01:06:53 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1835902</id>\n      <name>Alexander</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1835902-alexander]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1250106963p3/1835902.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1250106963p2/1835902.jpg]]></small_image_url>\n
+        \     <friends_count>122</friends_count>\n      <reviews_count>1569</reviews_count>\n
+        \ \t\t\t<created_at>Tue Jan 20 12:47:18 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>4010856</id>\n      <name>Eflclassroom</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/4010856-eflclassroom]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1279184854p3/4010856.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1279184854p2/4010856.jpg]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>96</reviews_count>\n
+        \ \t\t\t<created_at>Wed Jun 19 01:42:47 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>17371051</id>\n      <name>Peter Praschl</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/17371051-peter-praschl]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1360610559p3/17371051.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1360610559p2/17371051.jpg]]></small_image_url>\n
+        \     <friends_count>56</friends_count>\n      <reviews_count>1073</reviews_count>\n
+        \ \t\t\t<created_at>Mon Sep 16 10:10:27 -0700 2013</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:43 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/3427339/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="MTqviycE2ZHMvNzhI5EOw4KlrV7tn0c68QKaeylHS94",
+        oauth_signature="9%2FU1goGS7Psd1D9CvFGmn0FTvk8%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466063", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:43 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 038ESZDQ2MVXWW8C1FED
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.052351'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=62862c07a12c4fc7b0e3d8716337183e; path=/; expires=Wed, 28-Jan-2015
+        23:27:43 GMT; HttpOnly
+      - csid=BAhJIhgzOTYtNDM1MjcyMi01MDgwMzc2BjoGRVQ%3D--29b6e448d247cdf398833a74e38ea3fc768a54c8;
+        path=/; expires=Sun, 28-Jan-2035 17:27:43 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_followings_following]]></method>
+          </Request>
+          <following start="0" end="0" total="0">
+        </following>
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:43 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/4209363/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="jq24QTxsQCycjL7AkO5pjb47LWnWAOn6EzuSzImnI4",
+        oauth_signature="wsHeLCGQTUJH3vvWk8KDxJp7HCw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466063", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:43 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 02TB990S5ZEPG8FGDGB2
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.087934'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=9c6309fe5230d37ab5a6bd9b023eb9aa; path=/; expires=Wed, 28-Jan-2015
+        23:27:43 GMT; HttpOnly
+      - csid=BAhJIhg5MzgtMzQxMTg5NS0zMDE4Mzk4BjoGRVQ%3D--05af3ba4ae8611bc1297d7d7c30a9c665accd978;
+        path=/; expires=Sun, 28-Jan-2035 17:27:43 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_followings_following]]></method>
+          </Request>
+          <following start="0" end="0" total="0">
+        </following>
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:43 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/4384303/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="1szpIvUJXgYfjuj3ZGzRwqohz4UfI22pAAgJF2SRk0",
+        oauth_signature="vRJLbY%2F4ibrODHylL1HpYZ6KHwo%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466063", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:44 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 0BHHAJVG6K05QXAZJERS
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.156095'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=479d6fa1f7d829a8f22dc0e940a99254; path=/; expires=Wed, 28-Jan-2015
+        23:27:44 GMT; HttpOnly
+      - csid=BAhJIhg4MjgtNDA5MDYzMi01NDgyMzM4BjoGRVQ%3D--48857f3856319735e57156761c17aa807231af0f;
+        path=/; expires=Sun, 28-Jan-2035 17:27:43 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"16\" total=\"16\">\n    <user>\n      <id>702622</id>\n
+        \     <name>Joshua</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/702622-joshua]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1199076200p3/702622.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1199076200p2/702622.jpg]]></small_image_url>\n
+        \     <friends_count>68</friends_count>\n      <reviews_count>667</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:12:58 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1186532</id>\n      <name>Ruskanen</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1186532-ruskanen]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1403897737p3/1186532.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1403897737p2/1186532.jpg]]></small_image_url>\n
+        \     <friends_count>40</friends_count>\n      <reviews_count>531</reviews_count>\n
+        \ \t\t\t<created_at>Sun Feb 02 19:51:57 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>6943908</id>\n      <name>Dw</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/6943908-dw]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>291</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:13:33 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>7707435</id>\n      <name>Scott</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/7707435-scott]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1328971153p3/7707435.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1328971153p2/7707435.jpg]]></small_image_url>\n
+        \     <friends_count>52</friends_count>\n      <reviews_count>557</reviews_count>\n
+        \ \t\t\t<created_at>Tue Oct 14 21:25:39 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>8183327</id>\n      <name>Krista</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/8183327-krista]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1331672430p3/8183327.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1331672430p2/8183327.jpg]]></small_image_url>\n
+        \     <friends_count>12</friends_count>\n      <reviews_count>68</reviews_count>\n
+        \ \t\t\t<created_at>Fri Nov 14 11:59:41 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>8237555</id>\n      <name>Basheer</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/8237555-basheer]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1331993681p3/8237555.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1331993681p2/8237555.jpg]]></small_image_url>\n
+        \     <friends_count>46</friends_count>\n      <reviews_count>15</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:17:04 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>8705808</id>\n      <name>Christine</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/8705808-christine]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1363918826p3/8705808.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1363918826p2/8705808.jpg]]></small_image_url>\n
+        \     <friends_count>31</friends_count>\n      <reviews_count>330</reviews_count>\n
+        \ \t\t\t<created_at>Wed Nov 13 19:01:05 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>11859986</id>\n      <name>The American Conservative</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/11859986-the-american-conservative]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1369778720p3/11859986.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1369778720p2/11859986.jpg]]></small_image_url>\n
+        \     <friends_count>214</friends_count>\n      <reviews_count>848</reviews_count>\n
+        \ \t\t\t<created_at>Tue Dec 30 08:38:39 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>14376589</id>\n      <name>Kumud</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/14376589-kumud]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>8</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:11:49 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>15883105</id>\n      <name>Lee</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/15883105-lee]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1356798718p3/15883105.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1356798718p2/15883105.jpg]]></small_image_url>\n
+        \     <friends_count>15</friends_count>\n      <reviews_count>158</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:13:17 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>18270881</id>\n      <name>Manes</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/18270881-manes]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1363449217p3/18270881.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1363449217p2/18270881.jpg]]></small_image_url>\n
+        \     <friends_count>2</friends_count>\n      <reviews_count>495</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:17:20 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>20882143</id>\n      <name>Martina</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/20882143-martina]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1370010348p3/20882143.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1370010348p2/20882143.jpg]]></small_image_url>\n
+        \     <friends_count>3</friends_count>\n      <reviews_count>228</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:15:28 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>24556525</id>\n      <name>Mongo</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/24556525-mongo]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1385180308p3/24556525.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1385180308p2/24556525.jpg]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>5</reviews_count>\n
+        \ \t\t\t<created_at>Sat Nov 23 17:39:15 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>25515646</id>\n      <name>Vlad Ionescu</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/25515646-vlad-ionescu]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>3</reviews_count>\n
+        \ \t\t\t<created_at>Wed Dec 11 14:37:16 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>25536881</id>\n      <name>Eric Guerrero</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/25536881-eric-guerrero]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1384139730p3/25536881.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1384139730p2/25536881.jpg]]></small_image_url>\n
+        \     <friends_count>4</friends_count>\n      <reviews_count>0</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 18:15:48 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>27064009</id>\n      <name>Jagan</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/27064009-jagan]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>1</reviews_count>\n
+        \ \t\t\t<created_at>Sat Dec 28 06:15:32 -0800 2013</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:44 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/7036337/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="pmgjBKjZscOZY7WOpm4YPYkFLzCeLVsBkBn5rtFwA",
+        oauth_signature="hS43QAUoQPDhYdDW33xGYuxu79U%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466064", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:44 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1E400H21TZ9B74BM9TQR
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.256255'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=1933dd69e74e3efd36481cdda8c62d26; path=/; expires=Wed, 28-Jan-2015
+        23:27:44 GMT; HttpOnly
+      - csid=BAhJIhg2ODItMzczNjEwNi0yODg2MDM1BjoGRVQ%3D--d91749cad86d61ef73f5fd087691dcb0313684cf;
+        path=/; expires=Sun, 28-Jan-2035 17:27:44 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEdvb2Ry
+        ZWFkc1Jlc3BvbnNlPgogIDxSZXF1ZXN0PgogICAgPGF1dGhlbnRpY2F0aW9u
+        PnRydWU8L2F1dGhlbnRpY2F0aW9uPgogICAgICA8a2V5PjwhW0NEQVRBWzdK
+        WmJiQWRBOTFrdHBxMTlSNFAxY0FdXT48L2tleT4KICAgIDxtZXRob2Q+PCFb
+        Q0RBVEFbdXNlcl9mb2xsb3dpbmdzX2ZvbGxvd2luZ11dPjwvbWV0aG9kPgog
+        IDwvUmVxdWVzdD4KICA8Zm9sbG93aW5nIHN0YXJ0PSIxIiBlbmQ9IjMwIiB0
+        b3RhbD0iNTMiPgogICAgPHVzZXI+CiAgICAgIDxpZD41MzE2NTwvaWQ+CiAg
+        ICAgIDxuYW1lPldhcndpY2s8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRB
+        W2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNTMxNjUtd2Fy
+        d2lja11dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRw
+        Oi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNTYwNzM2NzJwMy81MzE2NS5q
+        cGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtD
+        REFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNTYwNzM2NzJw
+        Mi81MzE2NS5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVu
+        ZHNfY291bnQ+NDk1PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19j
+        b3VudD4xNDQwPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PlNh
+        dCBKdWwgMTkgMDg6NDg6MzUgLTA3MDAgMjAxNDwvY3JlYXRlZF9hdD4KICAg
+        IDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+NjgwMzA8L2lkPgogICAg
+        ICA8bmFtZT5KZW5ueSAoUmVhZGluZyBFbnZ5KTwvbmFtZT4KICAgICAgPGxp
+        bms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hv
+        dy82ODAzMC1qZW5ueS1yZWFkaW5nLWVudnldXT48L2xpbms+CiAgICAgIDxp
+        bWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vy
+        cy8xMzUyMzQ4NTc0cDMvNjgwMzAuanBnXV0+PC9pbWFnZV91cmw+CiAgICAg
+        IDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMzUyMzQ4NTc0cDIvNjgwMzAuanBnXV0+PC9zbWFsbF9p
+        bWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjEwMDY8L2ZyaWVuZHNf
+        Y291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjQxMTE8L3Jldmlld3NfY291
+        bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+VHVlIE5vdiAxOSAxNjoxNTo0MyAtMDgw
+        MCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAg
+        ICAgIDxpZD4xMzE5MjI8L2lkPgogICAgICA8bmFtZT5tYXJrIG1vbmRheTwv
+        bmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVh
+        ZHMuY29tL3VzZXIvc2hvdy8xMzE5MjItbWFyay1tb25kYXldXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xNDE0OTYzMjgxcDMvMTMxOTIyLmpwZ11dPjwvaW1hZ2Vf
+        dXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9k
+        LmdyLWFzc2V0cy5jb20vdXNlcnMvMTQxNDk2MzI4MXAyLzEzMTkyMi5qcGdd
+        XT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+Mzk0
+        PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4xMjc3PC9y
+        ZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0Pk1vbiBKYW4gMjAgMTQ6
+        MTg6NTMgLTA4MDAgMjAxNDwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAg
+        IDx1c2VyPgogICAgICA8aWQ+Mjg4Mjk3PC9pZD4KICAgICAgPG5hbWU+VGhl
+        IExpYnJhcnkgTGFkeTwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0
+        cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8yODgyOTctdGhlLWxp
+        YnJhcnktbGFkeV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFU
+        QVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzExODg3ODA5NjRwMy8y
+        ODgyOTcuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMTg4
+        NzgwOTY0cDIvMjg4Mjk3LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAg
+        ICA8ZnJpZW5kc19jb3VudD40MTwvZnJpZW5kc19jb3VudD4KICAgICAgPHJl
+        dmlld3NfY291bnQ+Mzg0MTwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRl
+        ZF9hdD5UaHUgTWFyIDA2IDE0OjA3OjUwIC0wODAwIDIwMTQ8L2NyZWF0ZWRf
+        YXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjQwNTM5MDwv
+        aWQ+CiAgICAgIDxuYW1lPktlbXBlcjwvbmFtZT4KICAgICAgPGxpbms+PCFb
+        Q0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy80MDUz
+        OTAta2VtcGVyXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQyMDk4NDYzN3AzLzQw
+        NTM5MC5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3Vy
+        bD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MjA5
+        ODQ2MzdwMi80MDUzOTAuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAg
+        IDxmcmllbmRzX2NvdW50PjExNDU8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxy
+        ZXZpZXdzX2NvdW50PjE3NTA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0
+        ZWRfYXQ+U2F0IE1hciAyMyAwOToxMjowNCAtMDcwMCAyMDEzPC9jcmVhdGVk
+        X2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD40MTYzOTA8
+        L2lkPgogICAgICA8bmFtZT5QYXVsPC9uYW1lPgogICAgICA8bGluaz48IVtD
+        REFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzQxNjM5
+        MC1wYXVsXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0
+        dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTIyNDExMzE3MnAzLzQxNjM5
+        MC5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48
+        IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEyMjQxMTMx
+        NzJwMi80MTYzOTAuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxm
+        cmllbmRzX2NvdW50PjE2MDg8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZp
+        ZXdzX2NvdW50PjIwMTA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRf
+        YXQ+TW9uIEFwciAxNSAwNjozMjowMyAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0
+        PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD41NDE0MTY8L2lk
+        PgogICAgICA8bmFtZT5UZXJlc2E8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NE
+        QVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNTQxNDE2
+        LXRlcmVzYV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVto
+        dHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MTI3OTQ0MTRwMy81NDE0
+        MTYuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+
+        PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDEyNzk0
+        NDE0cDIvNTQxNDE2LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8
+        ZnJpZW5kc19jb3VudD45NjwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmll
+        d3NfY291bnQ+MTk4ODwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9h
+        dD5TdW4gSnVuIDIyIDE0OjAxOjU2IC0wNzAwIDIwMTQ8L2NyZWF0ZWRfYXQ+
+        CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjYzMjQ1MjwvaWQ+
+        CiAgICAgIDxuYW1lPlN0ZXZlPC9uYW1lPgogICAgICA8bGluaz48IVtDREFU
+        QVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzYzMjQ1Mi1z
+        dGV2ZV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRw
+        Oi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNjc2MTkwNjJwMy82MzI0NTIu
+        anBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzY3NjE5MDYy
+        cDIvNjMyNDUyLmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJp
+        ZW5kc19jb3VudD41MTwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3Nf
+        Y291bnQ+NTk8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+VHVl
+        IE1heSAwNyAxODowMDoyMyAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAg
+        PC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD44ODg1OTk8L2lkPgogICAg
+        ICA8bmFtZT5KYXNvbjwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0
+        cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy84ODg1OTktamFzb25d
+        XT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2Qu
+        Z3ItYXNzZXRzLmNvbS91c2Vycy8xNDE3MTQzMzMzcDMvODg4NTk5LmpwZ11d
+        PjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQxNzE0MzMzM3AyLzg4
+        ODU5OS5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNf
+        Y291bnQ+ODg8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50
+        PjUxMTwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5XZWQgT2N0
+        IDIyIDE1OjQyOjQwIC0wNzAwIDIwMTQ8L2NyZWF0ZWRfYXQ+CiAgICA8L3Vz
+        ZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjEwNzI1ODI8L2lkPgogICAgICA8
+        bmFtZT5LYWV0aGU8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6
+        Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvMTA3MjU4Mi1rYWV0aGVd
+        XT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2Qu
+        Z3ItYXNzZXRzLmNvbS91c2Vycy8xMzE3OTg4MTk5cDMvMTA3MjU4Mi5qcGdd
+        XT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFU
+        QVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzMTc5ODgxOTlwMi8x
+        MDcyNTgyLmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5k
+        c19jb3VudD42MDQ8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2Nv
+        dW50PjMzODk5PC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PkZy
+        aSBOb3YgMDEgMDc6MjU6NTAgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAg
+        IDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+MTEwODEyMzwvaWQ+CiAg
+        ICAgIDxuYW1lPuKYr0JldHRpZeKYrzwvbmFtZT4KICAgICAgPGxpbms+PCFb
+        Q0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8xMTA4
+        MTIzLWJldHRpZV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFU
+        QVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MjA1ODQ3MzdwMy8x
+        MTA4MTIzLmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2Vf
+        dXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQy
+        MDU4NDczN3AyLzExMDgxMjMuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAg
+        ICAgIDxmcmllbmRzX2NvdW50PjE2OTwvZnJpZW5kc19jb3VudD4KICAgICAg
+        PHJldmlld3NfY291bnQ+MTE2MTY8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNy
+        ZWF0ZWRfYXQ+RnJpIE5vdiAwMSAwNzoyNToyMyAtMDcwMCAyMDEzPC9jcmVh
+        dGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xMjEz
+        NjA3PC9pZD4KICAgICAgPG5hbWU+SnVsaWU8L25hbWU+CiAgICAgIDxsaW5r
+        PjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cv
+        MTIxMzYwNy1qdWxpZV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtD
+        REFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MDEzNjg5NDlw
+        My8xMjEzNjA3LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTQwMTM2ODk0OXAyLzEyMTM2MDcuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+
+        CiAgICAgIDxmcmllbmRzX2NvdW50PjQ4OTwvZnJpZW5kc19jb3VudD4KICAg
+        ICAgPHJldmlld3NfY291bnQ+MTM5NjwvcmV2aWV3c19jb3VudD4KICAJCQk8
+        Y3JlYXRlZF9hdD5UdWUgTWFyIDE5IDE2OjE0OjA4IC0wNzAwIDIwMTM8L2Ny
+        ZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjEy
+        OTcwMTQ8L2lkPgogICAgICA8bmFtZT5DYXRobGVlbjwvbmFtZT4KICAgICAg
+        PGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIv
+        c2hvdy8xMjk3MDE0LWNhdGhsZWVuXV0+PC9saW5rPgogICAgICA8aW1hZ2Vf
+        dXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQw
+        MjcwNzk1MHAzLzEyOTcwMTQuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxz
+        bWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNv
+        bS91c2Vycy8xNDAyNzA3OTUwcDIvMTI5NzAxNC5qcGddXT48L3NtYWxsX2lt
+        YWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTAwPC9mcmllbmRzX2Nv
+        dW50PgogICAgICA8cmV2aWV3c19jb3VudD4xMTk4PC9yZXZpZXdzX2NvdW50
+        PgogIAkJCTxjcmVhdGVkX2F0PlR1ZSBKdWwgMjMgMDY6NTg6NDYgLTA3MDAg
+        MjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAg
+        ICA8aWQ+MTM4NDk0NDwvaWQ+CiAgICAgIDxuYW1lPlJvbiBDaGFybGVzPC9u
+        YW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFk
+        cy5jb20vdXNlci9zaG93LzEzODQ5NDQtcm9uLWNoYXJsZXNdXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjU0MDYxMTM1cDMvMTM4NDk0NC5qcGddXT48L2ltYWdl
+        X3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8v
+        ZC5nci1hc3NldHMuY29tL3VzZXJzLzEyNTQwNjExMzVwMi8xMzg0OTQ0Lmpw
+        Z11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4x
+        MTc0PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD44MDI8
+        L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+V2VkIE9jdCAzMCAw
+        ODo0NzoyNiAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgog
+        ICAgPHVzZXI+CiAgICAgIDxpZD4xMzkzMzM2PC9pZD4KICAgICAgPG5hbWU+
+        SmVubmlmZXIgKGFrYSBFTSk8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRB
+        W2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvMTM5MzMzNi1q
+        ZW5uaWZlci1ha2EtZW1dXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDIwMTI1NTkx
+        cDMvMTM5MzMzNi5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2lt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzE0MjAxMjU1OTFwMi8xMzkzMzM2LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJs
+        PgogICAgICA8ZnJpZW5kc19jb3VudD4xODQ8L2ZyaWVuZHNfY291bnQ+CiAg
+        ICAgIDxyZXZpZXdzX2NvdW50PjExMTE8L3Jldmlld3NfY291bnQ+CiAgCQkJ
+        PGNyZWF0ZWRfYXQ+U3VuIEFwciAyMSAxODo0Mjo1MyAtMDcwMCAyMDEzPC9j
+        cmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4x
+        NjUyODk4PC9pZD4KICAgICAgPG5hbWU+wrdLYXJlbsK3PC9uYW1lPgogICAg
+        ICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNl
+        ci9zaG93LzE2NTI4OTgta2FyZW5dXT48L2xpbms+CiAgICAgIDxpbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzgx
+        ODUwMzQ5cDMvMTY1Mjg5OC5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNt
+        YWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29t
+        L3VzZXJzLzEzODE4NTAzNDlwMi8xNjUyODk4LmpwZ11dPjwvc21hbGxfaW1h
+        Z2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD45NzwvZnJpZW5kc19jb3Vu
+        dD4KICAgICAgPHJldmlld3NfY291bnQ+MTUwODwvcmV2aWV3c19jb3VudD4K
+        ICAJCQk8Y3JlYXRlZF9hdD5GcmkgQXByIDA1IDE4OjM3OjM5IC0wNzAwIDIw
+        MTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAg
+        PGlkPjE3MTEyMTM8L2lkPgogICAgICA8bmFtZT5KIEZyZWRlcmljazwvbmFt
+        ZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMu
+        Y29tL3VzZXIvc2hvdy8xNzExMjEzLWotZnJlZGVyaWNrXV0+PC9saW5rPgog
+        ICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTQxNzYyODY4OHAzLzE3MTEyMTMuanBnXV0+PC9pbWFnZV91
+        cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2Qu
+        Z3ItYXNzZXRzLmNvbS91c2Vycy8xNDE3NjI4Njg4cDIvMTcxMTIxMy5qcGdd
+        XT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTk2
+        PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4zODM8L3Jl
+        dmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+RnJpIEp1biAxNCAxMzow
+        NTozMiAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAg
+        PHVzZXI+CiAgICAgIDxpZD4xNzEzOTU2PC9pZD4KICAgICAgPG5hbWU+TWFu
+        bnk8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29v
+        ZHJlYWRzLmNvbS91c2VyL3Nob3cvMTcxMzk1Ni1tYW5ueV1dPjwvbGluaz4K
+        ICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMu
+        Y29tL3VzZXJzLzEyMjcyNzU4NDRwMy8xNzEzOTU2LmpwZ11dPjwvaW1hZ2Vf
+        dXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9k
+        LmdyLWFzc2V0cy5jb20vdXNlcnMvMTIyNzI3NTg0NHAyLzE3MTM5NTYuanBn
+        XV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjI1
+        MzQ8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjI1OTU8
+        L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+V2VkIEp1biAwNCAx
+        Mjo0NDoyOSAtMDcwMCAyMDE0PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgog
+        ICAgPHVzZXI+CiAgICAgIDxpZD4xNzQyODI0PC9pZD4KICAgICAgPG5hbWU+
+        SmFzb24gS29pdnU8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6
+        Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvMTc0MjgyNC1qYXNvbi1r
+        b2l2dV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRw
+        Oi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MjAxMzI0OTRwMy8xNzQyODI0
+        LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwh
+        W0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQyMDEzMjQ5
+        NHAyLzE3NDI4MjQuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxm
+        cmllbmRzX2NvdW50PjI3MDE8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZp
+        ZXdzX2NvdW50PjM1MDI8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRf
+        YXQ+V2VkIE1heSAxNSAwNzowNzozMiAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0
+        PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xOTEwODM2PC9p
+        ZD4KICAgICAgPG5hbWU+TG9ic3Rlcmdpcmw8L25hbWU+CiAgICAgIDxsaW5r
+        PjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cv
+        MTkxMDgzNi1sb2JzdGVyZ2lybF1dPjwvbGluaz4KICAgICAgPGltYWdlX3Vy
+        bD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzODAy
+        NTY4MDFwMy8xOTEwODM2LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21h
+        bGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20v
+        dXNlcnMvMTM4MDI1NjgwMXAyLzE5MTA4MzYuanBnXV0+PC9zbWFsbF9pbWFn
+        ZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjE1MDwvZnJpZW5kc19jb3Vu
+        dD4KICAgICAgPHJldmlld3NfY291bnQ+Mzg3MzwvcmV2aWV3c19jb3VudD4K
+        ICAJCQk8Y3JlYXRlZF9hdD5UdWUgTm92IDA1IDE0OjE1OjI4IC0wODAwIDIw
+        MTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAg
+        PGlkPjIxOTQ4MTA8L2lkPgogICAgICA8bmFtZT5EYW48L25hbWU+CiAgICAg
+        IDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2Vy
+        L3Nob3cvMjE5NDgxMC1kYW5dXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+
+        PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzY0NDk0
+        MTg1cDMvMjE5NDgxMC5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxs
+        X2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3Vz
+        ZXJzLzEzNjQ0OTQxODVwMi8yMTk0ODEwLmpwZ11dPjwvc21hbGxfaW1hZ2Vf
+        dXJsPgogICAgICA8ZnJpZW5kc19jb3VudD45PC9mcmllbmRzX2NvdW50Pgog
+        ICAgICA8cmV2aWV3c19jb3VudD43NzwvcmV2aWV3c19jb3VudD4KICAJCQk8
+        Y3JlYXRlZF9hdD5TdW4gTWFyIDMxIDExOjUyOjA0IC0wNzAwIDIwMTM8L2Ny
+        ZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjIy
+        MjgxODE8L2lkPgogICAgICA8bmFtZT5KaWxsPC9uYW1lPgogICAgICA8bGlu
+        az48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93
+        LzIyMjgxODEtamlsbF1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtD
+        REFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MTU4MTMxMzZw
+        My8yMjI4MTgxLmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTQxNTgxMzEzNnAyLzIyMjgxODEuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+
+        CiAgICAgIDxmcmllbmRzX2NvdW50PjE3MDwvZnJpZW5kc19jb3VudD4KICAg
+        ICAgPHJldmlld3NfY291bnQ+OTExPC9yZXZpZXdzX2NvdW50PgogIAkJCTxj
+        cmVhdGVkX2F0PkZyaSBNYXkgMzAgMDU6NTg6MzkgLTA3MDAgMjAxNDwvY3Jl
+        YXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+Mjg0
+        MzkxMjwvaWQ+CiAgICAgIDxuYW1lPnN3aXR0ZXJidWcgKEJldHNleSk8L25h
+        bWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRz
+        LmNvbS91c2VyL3Nob3cvMjg0MzkxMi1zd2l0dGVyYnVnLWJldHNleV1dPjwv
+        bGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1h
+        c3NldHMuY29tL3VzZXJzLzEzNzQzMTU3NTRwMy8yODQzOTEyLmpwZ11dPjwv
+        aW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0
+        dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM3NDMxNTc1NHAyLzI4NDM5
+        MTIuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2Nv
+        dW50PjM1MjwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+
+        NTMxPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0Pk1vbiBNYXIg
+        MjUgMTQ6NTc6MzAgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNl
+        cj4KICAgIDx1c2VyPgogICAgICA8aWQ+MzEyNTgxMDwvaWQ+CiAgICAgIDxu
+        YW1lPkphbWVzPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8v
+        d3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzMxMjU4MTAtamFtZXNdXT48
+        L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3It
+        YXNzZXRzLmNvbS91c2Vycy8xNDA5NDk2NzE3cDMvMzEyNTgxMC5qcGddXT48
+        L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVto
+        dHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MDk0OTY3MTdwMi8zMTI1
+        ODEwLmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19j
+        b3VudD41NjwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+
+        MjU5PC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0Pk1vbiBOb3Yg
+        MDQgMTU6NTg6MjkgLTA4MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNl
+        cj4KICAgIDx1c2VyPgogICAgICA8aWQ+MzMwMTgxNDwvaWQ+CiAgICAgIDxu
+        YW1lPkphbWVzPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8v
+        d3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzMzMDE4MTQtamFtZXNdXT48
+        L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL3MuZ3It
+        YXNzZXRzLmNvbS9hc3NldHMvbm9waG90by91c2VyL21fMTExeDE0OC1lMDhi
+        NDY4MmVlYTcwODhmOGNkZmQ2N2MxMzFkNTFjZC5wbmddXT48L2ltYWdlX3Vy
+        bD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vcy5n
+        ci1hc3NldHMuY29tL2Fzc2V0cy9ub3Bob3RvL3VzZXIvbV81MHg2Ni04MjA5
+        MzgwOGJjYTcyNmNiMzI0OWE0OTNmYmQzYmQwZi5wbmddXT48L3NtYWxsX2lt
+        YWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MjA8L2ZyaWVuZHNfY291
+        bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjMzNjc8L3Jldmlld3NfY291bnQ+
+        CiAgCQkJPGNyZWF0ZWRfYXQ+U2F0IFNlcCAwNiAwNDo1ODo0NiAtMDcwMCAy
+        MDE0PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAg
+        IDxpZD4zMzM1NjY0PC9pZD4KICAgICAgPG5hbWU+RGF2aWQ8L25hbWU+CiAg
+        ICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91
+        c2VyL3Nob3cvMzMzNTY2NC1kYXZpZF1dPjwvbGluaz4KICAgICAgPGltYWdl
+        X3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEz
+        Mzg2Nzk4NDhwMy8zMzM1NjY0LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8
+        c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTMzODY3OTg0OHAyLzMzMzU2NjQuanBnXV0+PC9zbWFsbF9p
+        bWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjIyMTwvZnJpZW5kc19j
+        b3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTU1NDwvcmV2aWV3c19jb3Vu
+        dD4KICAJCQk8Y3JlYXRlZF9hdD5TdW4gRmViIDE3IDA3OjIyOjU2IC0wODAw
+        IDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAg
+        ICAgPGlkPjMzODE2MzQ8L2lkPgogICAgICA8bmFtZT5QcmFqPC9uYW1lPgog
+        ICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20v
+        dXNlci9zaG93LzMzODE2MzQtcHJhal1dPjwvbGluaz4KICAgICAgPGltYWdl
+        X3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0
+        MjIwMzc2NTZwMy8zMzgxNjM0LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8
+        c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTQyMjAzNzY1NnAyLzMzODE2MzQuanBnXV0+PC9zbWFsbF9p
+        bWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjQ1ODwvZnJpZW5kc19j
+        b3VudD4KICAgICAgPHJldmlld3NfY291bnQ+NDI2MDwvcmV2aWV3c19jb3Vu
+        dD4KICAJCQk8Y3JlYXRlZF9hdD5Nb24gTWFyIDAzIDE2OjU1OjAyIC0wODAw
+        IDIwMTQ8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAg
+        ICAgPGlkPjM0MDk1MzI8L2lkPgogICAgICA8bmFtZT5hUHJpTCBlVm9MdkVz
+        IChleC1Hcm9vdCk8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6
+        Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvMzQwOTUzMi1hcHJpbC1l
+        dm9sdmVzLWV4LWdyb290XV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwh
+        W0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQyMTYyNDg1
+        OXAzLzM0MDk1MzIuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9p
+        bWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vy
+        cy8xNDIxNjI0ODU5cDIvMzQwOTUzMi5qcGddXT48L3NtYWxsX2ltYWdlX3Vy
+        bD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTYyPC9mcmllbmRzX2NvdW50Pgog
+        ICAgICA8cmV2aWV3c19jb3VudD4xMTcwPC9yZXZpZXdzX2NvdW50PgogIAkJ
+        CTxjcmVhdGVkX2F0PlNhdCBBcHIgMjAgMTE6Mjg6MDQgLTA3MDAgMjAxMzwv
+        Y3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+
+        MzcxMjE4MTwvaWQ+CiAgICAgIDxuYW1lPlN0ZXBoZW4gTTwvbmFtZT4KICAg
+        ICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3Vz
+        ZXIvc2hvdy8zNzEyMTgxLXN0ZXBoZW4tbV1dPjwvbGluaz4KICAgICAgPGlt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzE0MDk4MDk0MDRwMy8zNzEyMTgxLmpwZ11dPjwvaW1hZ2VfdXJsPgogICAg
+        ICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0
+        cy5jb20vdXNlcnMvMTQwOTgwOTQwNHAyLzM3MTIxODEuanBnXV0+PC9zbWFs
+        bF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjIxMTwvZnJpZW5k
+        c19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+Mzk3PC9yZXZpZXdzX2Nv
+        dW50PgogIAkJCTxjcmVhdGVkX2F0PlRodSBKdWwgMjUgMTY6MDM6NDggLTA3
+        MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgog
+        ICAgICA8aWQ+MzkyMDY5MzwvaWQ+CiAgICAgIDxuYW1lPjwhW0NEQVRBW1Jp
+        Y2hhcmQgUmV2aWxlcyBDZW5zb3JzaGlwIEFsd2F5cyBpbiBBbGwgV2F5c11d
+        PjwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29k
+        cmVhZHMuY29tL3VzZXIvc2hvdy8zOTIwNjkzLXJpY2hhcmQtcmV2aWxlcy1j
+        ZW5zb3JzaGlwLWFsd2F5cy1pbi1hbGwtd2F5c11dPjwvbGluaz4KICAgICAg
+        PGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3Vz
+        ZXJzLzEzNjU1ODg1NTFwMy8zOTIwNjkzLmpwZ11dPjwvaW1hZ2VfdXJsPgog
+        ICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFz
+        c2V0cy5jb20vdXNlcnMvMTM2NTU4ODU1MXAyLzM5MjA2OTMuanBnXV0+PC9z
+        bWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjE0ODE8L2Zy
+        aWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjE1NDE8L3Jldmll
+        d3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+U2F0IEFwciAyMCAxMjo1MDo0
+        NyAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgo8L2ZvbGxv
+        d2luZz4KPC9Hb29kcmVhZHNSZXNwb25zZT4=
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:44 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/7088118/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="bN0JvWGoaFDDWBqbfGAfd3vyeEiHbwbebWhCuHSl9A",
+        oauth_signature="%2BZzSHNJeda7ITZI2qGwR445mOAg%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466064", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:45 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 0R22JGYYWQ6HYYGZDBNX
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.061403'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=37f1252b601717e57bd0d98a7ad2695e; path=/; expires=Wed, 28-Jan-2015
+        23:27:45 GMT; HttpOnly
+      - csid=BAhJIhg2NzgtMTk5NDE1OC0zMzg3NjA1BjoGRVQ%3D--d6d95913a8cf825eee79f1d1788d6696e91f6cc8;
+        path=/; expires=Sun, 28-Jan-2035 17:27:45 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_followings_following]]></method>
+          </Request>
+          <following start="0" end="0" total="0">
+        </following>
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:45 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/7213075/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="mPNOWgZu1E1qQjqkfLItkq01u6bPfIKFowsjGQTBl0",
+        oauth_signature="Cb2nNyY%2Be7v5ln2jVJgkxrt2FY4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466065", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:45 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1GTM06YG9SHCSZXRCSBA
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.188638'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=9e71e4f9ba4452fba8394c0ea86b8885; path=/; expires=Wed, 28-Jan-2015
+        23:27:45 GMT; HttpOnly
+      - csid=BAhJIhg1OTQtNzYwMTQ2MC02MjY3NjAyBjoGRVQ%3D--f82a3f1d2a79b9b2c5e72bdda19a64c3a0b7c650;
+        path=/; expires=Sun, 28-Jan-2035 17:27:45 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEdvb2Ry
+        ZWFkc1Jlc3BvbnNlPgogIDxSZXF1ZXN0PgogICAgPGF1dGhlbnRpY2F0aW9u
+        PnRydWU8L2F1dGhlbnRpY2F0aW9uPgogICAgICA8a2V5PjwhW0NEQVRBWzdK
+        WmJiQWRBOTFrdHBxMTlSNFAxY0FdXT48L2tleT4KICAgIDxtZXRob2Q+PCFb
+        Q0RBVEFbdXNlcl9mb2xsb3dpbmdzX2ZvbGxvd2luZ11dPjwvbWV0aG9kPgog
+        IDwvUmVxdWVzdD4KICA8Zm9sbG93aW5nIHN0YXJ0PSIxIiBlbmQ9IjMwIiB0
+        b3RhbD0iMzgiPgogICAgPHVzZXI+CiAgICAgIDxpZD4zOTQ3PC9pZD4KICAg
+        ICAgPG5hbWU+RzwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDov
+        L3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8zOTQ3LWddXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjY4NzAyNzM2cDMvMzk0Ny5qcGddXT48L2ltYWdlX3Vy
+        bD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEyNjg3MDI3MzZwMi8zOTQ3LmpwZ11dPjwv
+        c21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD45MzwvZnJp
+        ZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+Nzc1PC9yZXZpZXdz
+        X2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PldlZCBBcHIgMDQgMDg6MzU6NDYg
+        LTA3MDAgMjAxMjwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2Vy
+        PgogICAgICA8aWQ+MTkzMzEwPC9pZD4KICAgICAgPG5hbWU+YnJpYW4gICA8
+        L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJl
+        YWRzLmNvbS91c2VyL3Nob3cvMTkzMzEwLWJyaWFuXV0+PC9saW5rPgogICAg
+        ICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20v
+        dXNlcnMvMTM1MzE5NTUyNHAzLzE5MzMxMC5qcGddXT48L2ltYWdlX3VybD4K
+        ICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1h
+        c3NldHMuY29tL3VzZXJzLzEzNTMxOTU1MjRwMi8xOTMzMTAuanBnXV0+PC9z
+        bWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjM4NDwvZnJp
+        ZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTA3MjwvcmV2aWV3
+        c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5GcmkgRGVjIDIwIDA2OjI0OjAz
+        IC0wODAwIDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNl
+        cj4KICAgICAgPGlkPjYyMjYxNTwvaWQ+CiAgICAgIDxuYW1lPlZhbmphIEFu
+        dG9uaWpldmljPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8v
+        d3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzYyMjYxNS12YW5qYS1hbnRv
+        bmlqZXZpY11dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVto
+        dHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzMDE1ODk2ODVwMy82MjI2
+        MTUuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+
+        PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzAxNTg5
+        Njg1cDIvNjIyNjE1LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8
+        ZnJpZW5kc19jb3VudD4yNTwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmll
+        d3NfY291bnQ+MTk4PC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0
+        Pk1vbiBNYXIgMDUgMjI6Mjk6MDcgLTA4MDAgMjAxMjwvY3JlYXRlZF9hdD4K
+        ICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+NjUwMTI2PC9pZD4K
+        ICAgICAgPG5hbWU+SGVsZW5lIFdlY2tlcjwvbmFtZT4KICAgICAgPGxpbms+
+        PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy82
+        NTAxMjYtaGVsZW5lLXdlY2tlcl1dPjwvbGluaz4KICAgICAgPGltYWdlX3Vy
+        bD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNDk5
+        NzgxMjdwMy82NTAxMjYuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFs
+        bF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91
+        c2Vycy8xMzQ5OTc4MTI3cDIvNjUwMTI2LmpwZ11dPjwvc21hbGxfaW1hZ2Vf
+        dXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4xNzE8L2ZyaWVuZHNfY291bnQ+
+        CiAgICAgIDxyZXZpZXdzX2NvdW50PjE4MDwvcmV2aWV3c19jb3VudD4KICAJ
+        CQk8Y3JlYXRlZF9hdD5UdWUgTm92IDIwIDIwOjEwOjQ3IC0wODAwIDIwMTI8
+        L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlk
+        PjgzNTk1MzwvaWQ+CiAgICAgIDxuYW1lPktlcnNwbGViZWRlYjwvbmFtZT4K
+        ICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29t
+        L3VzZXIvc2hvdy84MzU5NTMta2Vyc3BsZWJlZGViXV0+PC9saW5rPgogICAg
+        ICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20v
+        dXNlcnMvMTIwMTY1MjA1MHAzLzgzNTk1My5qcGddXT48L2ltYWdlX3VybD4K
+        ICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1h
+        c3NldHMuY29tL3VzZXJzLzEyMDE2NTIwNTBwMi84MzU5NTMuanBnXV0+PC9z
+        bWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjI1MjwvZnJp
+        ZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MzkzPC9yZXZpZXdz
+        X2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PlNhdCBNYXkgMDQgMjM6MjM6NTYg
+        LTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2Vy
+        PgogICAgICA8aWQ+MTEwNTE2MjwvaWQ+CiAgICAgIDxuYW1lPk11aGFtbWFk
+        IEFobWFkPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3
+        Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzExMDUxNjItbXVoYW1tYWQtYWht
+        YWRdXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDov
+        L2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMjA5MDQxMzE4cDMvMTEwNTE2Mi5q
+        cGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtD
+        REFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEyMDkwNDEzMThw
+        Mi8xMTA1MTYyLmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJp
+        ZW5kc19jb3VudD4zMDQ8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdz
+        X2NvdW50PjYxNDwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5T
+        dW4gSmFuIDE5IDIwOjI0OjUyIC0wODAwIDIwMTQ8L2NyZWF0ZWRfYXQ+CiAg
+        ICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjExNDg5MzU8L2lkPgog
+        ICAgICA8bmFtZT5EaXJrPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVto
+        dHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzExNDg5MzUtZGly
+        a11dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8v
+        ZC5nci1hc3NldHMuY29tL3VzZXJzLzEyMTAzMTI5NzhwMy8xMTQ4OTM1Lmpw
+        Z11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NE
+        QVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTIxMDMxMjk3OHAy
+        LzExNDg5MzUuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmll
+        bmRzX2NvdW50PjQxPC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19j
+        b3VudD4xNDY8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+TW9u
+        IEFwciAyMiAxMzoxNTozNSAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAg
+        PC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xMjgxODgwPC9pZD4KICAg
+        ICAgPG5hbWU+Sm9zZXBoPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVto
+        dHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzEyODE4ODAtam9z
+        ZXBoXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6
+        Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQyMDE0NzM3NXAzLzEyODE4ODAu
+        anBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDIwMTQ3Mzc1
+        cDIvMTI4MTg4MC5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZy
+        aWVuZHNfY291bnQ+OTUxPC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3
+        c19jb3VudD4xMTMxPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0
+        PlN1biBOb3YgMTYgMTg6MjU6MTEgLTA4MDAgMjAxNDwvY3JlYXRlZF9hdD4K
+        ICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+MTY1Mjg5ODwvaWQ+
+        CiAgICAgIDxuYW1lPsK3S2FyZW7CtzwvbmFtZT4KICAgICAgPGxpbms+PCFb
+        Q0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8xNjUy
+        ODk4LWthcmVuXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM4MTg1MDM0OXAzLzE2
+        NTI4OTguanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzgx
+        ODUwMzQ5cDIvMTY1Mjg5OC5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAg
+        ICAgPGZyaWVuZHNfY291bnQ+OTc8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxy
+        ZXZpZXdzX2NvdW50PjE1MDg8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0
+        ZWRfYXQ+U2F0IE1heSAyNSAyMjo1MTozOCAtMDcwMCAyMDEzPC9jcmVhdGVk
+        X2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xNzA3OTg4
+        PC9pZD4KICAgICAgPG5hbWU+R2FicmllbGxlPC9uYW1lPgogICAgICA8bGlu
+        az48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93
+        LzE3MDc5ODgtZ2FicmllbGxlXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJs
+        PjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTI1MTA1
+        MjY1N3AzLzE3MDc5ODguanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFs
+        bF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91
+        c2Vycy8xMjUxMDUyNjU3cDIvMTcwNzk4OC5qcGddXT48L3NtYWxsX2ltYWdl
+        X3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+NjI4PC9mcmllbmRzX2NvdW50
+        PgogICAgICA8cmV2aWV3c19jb3VudD4xOTU8L3Jldmlld3NfY291bnQ+CiAg
+        CQkJPGNyZWF0ZWRfYXQ+RnJpIERlYyAxOSAxMjoxNjo1MSAtMDgwMCAyMDE0
+        PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxp
+        ZD4xODI4ODE1PC9pZD4KICAgICAgPG5hbWU+QW50aG9ueSBEIEJ1Y2tsZXk8
+        L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJl
+        YWRzLmNvbS91c2VyL3Nob3cvMTgyODgxNS1hbnRob255LWQtYnVja2xleV1d
+        PjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEyMzAxMzA1NDhwMy8xODI4ODE1LmpwZ11d
+        PjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTIzMDEzMDU0OHAyLzE4
+        Mjg4MTUuanBnXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRz
+        X2NvdW50PjU4PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3Vu
+        dD40NzA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+U3VuIEFw
+        ciAyMiAwNzo0NDoxMCAtMDcwMCAyMDEyPC9jcmVhdGVkX2F0PgogICAgPC91
+        c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4yMTM0NDYyPC9pZD4KICAgICAg
+        PG5hbWU+U291dGggRW5kIFByZXNzPC9uYW1lPgogICAgICA8bGluaz48IVtD
+        REFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzIxMzQ0
+        NjItc291dGgtZW5kLXByZXNzXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJs
+        PjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTIzNzI0
+        MDgxMnAzLzIxMzQ0NjIuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFs
+        bF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91
+        c2Vycy8xMjM3MjQwODEycDIvMjEzNDQ2Mi5qcGddXT48L3NtYWxsX2ltYWdl
+        X3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+Mzk1PC9mcmllbmRzX2NvdW50
+        PgogICAgICA8cmV2aWV3c19jb3VudD43MDwvcmV2aWV3c19jb3VudD4KICAJ
+        CQk8Y3JlYXRlZF9hdD5XZWQgQXVnIDA2IDA5OjE0OjM1IC0wNzAwIDIwMTQ8
+        L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlk
+        PjIxNzYwNDE8L2lkPgogICAgICA8bmFtZT5MaXNhPC9uYW1lPgogICAgICA8
+        bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9z
+        aG93LzIxNzYwNDEtbGlzYV1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48
+        IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzODA4MTk1
+        NDRwMy8yMTc2MDQxLmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxf
+        aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNl
+        cnMvMTM4MDgxOTU0NHAyLzIxNzYwNDEuanBnXV0+PC9zbWFsbF9pbWFnZV91
+        cmw+CiAgICAgIDxmcmllbmRzX2NvdW50Pjk5PC9mcmllbmRzX2NvdW50Pgog
+        ICAgICA8cmV2aWV3c19jb3VudD40MjY8L3Jldmlld3NfY291bnQ+CiAgCQkJ
+        PGNyZWF0ZWRfYXQ+U3VuIE9jdCAyMCAxODowMDowMSAtMDcwMCAyMDEzPC9j
+        cmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4y
+        MjAxODg2PC9pZD4KICAgICAgPG5hbWU+TWlrZTwvbmFtZT4KICAgICAgPGxp
+        bms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hv
+        dy8yMjAxODg2LW1pa2VdXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMjM5MzkyNzk3
+        cDMvMjIwMTg4Ni5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2lt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzEyMzkzOTI3OTdwMi8yMjAxODg2LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJs
+        PgogICAgICA8ZnJpZW5kc19jb3VudD4xODwvZnJpZW5kc19jb3VudD4KICAg
+        ICAgPHJldmlld3NfY291bnQ+MTc3NDwvcmV2aWV3c19jb3VudD4KICAJCQk8
+        Y3JlYXRlZF9hdD5GcmkgSmFuIDI1IDA5OjMwOjAwIC0wODAwIDIwMTM8L2Ny
+        ZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjI0
+        OTI1ODg8L2lkPgogICAgICA8bmFtZT5LYXRpZTwvbmFtZT4KICAgICAgPGxp
+        bms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hv
+        dy8yNDkyNTg4LWthdGllXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwh
+        W0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTQwNjI3OTgz
+        NnAzLzI0OTI1ODguanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9p
+        bWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vy
+        cy8xNDA2Mjc5ODM2cDIvMjQ5MjU4OC5qcGddXT48L3NtYWxsX2ltYWdlX3Vy
+        bD4KICAgICAgPGZyaWVuZHNfY291bnQ+OTk8L2ZyaWVuZHNfY291bnQ+CiAg
+        ICAgIDxyZXZpZXdzX2NvdW50PjEwNDc8L3Jldmlld3NfY291bnQ+CiAgCQkJ
+        PGNyZWF0ZWRfYXQ+VHVlIE5vdiAxMSAxMDoyMTozMCAtMDgwMCAyMDE0PC9j
+        cmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4y
+        NTQwMTUzPC9pZD4KICAgICAgPG5hbWU+QXByaWwgRnJhbmtsaW48L25hbWU+
+        CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNv
+        bS91c2VyL3Nob3cvMjU0MDE1My1hcHJpbC1mcmFua2xpbl1dPjwvbGluaz4K
+        ICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMu
+        Y29tL3VzZXJzLzEzMDIzMDc1NDZwMy8yNTQwMTUzLmpwZ11dPjwvaW1hZ2Vf
+        dXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9k
+        LmdyLWFzc2V0cy5jb20vdXNlcnMvMTMwMjMwNzU0NnAyLzI1NDAxNTMuanBn
+        XV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjUy
+        PC9mcmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4xMDMxPC9y
+        ZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PlN1biBBdWcgMTggMjE6
+        MTQ6MTcgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAg
+        IDx1c2VyPgogICAgICA8aWQ+MzA4ODM3NzwvaWQ+CiAgICAgIDxuYW1lPkxh
+        dXJhPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdv
+        b2RyZWFkcy5jb20vdXNlci9zaG93LzMwODgzNzctbGF1cmFdXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjYyMTc5MTE0cDMvMzA4ODM3Ny5qcGddXT48L2ltYWdl
+        X3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8v
+        ZC5nci1hc3NldHMuY29tL3VzZXJzLzEyNjIxNzkxMTRwMi8zMDg4Mzc3Lmpw
+        Z11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD43
+        MDwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTg0PC9y
+        ZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PkZyaSBPY3QgMTIgMDc6
+        NTI6NTMgLTA3MDAgMjAxMjwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAg
+        IDx1c2VyPgogICAgICA8aWQ+MzMzNTE3OTwvaWQ+CiAgICAgIDxuYW1lPlJv
+        c2llIEJyb2NrbGVodXJzdDwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFb
+        aHR0cDovL3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy8zMzM1MTc5LXJv
+        c2llLWJyb2NrbGVodXJzdF1dPjwvbGluaz4KICAgICAgPGltYWdlX3VybD48
+        IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEyOTQ2NjIy
+        MTNwMy8zMzM1MTc5LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxf
+        aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNl
+        cnMvMTI5NDY2MjIxM3AyLzMzMzUxNzkuanBnXV0+PC9zbWFsbF9pbWFnZV91
+        cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjI8L2ZyaWVuZHNfY291bnQ+CiAg
+        ICAgIDxyZXZpZXdzX2NvdW50Pjk4PC9yZXZpZXdzX2NvdW50PgogIAkJCTxj
+        cmVhdGVkX2F0PldlZCBBdWcgMjEgMjI6Mzg6NTEgLTA3MDAgMjAxMzwvY3Jl
+        YXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+MzQ2
+        MTc0NjwvaWQ+CiAgICAgIDxuYW1lPkpvYW4gQ29sYnk8L25hbWU+CiAgICAg
+        IDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2Vy
+        L3Nob3cvMzQ2MTc0Ni1qb2FuLWNvbGJ5XV0+PC9saW5rPgogICAgICA8aW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTQxMzA0OTIyMHAzLzM0NjE3NDYuanBnXV0+PC9pbWFnZV91cmw+CiAgICAg
+        IDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xNDEzMDQ5MjIwcDIvMzQ2MTc0Ni5qcGddXT48L3NtYWxs
+        X2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTIyPC9mcmllbmRz
+        X2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD42NjQ8L3Jldmlld3NfY291
+        bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+VHVlIE1hciAwNiAwNzo1NzozMiAtMDgw
+        MCAyMDEyPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAg
+        ICAgIDxpZD4zOTIwNjkzPC9pZD4KICAgICAgPG5hbWU+PCFbQ0RBVEFbUmlj
+        aGFyZCBSZXZpbGVzIENlbnNvcnNoaXAgQWx3YXlzIGluIEFsbCBXYXlzXV0+
+        PC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2Ry
+        ZWFkcy5jb20vdXNlci9zaG93LzM5MjA2OTMtcmljaGFyZC1yZXZpbGVzLWNl
+        bnNvcnNoaXAtYWx3YXlzLWluLWFsbC13YXlzXV0+PC9saW5rPgogICAgICA8
+        aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNl
+        cnMvMTM2NTU4ODU1MXAzLzM5MjA2OTMuanBnXV0+PC9pbWFnZV91cmw+CiAg
+        ICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNz
+        ZXRzLmNvbS91c2Vycy8xMzY1NTg4NTUxcDIvMzkyMDY5My5qcGddXT48L3Nt
+        YWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTQ4MTwvZnJp
+        ZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTU0MTwvcmV2aWV3
+        c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5TdW4gRGVjIDA4IDE0OjIxOjI0
+        IC0wODAwIDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNl
+        cj4KICAgICAgPGlkPjQwMzAxNDc8L2lkPgogICAgICA8bmFtZT5NZWxpc3Nh
+        IFByaXRjaGFyZDwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDov
+        L3d3dy5nb29kcmVhZHMuY29tL3VzZXIvc2hvdy80MDMwMTQ3LW1lbGlzc2Et
+        cHJpdGNoYXJkXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM5MDcwNjg0N3AzLzQw
+        MzAxNDcuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzkw
+        NzA2ODQ3cDIvNDAzMDE0Ny5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAg
+        ICAgPGZyaWVuZHNfY291bnQ+NTYxPC9mcmllbmRzX2NvdW50PgogICAgICA8
+        cmV2aWV3c19jb3VudD4yPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVk
+        X2F0PlR1ZSBBcHIgMjkgMDk6MTM6MTIgLTA3MDAgMjAxNDwvY3JlYXRlZF9h
+        dD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAgICA8aWQ+NDc0Mjg4NDwv
+        aWQ+CiAgICAgIDxuYW1lPkxpc2EgTGllYmVybWFuPC9uYW1lPgogICAgICA8
+        bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9z
+        aG93LzQ3NDI4ODQtbGlzYS1saWViZXJtYW5dXT48L2xpbms+CiAgICAgIDxp
+        bWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vy
+        cy8xMzgyMDQ3NTU0cDMvNDc0Mjg4NC5qcGddXT48L2ltYWdlX3VybD4KICAg
+        ICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3Nl
+        dHMuY29tL3VzZXJzLzEzODIwNDc1NTRwMi80NzQyODg0LmpwZ11dPjwvc21h
+        bGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD41MzwvZnJpZW5k
+        c19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MzYxPC9yZXZpZXdzX2Nv
+        dW50PgogIAkJCTxjcmVhdGVkX2F0PldlZCBKdW4gMTIgMDg6MzE6MjcgLTA3
+        MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgog
+        ICAgICA8aWQ+NTUwMTAyOTwvaWQ+CiAgICAgIDxuYW1lPk1lZ2FuPC9uYW1l
+        PgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5j
+        b20vdXNlci9zaG93LzU1MDEwMjktbWVnYW5dXT48L2xpbms+CiAgICAgIDxp
+        bWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vy
+        cy8xMzA2MjgxMTc0cDMvNTUwMTAyOS5qcGddXT48L2ltYWdlX3VybD4KICAg
+        ICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3Nl
+        dHMuY29tL3VzZXJzLzEzMDYyODExNzRwMi81NTAxMDI5LmpwZ11dPjwvc21h
+        bGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4yMzwvZnJpZW5k
+        c19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+NjQ8L3Jldmlld3NfY291
+        bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+TW9uIEFwciAwMiAyMTozMjoxNSAtMDcw
+        MCAyMDEyPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAg
+        ICAgIDxpZD41ODg1NzEwPC9pZD4KICAgICAgPG5hbWU+QWRlbGEgQy48L25h
+        bWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRz
+        LmNvbS91c2VyL3Nob3cvNTg4NTcxMC1hZGVsYS1jXV0+PC9saW5rPgogICAg
+        ICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20v
+        dXNlcnMvMTQxNDA5MzY4MXAzLzU4ODU3MTAuanBnXV0+PC9pbWFnZV91cmw+
+        CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3It
+        YXNzZXRzLmNvbS91c2Vycy8xNDE0MDkzNjgxcDIvNTg4NTcxMC5qcGddXT48
+        L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTUwPC9m
+        cmllbmRzX2NvdW50PgogICAgICA8cmV2aWV3c19jb3VudD4xNjQ2PC9yZXZp
+        ZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PlN1biBBcHIgMDcgMDg6NDg6
+        MTUgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1
+        c2VyPgogICAgICA8aWQ+NTg4ODYyOTwvaWQ+CiAgICAgIDxuYW1lPkx1Y2lh
+        bm8gWm9yemV0dG88L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6
+        Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNTg4ODYyOS1sdWNpYW5v
+        LXpvcnpldHRvXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRB
+        W2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM1ODk3MTAxM3AzLzU4
+        ODg2MjkuanBnXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91
+        cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzU4
+        OTcxMDEzcDIvNTg4ODYyOS5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAg
+        ICAgPGZyaWVuZHNfY291bnQ+NDI8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxy
+        ZXZpZXdzX2NvdW50PjIxODwvcmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRl
+        ZF9hdD5XZWQgQXByIDA0IDA4OjQzOjIxIC0wNzAwIDIwMTI8L2NyZWF0ZWRf
+        YXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjYyMzc4NjQ8
+        L2lkPgogICAgICA8bmFtZT5OYW5kYWtpc2hvcmUgVmFybWE8L25hbWU+CiAg
+        ICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91
+        c2VyL3Nob3cvNjIzNzg2NC1uYW5kYWtpc2hvcmUtdmFybWFdXT48L2xpbms+
+        CiAgICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xNDIxMzMyMDc1cDMvNjIzNzg2NC5qcGddXT48L2ltYWdl
+        X3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8v
+        ZC5nci1hc3NldHMuY29tL3VzZXJzLzE0MjEzMzIwNzVwMi82MjM3ODY0Lmpw
+        Z11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD41
+        ODc8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjEzMDg8
+        L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+RnJpIEF1ZyAwMSAw
+        ODoxNjowOCAtMDcwMCAyMDE0PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgog
+        ICAgPHVzZXI+CiAgICAgIDxpZD43MDM2MzM3PC9pZD4KICAgICAgPG5hbWU+
+        R2FyeSAgdGhlIEJvb2t3b3JtPC9uYW1lPgogICAgICA8bGluaz48IVtDREFU
+        QVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzcwMzYzMzct
+        Z2FyeS10aGUtYm9va3dvcm1dXT48L2xpbms+CiAgICAgIDxpbWFnZV91cmw+
+        PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xNDA5MjUy
+        ODM1cDMvNzAzNjMzNy5qcGddXT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxs
+        X2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3Vz
+        ZXJzLzE0MDkyNTI4MzVwMi83MDM2MzM3LmpwZ11dPjwvc21hbGxfaW1hZ2Vf
+        dXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4xNjU8L2ZyaWVuZHNfY291bnQ+
+        CiAgICAgIDxyZXZpZXdzX2NvdW50PjI4MDwvcmV2aWV3c19jb3VudD4KICAJ
+        CQk8Y3JlYXRlZF9hdD5GcmkgTWFyIDE0IDEyOjIxOjUwIC0wNzAwIDIwMTQ8
+        L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlk
+        PjcyOTgwOTU8L2lkPgogICAgICA8bmFtZT5EZWVwdGhpPC9uYW1lPgogICAg
+        ICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNl
+        ci9zaG93LzcyOTgwOTUtZGVlcHRoaV1dPjwvbGluaz4KICAgICAgPGltYWdl
+        X3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzE0
+        MjA0MjA2NDVwMy83Mjk4MDk1LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8
+        c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTQyMDQyMDY0NXAyLzcyOTgwOTUuanBnXV0+PC9zbWFsbF9p
+        bWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50Pjg3PC9mcmllbmRzX2Nv
+        dW50PgogICAgICA8cmV2aWV3c19jb3VudD4xMzA0PC9yZXZpZXdzX2NvdW50
+        PgogIAkJCTxjcmVhdGVkX2F0Pk1vbiBGZWIgMTcgMjE6MzA6MzIgLTA4MDAg
+        MjAxNDwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1c2VyPgogICAg
+        ICA8aWQ+NzQ0MTcwNzwvaWQ+CiAgICAgIDxuYW1lPkdsZW4gUGFya3M8L25h
+        bWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRz
+        LmNvbS91c2VyL3Nob3cvNzQ0MTcwNy1nbGVuLXBhcmtzXV0+PC9saW5rPgog
+        ICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTM3OTczNTk3MnAzLzc0NDE3MDcuanBnXV0+PC9pbWFnZV91
+        cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2Qu
+        Z3ItYXNzZXRzLmNvbS91c2Vycy8xMzc5NzM1OTcycDIvNzQ0MTcwNy5qcGdd
+        XT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MjI8
+        L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjE2NTwvcmV2
+        aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5UdWUgTWF5IDE0IDE5OjIx
+        OjQ5IC0wNzAwIDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8
+        dXNlcj4KICAgICAgPGlkPjc2MDc0Mzc8L2lkPgogICAgICA8bmFtZT5OYXRo
+        YW4gJnF1b3Q7Ti5SLiZxdW90OyBHYWRkaXM8L25hbWU+CiAgICAgIDxsaW5r
+        PjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cv
+        NzYwNzQzNy1uYXRoYW4tbi1yLWdhZGRpc11dPjwvbGluaz4KICAgICAgPGlt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzEzODIxMDc3NDNwMy83NjA3NDM3LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAg
+        ICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0
+        cy5jb20vdXNlcnMvMTM4MjEwNzc0M3AyLzc2MDc0MzcuanBnXV0+PC9zbWFs
+        bF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjE4MTwvZnJpZW5k
+        c19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTc4MzwvcmV2aWV3c19j
+        b3VudD4KICAJCQk8Y3JlYXRlZF9hdD5XZWQgQXVnIDA2IDA4OjE4OjA3IC0w
+        NzAwIDIwMTQ8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CjwvZm9sbG93aW5n
+        Pgo8L0dvb2RyZWFkc1Jlc3BvbnNlPg==
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:45 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/18383778/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="P8aJ4R5K1KpH3SKqnQxsQmKxMBXIDGzFKxjOnGLKIQ",
+        oauth_signature="xbJIx0DX9Odg5Sy2iuV%2BFSD6zp0%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466065", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:46 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1VJP6M2SZ5XAW4XA1JF8
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.136315'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=21ac725fa0d4a3a9ed9f32c285d4fb5d; path=/; expires=Wed, 28-Jan-2015
+        23:27:46 GMT; HttpOnly
+      - csid=BAhJIhg2NTUtODQ3MjkyMy02NDM5ODg5BjoGRVQ%3D--d04d3e698e5927f56f5f1e1cce6221ed0b669d02;
+        path=/; expires=Sun, 28-Jan-2035 17:27:45 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"22\" total=\"22\">\n    <user>\n      <id>12404</id>\n
+        \     <name>Chas</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/12404-chas]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1321974674p3/12404.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1321974674p2/12404.jpg]]></small_image_url>\n
+        \     <friends_count>189</friends_count>\n      <reviews_count>10617</reviews_count>\n
+        \ \t\t\t<created_at>Thu Apr 18 12:16:23 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>37069</id>\n      <name>Ben</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/37069-ben]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1188676371p3/37069.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1188676371p2/37069.jpg]]></small_image_url>\n
+        \     <friends_count>105</friends_count>\n      <reviews_count>584</reviews_count>\n
+        \ \t\t\t<created_at>Tue Mar 19 03:20:40 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>155482</id>\n      <name>Julia</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/155482-julia]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1186146701p3/155482.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1186146701p2/155482.jpg]]></small_image_url>\n
+        \     <friends_count>12</friends_count>\n      <reviews_count>904</reviews_count>\n
+        \ \t\t\t<created_at>Tue Mar 19 03:40:34 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>171197</id>\n      <name>Ben Loory</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/171197-ben-loory]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1269647739p3/171197.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1269647739p2/171197.jpg]]></small_image_url>\n
+        \     <friends_count>1013</friends_count>\n      <reviews_count>2027</reviews_count>\n
+        \ \t\t\t<created_at>Sun Jun 30 02:00:14 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>416390</id>\n      <name>Paul</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/416390-paul]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1224113172p3/416390.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1224113172p2/416390.jpg]]></small_image_url>\n
+        \     <friends_count>1608</friends_count>\n      <reviews_count>2010</reviews_count>\n
+        \ \t\t\t<created_at>Fri May 10 15:31:37 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>729728</id>\n      <name>Annalisa</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/729728-annalisa]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1199241281p3/729728.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1199241281p2/729728.jpg]]></small_image_url>\n
+        \     <friends_count>22</friends_count>\n      <reviews_count>394</reviews_count>\n
+        \ \t\t\t<created_at>Tue Mar 19 03:39:40 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1198255</id>\n      <name>Madeleine</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1198255-madeleine]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1393452012p3/1198255.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1393452012p2/1198255.jpg]]></small_image_url>\n
+        \     <friends_count>185</friends_count>\n      <reviews_count>1510</reviews_count>\n
+        \ \t\t\t<created_at>Tue Jun 04 11:08:31 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1843184</id>\n      <name>Szplug</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1843184-szplug]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1395686229p3/1843184.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1395686229p2/1843184.jpg]]></small_image_url>\n
+        \     <friends_count>319</friends_count>\n      <reviews_count>494</reviews_count>\n
+        \ \t\t\t<created_at>Tue Apr 30 04:07:51 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>2467655</id>\n      <name>Jo</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2467655-jo]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1327178091p3/2467655.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1327178091p2/2467655.jpg]]></small_image_url>\n
+        \     <friends_count>332</friends_count>\n      <reviews_count>878</reviews_count>\n
+        \ \t\t\t<created_at>Tue Mar 19 03:34:25 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>2624672</id>\n      <name>TK421</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2624672-tk421]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1327476609p3/2624672.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1327476609p2/2624672.jpg]]></small_image_url>\n
+        \     <friends_count>384</friends_count>\n      <reviews_count>5307</reviews_count>\n
+        \ \t\t\t<created_at>Thu May 02 09:14:41 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>3470857</id>\n      <name>Mark</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/3470857-mark]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1402700677p3/3470857.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1402700677p2/3470857.jpg]]></small_image_url>\n
+        \     <friends_count>157</friends_count>\n      <reviews_count>1816</reviews_count>\n
+        \ \t\t\t<created_at>Wed Apr 17 00:39:21 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>4487924</id>\n      <name>Ben</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/4487924-ben]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1393033867p3/4487924.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1393033867p2/4487924.jpg]]></small_image_url>\n
+        \     <friends_count>611</friends_count>\n      <reviews_count>1236</reviews_count>\n
+        \ \t\t\t<created_at>Wed May 01 12:10:56 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>5484622</id>\n      <name>Nick Craske</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/5484622-nick-craske]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1405865691p3/5484622.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1405865691p2/5484622.jpg]]></small_image_url>\n
+        \     <friends_count>222</friends_count>\n      <reviews_count>1299</reviews_count>\n
+        \ \t\t\t<created_at>Mon Apr 08 03:22:07 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>5617661</id>\n      <name>Jan-Maat</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/5617661-jan-maat]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1407579968p3/5617661.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1407579968p2/5617661.jpg]]></small_image_url>\n
+        \     <friends_count>120</friends_count>\n      <reviews_count>926</reviews_count>\n
+        \ \t\t\t<created_at>Sun Jun 02 09:00:36 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>5647943</id>\n      <name>Ben Winch</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/5647943-ben-winch]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1412241332p3/5647943.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1412241332p2/5647943.jpg]]></small_image_url>\n
+        \     <friends_count>179</friends_count>\n      <reviews_count>264</reviews_count>\n
+        \ \t\t\t<created_at>Sat Jan 10 00:58:41 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>7607437</id>\n      <name>Nathan &quot;N.R.&quot; Gaddis</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/7607437-nathan-n-r-gaddis]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1382107743p3/7607437.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1382107743p2/7607437.jpg]]></small_image_url>\n
+        \     <friends_count>181</friends_count>\n      <reviews_count>1783</reviews_count>\n
+        \ \t\t\t<created_at>Fri Jun 28 11:04:30 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>8050734</id>\n      <name>Arthur Graham</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/8050734-arthur-graham]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1409977117p3/8050734.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1409977117p2/8050734.jpg]]></small_image_url>\n
+        \     <friends_count>550</friends_count>\n      <reviews_count>564</reviews_count>\n
+        \ \t\t\t<created_at>Mon May 06 10:04:57 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>8554284</id>\n      <name>Khaled Hosseini</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/8554284-khaled-hosseini]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1380994142p3/8554284.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1380994142p2/8554284.jpg]]></small_image_url>\n
+        \     <friends_count>2192</friends_count>\n      <reviews_count>59</reviews_count>\n
+        \ \t\t\t<created_at>Tue Nov 12 14:12:27 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>11143358</id>\n      <name>JJVid</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/11143358-jjvid]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1342920697p3/11143358.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1342920697p2/11143358.jpg]]></small_image_url>\n
+        \     <friends_count>21</friends_count>\n      <reviews_count>405</reviews_count>\n
+        \ \t\t\t<created_at>Sat Apr 27 00:20:16 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>14734360</id>\n      <name>Henry Martin</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/14734360-henry-martin]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1392241795p3/14734360.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1392241795p2/14734360.jpg]]></small_image_url>\n
+        \     <friends_count>123</friends_count>\n      <reviews_count>365</reviews_count>\n
+        \ \t\t\t<created_at>Mon Dec 22 10:54:50 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>19739634</id>\n      <name>Cristiane Serruya</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/19739634-cristiane-serruya]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1421209939p3/19739634.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1421209939p2/19739634.jpg]]></small_image_url>\n
+        \     <friends_count>24</friends_count>\n      <reviews_count>9</reviews_count>\n
+        \ \t\t\t<created_at>Tue Jan 13 08:56:01 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>22119193</id>\n      <name>Gregsamsa</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/22119193-gregsamsa]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1374800548p3/22119193.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1374800548p2/22119193.jpg]]></small_image_url>\n
+        \     <friends_count>146</friends_count>\n      <reviews_count>1260</reviews_count>\n
+        \ \t\t\t<created_at>Tue Jan 27 00:39:34 -0800 2015</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:46 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/22591633/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="DlrEIQMSKiu25CZYH8b1q7vbtqNk1Fsvn4PogT71rCI",
+        oauth_signature="IcR4XMakazoF7lrSNQjV2YVHdC4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466066", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:46 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 19BN83E2NBDD0GQNBT66
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.187772'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=4c7cad4f922fa1cffe8f00095a30b673; path=/; expires=Wed, 28-Jan-2015
+        23:27:46 GMT; HttpOnly
+      - csid=BAhJIhgyMDUtODc3ODc2MC0zMzk4Mjg3BjoGRVQ%3D--90c2453bcd416e41431d40c9a05af5b17e30f4d3;
+        path=/; expires=Sun, 28-Jan-2035 17:27:46 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"18\" total=\"18\">\n    <user>\n      <id>36813</id>\n
+        \     <name>Summer</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/36813-summer]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1174844299p3/36813.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1174844299p2/36813.jpg]]></small_image_url>\n
+        \     <friends_count>34</friends_count>\n      <reviews_count>457</reviews_count>\n
+        \ \t\t\t<created_at>Wed Sep 18 03:19:02 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>140760</id>\n      <name>Daniel</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/140760-daniel]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1182311292p3/140760.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1182311292p2/140760.jpg]]></small_image_url>\n
+        \     <friends_count>52</friends_count>\n      <reviews_count>54</reviews_count>\n
+        \ \t\t\t<created_at>Tue Sep 17 09:06:44 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1431828</id>\n      <name>Nnedi</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1431828-nnedi]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1352398743p3/1431828.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1352398743p2/1431828.jpg]]></small_image_url>\n
+        \     <friends_count>1503</friends_count>\n      <reviews_count>349</reviews_count>\n
+        \ \t\t\t<created_at>Thu Dec 26 01:37:48 -0800 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>1825161</id>\n      <name>Deborah</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/1825161-deborah]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1365837710p3/1825161.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1365837710p2/1825161.jpg]]></small_image_url>\n
+        \     <friends_count>8</friends_count>\n      <reviews_count>1</reviews_count>\n
+        \ \t\t\t<created_at>Tue Aug 05 06:50:08 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>2153853</id>\n      <name>Veronica</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2153853-veronica]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1245687842p3/2153853.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1245687842p2/2153853.jpg]]></small_image_url>\n
+        \     <friends_count>24</friends_count>\n      <reviews_count>597</reviews_count>\n
+        \ \t\t\t<created_at>Wed Apr 16 20:55:17 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>2159889</id>\n      <name>G.</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2159889-g]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1329583908p3/2159889.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1329583908p2/2159889.jpg]]></small_image_url>\n
+        \     <friends_count>60</friends_count>\n      <reviews_count>42</reviews_count>\n
+        \ \t\t\t<created_at>Sun Feb 09 20:55:16 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>2359631</id>\n      <name>Desera Favors</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2359631-desera-favors]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1262746806p3/2359631.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1262746806p2/2359631.jpg]]></small_image_url>\n
+        \     <friends_count>85</friends_count>\n      <reviews_count>79</reviews_count>\n
+        \ \t\t\t<created_at>Fri Apr 18 01:40:29 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>2757918</id>\n      <name>Feminist Press</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/2757918-feminist-press]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1253574154p3/2757918.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1253574154p2/2757918.jpg]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>272</reviews_count>\n
+        \ \t\t\t<created_at>Mon May 26 21:48:29 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>6919013</id>\n      <name>Nicholas</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/6919013-nicholas]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1403192664p3/6919013.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1403192664p2/6919013.jpg]]></small_image_url>\n
+        \     <friends_count>77</friends_count>\n      <reviews_count>1478</reviews_count>\n
+        \ \t\t\t<created_at>Thu Jan 01 08:27:46 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>9245431</id>\n      <name>Cath</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/9245431-cath]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1336061229p3/9245431.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1336061229p2/9245431.jpg]]></small_image_url>\n
+        \     <friends_count>28</friends_count>\n      <reviews_count>118</reviews_count>\n
+        \ \t\t\t<created_at>Thu Aug 22 14:22:24 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>12435096</id>\n      <name>Jessiemclaugh</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/12435096-jessiemclaugh]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>13</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:55:01 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>14515139</id>\n      <name>Calypso Faure</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/14515139-calypso-faure]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1352741201p3/14515139.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1352741201p2/14515139.jpg]]></small_image_url>\n
+        \     <friends_count>2</friends_count>\n      <reviews_count>1</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:55:01 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>15346068</id>\n      <name>Lakshmi Samarakoon</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/15346068-lakshmi-samarakoon]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>22</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:55:01 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>17561583</id>\n      <name>Charlotte Grimshaw</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/17561583-charlotte-grimshaw]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1361137763p3/17561583.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1361137763p2/17561583.jpg]]></small_image_url>\n
+        \     <friends_count>4</friends_count>\n      <reviews_count>17</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:03:08 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>19674885</id>\n      <name>Leigh-anne</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/19674885-leigh-anne]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_111x148-9394ebedbb3c6c218f64be9549657029.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/u_50x66-632230dc9882b4352d753eedf9396530.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>7</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:55:01 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>21899467</id>\n      <name>Clarisse Meunier</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/21899467-clarisse-meunier]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/f_111x148-8060b12280b2aec7543bafb574ee8422.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/f_50x66-6a03a5c12233c941481992b82eea8d23.png]]></small_image_url>\n
+        \     <friends_count>2</friends_count>\n      <reviews_count>2</reviews_count>\n
+        \ \t\t\t<created_at>Fri Aug 02 00:55:01 -0700 2013</created_at>\n    </user>\n
+        \   <user>\n      <id>22818017</id>\n      <name>Jai Danielle</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/22818017-jai-danielle]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1408657185p3/22818017.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1408657185p2/22818017.jpg]]></small_image_url>\n
+        \     <friends_count>72</friends_count>\n      <reviews_count>418</reviews_count>\n
+        \ \t\t\t<created_at>Sat Oct 11 02:50:45 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>37317550</id>\n      <name>Miranda July</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/37317550-miranda-july]]></link>\n
+        \     <image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/f_111x148-8060b12280b2aec7543bafb574ee8422.png]]></image_url>\n
+        \     <small_image_url><![CDATA[http://s.gr-assets.com/assets/nophoto/user/f_50x66-6a03a5c12233c941481992b82eea8d23.png]]></small_image_url>\n
+        \     <friends_count>0</friends_count>\n      <reviews_count>0</reviews_count>\n
+        \ \t\t\t<created_at>Sat Nov 29 13:22:34 -0800 2014</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:46 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/22920200/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="QuzG7GR01Uj7Cgijw7ClOiFE2xsNMEsCNUdWKFX9MV8",
+        oauth_signature="ILqsjnSQMhRkF3mJIy3TOnRViZw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466066", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:47 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 10QSQ9TMN2J5CS5TXKK9
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.156682'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=45b3bcb1f640b1d5ec2da65d37ee3ce2; path=/; expires=Wed, 28-Jan-2015
+        23:27:47 GMT; HttpOnly
+      - csid=BAhJIhg5NTMtMTQ2MDcyMy03Njk5MjM5BjoGRVQ%3D--7f6e9b23621cc3ddb0aa56e6b2c669c8b6297911;
+        path=/; expires=Sun, 28-Jan-2035 17:27:46 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPEdvb2Ry
+        ZWFkc1Jlc3BvbnNlPgogIDxSZXF1ZXN0PgogICAgPGF1dGhlbnRpY2F0aW9u
+        PnRydWU8L2F1dGhlbnRpY2F0aW9uPgogICAgICA8a2V5PjwhW0NEQVRBWzdK
+        WmJiQWRBOTFrdHBxMTlSNFAxY0FdXT48L2tleT4KICAgIDxtZXRob2Q+PCFb
+        Q0RBVEFbdXNlcl9mb2xsb3dpbmdzX2ZvbGxvd2luZ11dPjwvbWV0aG9kPgog
+        IDwvUmVxdWVzdD4KICA8Zm9sbG93aW5nIHN0YXJ0PSIxIiBlbmQ9IjEwIiB0
+        b3RhbD0iMTAiPgogICAgPHVzZXI+CiAgICAgIDxpZD40MTkxOTk4PC9pZD4K
+        ICAgICAgPG5hbWU+TWFyZ2FyZXQgQXR3b29kPC9uYW1lPgogICAgICA8bGlu
+        az48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93
+        LzQxOTE5OTgtbWFyZ2FyZXQtYXR3b29kXV0+PC9saW5rPgogICAgICA8aW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTI4MjY4MjEzMXAzLzQxOTE5OTguanBnXV0+PC9pbWFnZV91cmw+CiAgICAg
+        IDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRz
+        LmNvbS91c2Vycy8xMjgyNjgyMTMxcDIvNDE5MTk5OC5qcGddXT48L3NtYWxs
+        X2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+NzU8L2ZyaWVuZHNf
+        Y291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjA8L3Jldmlld3NfY291bnQ+
+        CiAgCQkJPGNyZWF0ZWRfYXQ+VGh1IE5vdiAyMCAyMjo0MzoyMCAtMDgwMCAy
+        MDE0PC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAg
+        IDxpZD41MDk1MTA2PC9pZD4KICAgICAgPG5hbWU+U2ViIFBhcXVldDwvbmFt
+        ZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMu
+        Y29tL3VzZXIvc2hvdy81MDk1MTA2LXNlYi1wYXF1ZXRdXT48L2xpbms+CiAg
+        ICAgIDxpbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL2QuZ3ItYXNzZXRzLmNv
+        bS91c2Vycy8xMjk5NTk0NDU4cDMvNTA5NTEwNi5qcGddXT48L2ltYWdlX3Vy
+        bD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEyOTk1OTQ0NThwMi81MDk1MTA2LmpwZ11d
+        Pjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4yOTg8
+        L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjczPC9yZXZp
+        ZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PldlZCBBdWcgMDcgMjA6MDU6
+        NTUgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAgIDx1
+        c2VyPgogICAgICA8aWQ+NjM1NDY5MTwvaWQ+CiAgICAgIDxuYW1lPk1pY2hh
+        ZWw8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29v
+        ZHJlYWRzLmNvbS91c2VyL3Nob3cvNjM1NDY5MS1taWNoYWVsXV0+PC9saW5r
+        PgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0
+        cy5jb20vdXNlcnMvMTMxNjM4MjA5N3AzLzYzNTQ2OTEuanBnXV0+PC9pbWFn
+        ZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDov
+        L2QuZ3ItYXNzZXRzLmNvbS91c2Vycy8xMzE2MzgyMDk3cDIvNjM1NDY5MS5q
+        cGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+
+        MzQ8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjcyPC9y
+        ZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVkX2F0PldlZCBBdWcgMDcgMjA6
+        MDU6NTYgLTA3MDAgMjAxMzwvY3JlYXRlZF9hdD4KICAgIDwvdXNlcj4KICAg
+        IDx1c2VyPgogICAgICA8aWQ+NzAwMzM2OTwvaWQ+CiAgICAgIDxuYW1lPkln
+        b3IgT3ZzeWFubnlrb3Y8L25hbWU+CiAgICAgIDxsaW5rPjwhW0NEQVRBW2h0
+        dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91c2VyL3Nob3cvNzAwMzM2OS1pZ29y
+        LW92c3lhbm55a292XV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NE
+        QVRBW2h0dHA6Ly9zLmdyLWFzc2V0cy5jb20vYXNzZXRzL25vcGhvdG8vdXNl
+        ci9tXzExMXgxNDgtZTA4YjQ2ODJlZWE3MDg4ZjhjZGZkNjdjMTMxZDUxY2Qu
+        cG5nXV0+PC9pbWFnZV91cmw+CiAgICAgIDxzbWFsbF9pbWFnZV91cmw+PCFb
+        Q0RBVEFbaHR0cDovL3MuZ3ItYXNzZXRzLmNvbS9hc3NldHMvbm9waG90by91
+        c2VyL21fNTB4NjYtODIwOTM4MDhiY2E3MjZjYjMyNDlhNDkzZmJkM2JkMGYu
+        cG5nXV0+PC9zbWFsbF9pbWFnZV91cmw+CiAgICAgIDxmcmllbmRzX2NvdW50
+        PjMxODwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MTwv
+        cmV2aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5XZWQgQXVnIDA3IDIw
+        OjA1OjU2IC0wNzAwIDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAg
+        ICA8dXNlcj4KICAgICAgPGlkPjk2Mzc3OTg8L2lkPgogICAgICA8bmFtZT5T
+        dGV2ZTwvbmFtZT4KICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5n
+        b29kcmVhZHMuY29tL3VzZXIvc2hvdy85NjM3Nzk4LXN0ZXZlXV0+PC9saW5r
+        PgogICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9zLmdyLWFzc2V0
+        cy5jb20vYXNzZXRzL25vcGhvdG8vdXNlci9tXzExMXgxNDgtZTA4YjQ2ODJl
+        ZWE3MDg4ZjhjZGZkNjdjMTMxZDUxY2QucG5nXV0+PC9pbWFnZV91cmw+CiAg
+        ICAgIDxzbWFsbF9pbWFnZV91cmw+PCFbQ0RBVEFbaHR0cDovL3MuZ3ItYXNz
+        ZXRzLmNvbS9hc3NldHMvbm9waG90by91c2VyL21fNTB4NjYtODIwOTM4MDhi
+        Y2E3MjZjYjMyNDlhNDkzZmJkM2JkMGYucG5nXV0+PC9zbWFsbF9pbWFnZV91
+        cmw+CiAgICAgIDxmcmllbmRzX2NvdW50PjA8L2ZyaWVuZHNfY291bnQ+CiAg
+        ICAgIDxyZXZpZXdzX2NvdW50PjA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNy
+        ZWF0ZWRfYXQ+V2VkIEF1ZyAwNyAyMDowNTo1NiAtMDcwMCAyMDEzPC9jcmVh
+        dGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xMjU4
+        MTc3NzwvaWQ+CiAgICAgIDxuYW1lPkplYW5mZXIgfeKAons8L25hbWU+CiAg
+        ICAgIDxsaW5rPjwhW0NEQVRBW2h0dHA6Ly93d3cuZ29vZHJlYWRzLmNvbS91
+        c2VyL3Nob3cvMTI1ODE3NzctamVhbmZlcl1dPjwvbGluaz4KICAgICAgPGlt
+        YWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJz
+        LzEzNDY5NDU3NjFwMy8xMjU4MTc3Ny5qcGddXT48L2ltYWdlX3VybD4KICAg
+        ICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5nci1hc3Nl
+        dHMuY29tL3VzZXJzLzEzNDY5NDU3NjFwMi8xMjU4MTc3Ny5qcGddXT48L3Nt
+        YWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVuZHNfY291bnQ+MTY8L2ZyaWVu
+        ZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2NvdW50PjY8L3Jldmlld3NfY291
+        bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+V2VkIEF1ZyAwNyAyMDowNTo1NyAtMDcw
+        MCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91c2VyPgogICAgPHVzZXI+CiAg
+        ICAgIDxpZD4xNDc3NTQ1OTwvaWQ+CiAgICAgIDxuYW1lPkRhbHkgRGUgZ2Fn
+        bsOpPC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdv
+        b2RyZWFkcy5jb20vdXNlci9zaG93LzE0Nzc1NDU5LWRhbHktZGUtZ2Fnbl1d
+        PjwvbGluaz4KICAgICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vZC5n
+        ci1hc3NldHMuY29tL3VzZXJzLzEzNTM0NTgxNDlwMy8xNDc3NTQ1OS5qcGdd
+        XT48L2ltYWdlX3VybD4KICAgICAgPHNtYWxsX2ltYWdlX3VybD48IVtDREFU
+        QVtodHRwOi8vZC5nci1hc3NldHMuY29tL3VzZXJzLzEzNTM0NTgxNDlwMi8x
+        NDc3NTQ1OS5qcGddXT48L3NtYWxsX2ltYWdlX3VybD4KICAgICAgPGZyaWVu
+        ZHNfY291bnQ+MzE8L2ZyaWVuZHNfY291bnQ+CiAgICAgIDxyZXZpZXdzX2Nv
+        dW50PjA8L3Jldmlld3NfY291bnQ+CiAgCQkJPGNyZWF0ZWRfYXQ+V2VkIEF1
+        ZyAwNyAyMDowNTo1NyAtMDcwMCAyMDEzPC9jcmVhdGVkX2F0PgogICAgPC91
+        c2VyPgogICAgPHVzZXI+CiAgICAgIDxpZD4xNTY3MjA3NTwvaWQ+CiAgICAg
+        IDxuYW1lPkFuZHkgQ2FydmluPC9uYW1lPgogICAgICA8bGluaz48IVtDREFU
+        QVtodHRwOi8vd3d3Lmdvb2RyZWFkcy5jb20vdXNlci9zaG93LzE1NjcyMDc1
+        LWFuZHktY2FydmluXV0+PC9saW5rPgogICAgICA8aW1hZ2VfdXJsPjwhW0NE
+        QVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMvMTM1NjA5OTM1MXAz
+        LzE1NjcyMDc1LmpwZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8c21hbGxfaW1h
+        Z2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5jb20vdXNlcnMv
+        MTM1NjA5OTM1MXAyLzE1NjcyMDc1LmpwZ11dPjwvc21hbGxfaW1hZ2VfdXJs
+        PgogICAgICA8ZnJpZW5kc19jb3VudD40MTE8L2ZyaWVuZHNfY291bnQ+CiAg
+        ICAgIDxyZXZpZXdzX2NvdW50PjE4MTwvcmV2aWV3c19jb3VudD4KICAJCQk8
+        Y3JlYXRlZF9hdD5XZWQgQXVnIDA3IDIwOjA1OjU1IC0wNzAwIDIwMTM8L2Ny
+        ZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8dXNlcj4KICAgICAgPGlkPjE3
+        MTk4NDMzPC9pZD4KICAgICAgPG5hbWU+VHJveSBDb2NocmFuZTwvbmFtZT4K
+        ICAgICAgPGxpbms+PCFbQ0RBVEFbaHR0cDovL3d3dy5nb29kcmVhZHMuY29t
+        L3VzZXIvc2hvdy8xNzE5ODQzMy10cm95LWNvY2hyYW5lXV0+PC9saW5rPgog
+        ICAgICA8aW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9kLmdyLWFzc2V0cy5j
+        b20vdXNlcnMvMTM2MDE2Mzk4OXAzLzE3MTk4NDMzLmpwZ11dPjwvaW1hZ2Vf
+        dXJsPgogICAgICA8c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9k
+        LmdyLWFzc2V0cy5jb20vdXNlcnMvMTM2MDE2Mzk4OXAyLzE3MTk4NDMzLmpw
+        Z11dPjwvc21hbGxfaW1hZ2VfdXJsPgogICAgICA8ZnJpZW5kc19jb3VudD4z
+        MjwvZnJpZW5kc19jb3VudD4KICAgICAgPHJldmlld3NfY291bnQ+MDwvcmV2
+        aWV3c19jb3VudD4KICAJCQk8Y3JlYXRlZF9hdD5TYXQgQXVnIDEwIDExOjU2
+        OjM1IC0wNzAwIDIwMTM8L2NyZWF0ZWRfYXQ+CiAgICA8L3VzZXI+CiAgICA8
+        dXNlcj4KICAgICAgPGlkPjE4NzE4MjU4PC9pZD4KICAgICAgPG5hbWU+S2Vu
+        PC9uYW1lPgogICAgICA8bGluaz48IVtDREFUQVtodHRwOi8vd3d3Lmdvb2Ry
+        ZWFkcy5jb20vdXNlci9zaG93LzE4NzE4MjU4LWtlbl1dPjwvbGluaz4KICAg
+        ICAgPGltYWdlX3VybD48IVtDREFUQVtodHRwOi8vcy5nci1hc3NldHMuY29t
+        L2Fzc2V0cy9ub3Bob3RvL3VzZXIvdV8xMTF4MTQ4LTkzOTRlYmVkYmIzYzZj
+        MjE4ZjY0YmU5NTQ5NjU3MDI5LnBuZ11dPjwvaW1hZ2VfdXJsPgogICAgICA8
+        c21hbGxfaW1hZ2VfdXJsPjwhW0NEQVRBW2h0dHA6Ly9zLmdyLWFzc2V0cy5j
+        b20vYXNzZXRzL25vcGhvdG8vdXNlci91XzUweDY2LTYzMjIzMGRjOTg4MmI0
+        MzUyZDc1M2VlZGY5Mzk2NTMwLnBuZ11dPjwvc21hbGxfaW1hZ2VfdXJsPgog
+        ICAgICA8ZnJpZW5kc19jb3VudD4wPC9mcmllbmRzX2NvdW50PgogICAgICA8
+        cmV2aWV3c19jb3VudD4wPC9yZXZpZXdzX2NvdW50PgogIAkJCTxjcmVhdGVk
+        X2F0PldlZCBBdWcgMDcgMjA6MDU6NTYgLTA3MDAgMjAxMzwvY3JlYXRlZF9h
+        dD4KICAgIDwvdXNlcj4KPC9mb2xsb3dpbmc+CjwvR29vZHJlYWRzUmVzcG9u
+        c2U+
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:47 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/29402621/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="pbxyKYkbQS13Dg81s0B5WNdIIQyP2ykjs9MUCrZWR0",
+        oauth_signature="mJb3QRoOb9IK4Z3ij3aDrICvjDU%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466067", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:48 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1FTGN40V9MBGDFJ1MQPV
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.836198'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=4840926ef8cc4f0ede4ef315d7f5d440; path=/; expires=Wed, 28-Jan-2015
+        23:27:48 GMT; HttpOnly
+      - csid=BAhJIhgyODItMzgyNDgwMS01MzczODA5BjoGRVQ%3D--dcfd95917ee37ac1e8cc6e3205479ce0c2278c00;
+        path=/; expires=Sun, 28-Jan-2035 17:27:48 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<GoodreadsResponse>\n  <Request>\n
+        \   <authentication>true</authentication>\n      <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>\n
+        \   <method><![CDATA[user_followings_following]]></method>\n  </Request>\n
+        \ <following start=\"1\" end=\"7\" total=\"7\">\n    <user>\n      <id>5150493</id>\n
+        \     <name>Jeffrey Luscombe</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/5150493-jeffrey-luscombe]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1334780872p3/5150493.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1334780872p2/5150493.jpg]]></small_image_url>\n
+        \     <friends_count>823</friends_count>\n      <reviews_count>168</reviews_count>\n
+        \ \t\t\t<created_at>Tue Oct 07 18:00:21 -0700 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>6020795</id>\n      <name>Jim</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/6020795-jim]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1383406674p3/6020795.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1383406674p2/6020795.jpg]]></small_image_url>\n
+        \     <friends_count>243</friends_count>\n      <reviews_count>2040</reviews_count>\n
+        \ \t\t\t<created_at>Tue Jan 20 05:19:14 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>6086101</id>\n      <name>Daniela_x</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/6086101-daniela-x]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1396943261p3/6086101.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1396943261p2/6086101.jpg]]></small_image_url>\n
+        \     <friends_count>4</friends_count>\n      <reviews_count>1191</reviews_count>\n
+        \ \t\t\t<created_at>Sat Nov 15 09:09:35 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>9046845</id>\n      <name>Aavis</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/9046845-aavis]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1400437316p3/9046845.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1400437316p2/9046845.jpg]]></small_image_url>\n
+        \     <friends_count>32</friends_count>\n      <reviews_count>1793</reviews_count>\n
+        \ \t\t\t<created_at>Fri Jan 02 06:06:31 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>10856439</id>\n      <name>Florence (Lefty) MacIntosh</name>\n
+        \     <link><![CDATA[http://www.goodreads.com/user/show/10856439-florence-lefty-macintosh]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1346034704p3/10856439.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1346034704p2/10856439.jpg]]></small_image_url>\n
+        \     <friends_count>154</friends_count>\n      <reviews_count>838</reviews_count>\n
+        \ \t\t\t<created_at>Sat Jan 17 19:27:04 -0800 2015</created_at>\n    </user>\n
+        \   <user>\n      <id>16291745</id>\n      <name>Jules</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/16291745-jules]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1357804781p3/16291745.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1357804781p2/16291745.jpg]]></small_image_url>\n
+        \     <friends_count>29</friends_count>\n      <reviews_count>734</reviews_count>\n
+        \ \t\t\t<created_at>Fri Dec 26 14:07:58 -0800 2014</created_at>\n    </user>\n
+        \   <user>\n      <id>24833226</id>\n      <name>Clericusvagans</name>\n      <link><![CDATA[http://www.goodreads.com/user/show/24833226-clericusvagans]]></link>\n
+        \     <image_url><![CDATA[http://d.gr-assets.com/users/1421503471p3/24833226.jpg]]></image_url>\n
+        \     <small_image_url><![CDATA[http://d.gr-assets.com/users/1421503471p2/24833226.jpg]]></small_image_url>\n
+        \     <friends_count>14</friends_count>\n      <reviews_count>580</reviews_count>\n
+        \ \t\t\t<created_at>Mon Dec 29 12:08:01 -0800 2014</created_at>\n    </user>\n</following>\n</GoodreadsResponse>"
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:48 GMT
+- request:
+    method: get
+    uri: http://www.goodreads.com/user/39398215/following?format=xml
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Authorization:
+      - OAuth oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA", oauth_nonce="Cs3zj2SitEfMhMMZDkgxdrtL9y8KEOItTzi3i61U",
+        oauth_signature="spYEjivmNNDasBsFFZV2QRXyWTE%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1422466068", oauth_token="1iGjnyBKj8gUvBuACNtw", oauth_version="1.0"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:27:48 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      X-Request-Id:
+      - 1YW01YX3ASHPD9ARB2HZ
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.088135'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=d8b0e5fe1020464e95f9d4675e265c23; path=/; expires=Wed, 28-Jan-2015
+        23:27:48 GMT; HttpOnly
+      - csid=BAhJIhg2NTMtNjgxMDMwMi05ODM2NzI4BjoGRVQ%3D--ba3a771a51c82174f6385143862beb2af629dfa4;
+        path=/; expires=Sun, 28-Jan-2035 17:27:48 GMT
+      - locale=en; path=/
+      Vary:
+      - User-Agent
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <GoodreadsResponse>
+          <Request>
+            <authentication>true</authentication>
+              <key><![CDATA[7JZbbAdA91ktpq19R4P1cA]]></key>
+            <method><![CDATA[user_followings_following]]></method>
+          </Request>
+          <following start="0" end="0" total="0">
+        </following>
+        </GoodreadsResponse>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:27:48 GMT
+recorded_with: VCR 2.9.3

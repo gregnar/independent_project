@@ -17,11 +17,22 @@ gem 'pry'
 gem 'figaro'
 gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
+gem 'will_paginate'
+gem 'will_paginate-foundation'
+
+group :test do
+  gem 'launchy', group: :test
+  gem 'webmock', group: :test
+  gem 'vcr'
+  gem 'simplecov'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+end
 
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails'
   gem 'web-console', '~> 2.0'
-  gem 'capybara'
   gem 'spring'
 end

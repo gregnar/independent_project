@@ -4,13 +4,15 @@ class XMLParser
     followee_hashes(followees)
   end
 
-  def self.parse_ratings(followee_id, ratings)
+  def self.parse_ratings_and_books(followee_id, ratings)
     new_ratings = ratings_hashes(ratings)
     new_ratings.map { |rating| rating.tap { |r| r['followee_id'] = followee_id } }
   end
 
   def self.parse_comparison(comparison)
-    comparison_hashes(comparison)
+    parsed_comparison = comparison_hashes(comparison)
+    return [] if parsed_comparison.nil?
+    parsed_comparison.is_a?(Array) ? parsed_comparison : Array.new(1, parsed_comparison)
   end
 
   private

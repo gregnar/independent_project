@@ -1,13 +1,24 @@
+
 <div class="row" id="search-results-header">
-  <div class="small-6 columns small-offset-3">
-    <h2 class='text-center'>Search Results:</h2>
+  <div class="small-6 columns small-offset-3 page-title">
+    <h2 class='text-center'>Search Results</h2>
   </div>
 </div>
 
-<div class="container" id="book-grid">
+<%= render partial: 'search_bar' %>
+
+<% if @results.empty? %>
+  <div class=row>
+    <div class="small-6 columns small-offset-3 text-center">
+      <h6>No matches.</h6>
+    </div>
+  </div>
+<% else %>
+<div class="row" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @results.each do |book| %>
       <li><%=render partial: 'books/book', locals: { book: book } %></li>
     <% end %>
   </ul>
 </div>
+<% end %>
