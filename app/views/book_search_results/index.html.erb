@@ -7,6 +7,13 @@
 
 <%= render partial: 'search_bar' %>
 
+<% if @results.empty? %>
+  <div class=row>
+    <div class="small-6 columns small-offset-3 text-center">
+      <h5>No matches; try again.</h5>
+    </div>
+  </div>
+<% else %>
 <div class="row" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @results.each do |book| %>
@@ -14,3 +21,4 @@
     <% end %>
   </ul>
 </div>
+<% end %>

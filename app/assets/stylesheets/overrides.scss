@@ -8,6 +8,8 @@
 
 #reason-for-user-suggestion {
   p {
+		margin-bottom: 0em;
+		margin-top: 0em;
     color: rgba(204, 51, 0, .9)
   }
 }
@@ -28,4 +30,8 @@
 	margin-top: 2em;
 	margin-bottom: 1em;
 	padding-left: 3em !important;
+}
+
+.bold-link {
+	font-weight: 500;
 }
