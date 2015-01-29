@@ -17,6 +17,8 @@ gem 'pry'
 gem 'figaro'
 gem 'faraday'
 gem 'sucker_punch', '~> 1.0'
+gem 'will_paginate'
+gem 'will_paginate-foundation'
 
 group :test do
   gem 'launchy', group: :test
