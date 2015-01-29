@@ -11,6 +11,7 @@ class XMLParser
 
   def self.parse_comparison(comparison)
     parsed_comparison = comparison_hashes(comparison)
+    return [] if parsed_comparison.nil?
     parsed_comparison.is_a?(Array) ? parsed_comparison : Array.new(1, parsed_comparison)
   end
 

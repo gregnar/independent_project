@@ -6,7 +6,7 @@ class SimilarityCalculator
   end
 
   def calculate_similarity
-    return if filtered_comps.empty?
+    return if comparisons.empty? || filtered_comps.empty?
     decimal.round
   end
 

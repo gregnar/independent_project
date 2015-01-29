@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_one :access_token, dependent: :destroy
   has_many :followees
   has_many :ratings, through: :followees
-  has_many :suggested_followees
+  has_many :suggested_followees, dependent: :destroy
 
   def set_access_token(token, secret)
     access_token.destroy if access_token.present?

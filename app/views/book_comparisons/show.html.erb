@@ -1,9 +1,9 @@
 <div class="row">
   <div class="small-6 columns small-offset-3">
     <% if @comparisons.empty? %>
-      <h2 class="text-center">You have no books in common with <%= @suggested_followee.name %>.</h2>
+      <h2 class="text-center">You have no books in common with <%= @compared_user.name %>.</h2>
     <% else %>
-      <h2 class="text-center">Compare ratings with <%= @suggested_followee.name %></h2>
+      <h2 class="text-center">Compare ratings with <%= @compared_user.name %></h2>
     <% end %>
   </div>
 </div>
@@ -24,7 +24,7 @@
           <tr>
             <th width="200">Book Title</th>
             <th width="150">You</th>
-            <th width="150"><%= @suggested_followee.name %></th>
+            <th width="150"><%= @compared_user.name %></th>
           </tr>
         </thead>
         <tbody>
