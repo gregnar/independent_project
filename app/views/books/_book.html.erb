@@ -1,17 +1,23 @@
 <div class="panel clearfix">
-  <div>
-    <h5 id="book-title"><b><%= book.title %></b></h5>
-    <span>
-      <%= image_tag book.image_url %>
-    </span>
-    <span id="panel-scores" class="right" style="float: right">
-      <div id="gr_add_to_books">
-        <div class="gr_custom_each_container_">
-          <%= link_to image_tag("add_book.png"), add_book_path(book_goodreads_id: book.goodreads_id), method: :post %>
+    <div class="row text-center">
+      <h5 id="book-title"><b><%= book.title %></b></h5>
+    </div>
+
+    <div class="row">
+      <div id="book-image" class="small-6 columns left">
+        <%= image_tag book.image_url %>
+      </div>
+      <div id="panel-scores" class="small-6 columns left" style="float: right">
+        <h6 class="scores">goodreads score: <br/></h6>
+        <h6><b><%= book.goodreads_rating %></b></h6>
+        <h6 class="scores">reviewer score:</h6>
+        <h6><b><%= custom_rating(book) %></b></h6>
+        <div id="gr_add_to_books">
+          <div>
+            <%= link_to 'add to "to-read"', add_book_path(book_goodreads_id: book.goodreads_id), method: :post, class: 'bold-link' %>
+          </div>
         </div>
       </div>
-      <h5>goodreads score: <br/><b><%= book.goodreads_rating %></b></h5>
-      <h5>reviewer score: <br/><b><%= custom_rating(book) %></b></h5>
-    </span>
-  </div>
+    </div>
+
 </div>

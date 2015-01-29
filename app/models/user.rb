@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
 
   def follow(user_id)
     goodreads_services.follow(user_id)
+    suggested_followees.find_by(goodreads_id: user_id).destroy
+    update_followees
   end
 
   def custom_rating(book_id)
