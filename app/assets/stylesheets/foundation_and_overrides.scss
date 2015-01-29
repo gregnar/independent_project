@@ -96,7 +96,7 @@ $font-family-sans-serif: "Oswald", "Helvetica Neue", Helvetica, Roboto, Arial, s
 // $font-weight-bold: bold !default;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: rgba(204, 51, 0, .9);
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -939,7 +939,7 @@ $body-font-weight: 200;
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
+$pagination-link-current-background: rgba(204, 51, 0, .9);
 // $pagination-link-current-font-color: $white;
 // $pagination-link-current-font-weight: $font-weight-bold;
 // $pagination-link-current-cursor: default;

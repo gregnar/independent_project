@@ -1,24 +1,24 @@
 <div class="row">
-  <div class="small-10 columns small-offset-1">
+  <div class="small-10 columns small-offset-1 page-title">
     <% if @comparisons.empty? %>
-      <h4 class="text-center">You have no books in common with <%= @compared_user.name %>.</h4>
+      <h2 class="text-center">You have no books in common with <%= @compared_user.name %>.</h2>
     <% else %>
-      <h4 class="text-center">Compare ratings with <%= @compared_user.name %></h4>
+      <h2 class="text-center"> You and <%= @compared_user.name %></h2>
     <% end %>
   </div>
 </div>
 
 <% if @similarity_score.present? %>
   <div class="row" id="similarity-score">
-    <div class="small-4 columns small-offset-4">
-      <h5>Your reviews are <%= @similarity_score %> percent similar.</h5>
+    <div class="small-4 columns small-offset-4 text-center similarity-score">
+      <h5><%= @similarity_score %> percent of your reviews are similar.</h5>
     </div>
   </div>
 <% end %>
 
 <% unless @comparisons.empty? %>
   <div class="row">
-    <div class="small-6 columns small-offset-3">
+    <div class="small-6 columns small-offset-3" id="comparison-table">
       <table>
         <thead>
           <tr>
