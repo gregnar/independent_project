@@ -4,29 +4,41 @@ require 'capybara/rspec'
 
 describe 'OmniAuth authorization', type: :feature do
 
-  before(:each) do
-    OmniAuth.config.test_mode = true
-    OmniAuth.config.mock_auth[:goodreads] = nil
-    OmniAuth.config.mock_auth[:goodreads] = OmniAuth::AuthHash.new({
-      :provider => 'goodreads',
-      :uid => '123445'
-    })
-    # request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:goodreads]
-  end
-
   context "when an unauthenticated user" do
 
-    it "can log in with goodreads" do
-      visit root_path
-      click_link "login"
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
-      puts current_path
+    it "can log in with goodreads and redirect to dashboard" do
+      log_in
+      expect(current_path).to eq(dashboard_index_path)
     end
 
+    it "can visit the root path without being redirected" do
+      visit root_path
+      expect(current_path).to eq(root_path)
+    end
+
+  end
+
+  context "when an authenticated user" do
+
+    before(:each) do
+      log_in
+    end
+
+    it "can log out" do
+      click_link 'logout'
+      expect(current_path).to_not have_content("logout")
+    end
+
+    it 'cannot visit the dashboard after logging out' do
+      click_link 'logout'
+      visit dashboard_index_path
+      expect(current_path).to eq(root_path)
+    end
+
+    it "cannot visit root path without being redirected" do
+      visit root_path
+      expect(current_path).to eq(dashboard_index_path)
+    end
 
   end
 

@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
   has_one :access_token, dependent: :destroy
   has_many :followees
   has_many :ratings, through: :followees
-  has_many :suggested_followees
+  has_many :suggested_followees, dependent: :destroy
 
   def set_access_token(token, secret)
     access_token.destroy if access_token.present?
@@ -18,36 +18,20 @@ class User < ActiveRecord::Base
     RatingsGenerator.generate_rating(self, book_id)
   end
 
-  def friends
-    goodreads_services.all_friends
-  end
-
   def update_followees
     goodreads_services.update_followees
   end
 
-  def update_ratings
-    goodreads_services.update_ratings
-  end
-
-  def update_books
-    goodreads_services.update_books
+  def update_ratings_and_books
+    goodreads_services.update_ratings_and_books
   end
 
   def custom_rating(book_id)
     RatingsGenerator.generate_rating(self, book_id)
   end
 
-  def ids_for_rated_books
-    ratings.pluck(:book_id).uniq
-  end
-
   def book_ids
     ratings.pluck(:book_id).uniq
-  end
-
-  def uncached_book_ids
-    book_ids.delete_if { |id| Book.find_by(goodreads_id: id) }
   end
 
   def books

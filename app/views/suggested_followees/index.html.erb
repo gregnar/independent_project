@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="small-8 columns small-offset-2">
+    <h2 class="text-center">People you should follow</h2>
+  </div>
+</div>
+
+<div class="row" id="book-grid">
+  <ul class="medium-block-grid-3">
+    <% @suggested_followees.each do |suggested_followee| %>
+      <li><%= render partial: 'suggested_followee', locals: {suggested_followee: suggested_followee} %></li>
+    <% end %>
+  </ul>
+</div>

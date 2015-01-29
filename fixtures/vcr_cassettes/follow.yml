@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.goodreads.com/user/4384303/followers?format=xml
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Authorization:
+      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA",
+        oauth_nonce="0o9tiEwJu1iNkIi4oUh7xOAqFbtbbuQOaevovDbR0", oauth_signature="9%2B5yire7algo5G%2BAIntm9q775Pw%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1422465102", oauth_token="1iGjnyBKj8gUvBuACNtw",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:11:42 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 422 Unprocessable Entity
+      X-Request-Id:
+      - 0B3DTS7K40TH63VNNN93
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - no-cache
+      X-Runtime:
+      - '0.115346'
+      Set-Cookie:
+      - _session_id2=52ed640e112c00a74a758fe137f6213a; path=/; expires=Wed, 28-Jan-2015
+        23:11:42 GMT; HttpOnly
+      - csid=BAhJIhg3NTMtOTk1Njk5My01NDI1MDgzBjoGRVQ%3D--889bb2af52dada8b24582d0a21d8200e143074e9;
+        path=/; expires=Sun, 28-Jan-2035 17:11:42 GMT
+      - locale=en; path=/
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '74'
+    body:
+      encoding: ASCII-8BIT
+      string: 'Validation failed: You''re already following this user.'
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:11:42 GMT
+recorded_with: VCR 2.9.3

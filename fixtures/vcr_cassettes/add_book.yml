@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://www.goodreads.com/shelf/add_to_shelf.xml?book_id=12872236&name=to-read
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - OAuth gem v0.4.7
+      Content-Length:
+      - '0'
+      Authorization:
+      - OAuth oauth_body_hash="2jmj7l5rSw0yVb%2FvlWAYkK%2FYBwk%3D", oauth_consumer_key="7JZbbAdA91ktpq19R4P1cA",
+        oauth_nonce="dTI2OEtEXCwThT3ndgIwh1UgtLLb8btKtckRcH8", oauth_signature="VJHK6isLvwy4tBhQiVSuhCVZNQ4%3D",
+        oauth_signature_method="HMAC-SHA1", oauth_timestamp="1422465101", oauth_token="1iGjnyBKj8gUvBuACNtw",
+        oauth_version="1.0"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:11:42 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 201 Created
+      Location:
+      - http://www.goodreads.com/review/list/9186805.xml?shelf=to-read
+      X-Request-Id:
+      - 1JSZ0ZKR4BDSC4NYW4MN
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Etag:
+      - '"76772a6a2500c653022476a7bf4be811-gzip"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.167005'
+      X-Content-Type-Options:
+      - nosniff
+      Set-Cookie:
+      - _session_id2=30e4c07fa0a32ba8e89502d111d3705e; path=/; expires=Wed, 28-Jan-2015
+        23:11:42 GMT; HttpOnly
+      - csid=BAhJIhg1MzEtODEyMzQ0My04MjM3NDM3BjoGRVQ%3D--e74e455edf276ad905ee2f1b5cc8d420cabfcb23;
+        path=/; expires=Sun, 28-Jan-2035 17:11:41 GMT
+      - locale=en; path=/
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '247'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        <?xml version="1.0" encoding="UTF-8"?>
+        <shelf>
+          <created-at type="datetime">2012-07-05T00:12:21+00:00</created-at>
+          <id type="integer">238912041</id>
+          <position type="integer">1</position>
+          <review-id type="integer">361336266</review-id>
+          <updated-at type="datetime">2012-07-05T00:12:21+00:00</updated-at>
+          <user-shelf-id type="integer">30811705</user-shelf-id>
+          <name>to-read</name>
+          <exclusive type="boolean">true</exclusive>
+        </shelf>
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:11:42 GMT
+recorded_with: VCR 2.9.3

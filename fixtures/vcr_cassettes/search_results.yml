@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.goodreads.com/search/index?format=xml&key=7JZbbAdA91ktpq19R4P1cA&q=Great%20Expectations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 28 Jan 2015 17:13:35 GMT
+      Server:
+      - Server
+      Content-Type:
+      - application/xml; charset=utf-8
+      Status:
+      - 200 OK
+      Vary:
+      - User-Agent
+      X-Request-Id:
+      - 0KNPFV8BTRHNJYSW07J4
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Runtime:
+      - '0.290776'
+      X-Content-Type-Options:
+      - nosniff
+      Content-Encoding:
+      - gzip
+      Set-Cookie:
+      - _session_id2=2df01a4de8f6a283ad9fd5c0d630a522; path=/; expires=Wed, 28-Jan-2015
+        23:13:35 GMT; HttpOnly
+      - csid=BAhJIhg3NTItNDg5MDQ2OC0zNDQ0OTYxBjoGRVQ%3D--308ff3e66866e289f627a1896700e89f26a13335;
+        path=/; expires=Sun, 28-Jan-2035 17:13:34 GMT
+      - locale=en; path=/
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        fT3w5/5bh/4H6cQJmrBIAAA=
+    http_version: 
+  recorded_at: Wed, 28 Jan 2015 17:13:35 GMT
+recorded_with: VCR 2.9.3

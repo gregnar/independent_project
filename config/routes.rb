@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   resources :dashboard, only: [:index]
   resources :users
   resources :user_followees, except: [:edit, :update, :new]
-
+  resources :suggested_followees, only: [:index]
+  resources :books, only: [:index]
   resources :sessions, only: [:create]
+
   get '/login',  to: 'sessions#new'
   get '/logout', to: 'sessions#destroy'
   get '/auth/:provider/callback', to: 'sessions#create'
