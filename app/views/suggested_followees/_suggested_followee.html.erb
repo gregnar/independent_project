@@ -15,13 +15,14 @@
         <%= image_tag suggested_followee.image_url, class: 'panel-image', lazy: true %>
       </div>
       <div class="row">
-        <div class="small-6 columns small-offset-3 text-center">
-          <%= link_to "compare", book_comparison_path(id: suggested_followee.goodreads_id), class: 'bold-link' %>
+        <div class="small-8 columns small-offset-2 text-center">
+          <%= link_to "follow", user_followees_path(followee_id: suggested_followee.goodreads_id), method: :post, class: 'bold-link left' %>
+          <span>|</span>
+          <%= link_to "compare", book_comparison_path(id: suggested_followee.goodreads_id), class: 'bold-link right' %>
         </div>
       </div>
       <div class="row">
-        <div class="small-6 columns small-offset-3 text-center">
-          <%= link_to "follow", user_followees_path(followee_id: suggested_followee.goodreads_id), method: :post, class: 'bold-link' %>
+        <div class="small-6 columns small-offset-2 right">
         </div>
       </div>
     </div>

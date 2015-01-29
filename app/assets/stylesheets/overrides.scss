@@ -35,3 +35,25 @@
 .bold-link {
 	font-weight: 500;
 }
+
+.page-title {
+	margin-top: 3em;
+	margin-bottom: 1em;
+}
+
+.similarity-score {
+	margin-bottom: .5em;
+	h5 {
+		color: rgba(204, 51, 0, .9);
+	}
+}
+
+#comparison-table {
+	td {
+		font-size: 1em;
+	}
+
+	th {
+		font-size: 1em;
+	}
+}
