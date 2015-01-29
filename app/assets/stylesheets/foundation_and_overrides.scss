@@ -1455,12 +1455,10 @@ $body-font-weight: 200;
 }
 
 
-#user-attributes {
-  float: right
-}
-
 #reason-for-user-suggestion {
   p {
+    font-size: .9em;
+    font-weight: 300;
     color: rgba(204, 51, 0, .9)
   }
 }

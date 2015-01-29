@@ -9,14 +9,13 @@
 
     <div class="container">
       <div class="followee-image-container small-10 columns small-offset-1">
-        <%= image_tag followee.image_url, class: 'panel-image', lazy: true %>
+        <%= image_tag followee.image_url, class: 'panel-image'%>
       </div>
-      <div class="small-8 columns small-offset-2">
-        <%= link_to "compare", book_comparison_path(id: followee.goodreads_id), class: 'left' %>
+      <div class=row>
+        <div class="small-6 columns small-offset-3 text-center">
+          <%= link_to "compare", book_comparison_path(id: followee.goodreads_id) %>
+        </div>
       </div>
-    </div>
-
-    <div class="row">
     </div>
 
   </div>
