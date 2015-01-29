@@ -1,9 +1,9 @@
 <div class="row">
-  <div class="small-6 columns small-offset-3">
+  <div class="small-10 columns small-offset-1">
     <% if @comparisons.empty? %>
-      <h2 class="text-center">You have no books in common with <%= @compared_user.name %>.</h2>
+      <h4 class="text-center">You have no books in common with <%= @compared_user.name %>.</h4>
     <% else %>
-      <h2 class="text-center">Compare ratings with <%= @compared_user.name %></h2>
+      <h4 class="text-center">Compare ratings with <%= @compared_user.name %></h4>
     <% end %>
   </div>
 </div>
@@ -11,7 +11,7 @@
 <% if @similarity_score.present? %>
   <div class="row" id="similarity-score">
     <div class="small-4 columns small-offset-4">
-      <h5>Your reviews are <%= @similarity_score %> percent similar.*</h5>
+      <h5>Your reviews are <%= @similarity_score %> percent similar.</h5>
     </div>
   </div>
 <% end %>

@@ -1,4 +1,4 @@
-class UserFolloweesController < ApplicationController
+class SuggestedFolloweesController < ApplicationController
 
   def index
     @suggested_followees = current_user.suggested_followees

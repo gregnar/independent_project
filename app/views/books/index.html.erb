@@ -6,7 +6,7 @@
 
 
 <div class="row" id="book-grid">
-  <ul class="medium-block-grid-4">
+  <ul class="medium-block-grid-3">
     <% @books.each do |book| %>
       <li><%= render partial: 'book', locals: {book: book} %></li>
     <% end %>

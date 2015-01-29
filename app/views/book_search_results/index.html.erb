@@ -1,10 +1,13 @@
+
 <div class="row" id="search-results-header">
   <div class="small-6 columns small-offset-3">
-    <h2 class='text-center'>Search Results:</h2>
+    <h2 class='text-center'>Search Results</h2>
   </div>
 </div>
 
-<div class="container" id="book-grid">
+<%= render partial: 'search_bar' %>
+
+<div class="row" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @results.each do |book| %>
       <li><%=render partial: 'books/book', locals: { book: book } %></li>

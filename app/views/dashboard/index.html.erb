@@ -2,30 +2,21 @@
   <h2 class='text-center'>Books</h2>
 </div>
 
-<div class="container" id="dashboard-search">
-  <%= form_tag('/book_search_results', method: 'get') do %>
-  <div class="small-6 medium-4 columns medium-offset-3">
-      <%= text_field_tag :q, nil, placeholder: "search books" %>
-  </div>
-  <div class="small-3 medium-2 columns end">
-    <%= submit_tag "Search", :name => nil, class: "button round postfix" %>
-  </div>
-  <% end %>
-</div>
+<%= render partial: 'book_search_results/search_bar' %>
 
 <div class="row">
   <div id="dashboard-book-suggestions"class="medium-6 columns medium-offset-3">
-    <h4 class='text-center'>Your suggestions</h4>
+    <h4 class='text-center'>Your book suggestions</h4>
   </div>
 </div>
 
-<div class="container">
+<div class="row">
   <div class= "medium-2 columns right">
-    <%= link_to "browse all", '#'%>
+    <%= link_to "browse all", books_path %>
   </div>
 </div>
 
-<div class="container" id="book-grid">
+<div class="row" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @books.each do |book| %>
       <li><%= render partial: 'books/book', locals: { book: book } %></li>
@@ -39,16 +30,16 @@
   </div>
 </div>
 
-<div class="container">
+<div class="row">
   <div class= "medium-2 columns right">
     <%= link_to "browse all", user_followees_path %>
   </div>
 </div>
 
-<div class="container" id="book-grid">
-  <ul class="medium-block-grid-3">
+<div class="row" id="book-grid">
+  <ul class="medium-block-grid-4">
     <% @followees.each do |followee| %>
-      <li><%= render partial: 'followees/followee', locals: {followee: followee} %></li>
+      <li><%= render partial: 'user_followees/followee', locals: {followee: followee} %></li>
     <% end %>
   </ul>
 </div>
@@ -60,13 +51,13 @@
   </div>
 </div>
 
-<div class="container">
+<div class="row">
   <div class= "medium-2 columns right">
     <%= link_to "browse all", suggested_followees_path %>
   </div>
 </div>
 
-<div class="container" id="book-grid">
+<div class="row" id="book-grid">
   <ul class="medium-block-grid-3">
     <% @suggested_followees.each do |suggested_followee| %>
       <li><%= render partial: 'suggested_followees/suggested_followee', locals: {suggested_followee: suggested_followee} %></li>

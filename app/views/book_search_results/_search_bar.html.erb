@@ -1,0 +1,10 @@
+<div class="container" id="dashboard-search">
+  <%= form_tag('/book_search_results', method: 'get') do %>
+  <div class="small-6 medium-4 columns medium-offset-3">
+      <%= text_field_tag :q, nil, placeholder: "search books" %>
+  </div>
+  <div class="small-3 medium-2 columns end">
+    <%= submit_tag "Search", :name => nil, class: "button round postfix" %>
+  </div>
+  <% end %>
+</div>
